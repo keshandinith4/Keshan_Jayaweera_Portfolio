@@ -4,11 +4,11 @@ export default function Header() {
   return (
      <header className="flex items-center justify-between px-10 py-4 bg-black text-white relative overflow-hidden">
       {/* Left Side Background Shape */}
-      <div className="absolute left-0 top-0 h-full w-1/2 bg-gray-300 -skew-x-12 origin-top-left"></div>
+      <div className="absolute left-4 top-0 h-full w-1/2 bg-gray-300 -skew-x-12 origin-top-left"></div>
 
       {/* Name */}
       <div className="relative z-10 flex items-center">
-        <span className="font-bold text-[#000000] text-2xl">Keshan Jayaweera</span>
+        <span className="font-bold text-[#000000] text-2xl"></span>
       </div>
 
       {/* Navigation */}
