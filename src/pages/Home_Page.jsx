@@ -2,6 +2,8 @@ import '../App.css'
 import About_Us from '../components/About_Us'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import About_Us from '../components/About_Us'
+import Projects from '../components/Projects'
 
 export default function Home_Page() {
     return(
