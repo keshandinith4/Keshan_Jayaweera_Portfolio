@@ -2,31 +2,32 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="bg-black shadow-md w-full">
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-        
-        <div className="flex items-center space-x-2">
-          <span className="text-xl font-bold text-white">Keshan Jayaweera</span>
-        </div>
+     <header className="flex items-center justify-between px-10 py-4 bg-black text-white relative overflow-hidden">
+      {/* Left Side Background Shape */}
+      <div className="absolute left-0 top-0 h-full w-1/2 bg-gray-300 -skew-x-12 origin-top-left"></div>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex space-x-15 font-medium text-white">
-          <div className="hover:text-blue-600 transition-colors">
-            Home
-          </div>
-          <div className="hover:text-blue-600 transition-colors">
-            About
-          </div>
-          <div className="hover:text-blue-600 transition-colors">
-            Projects
-          </div>
-        </nav>
-
-        {/* Contact Us btn */}
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition-all">
-          Contact US
-        </button>
+      {/* Name */}
+      <div className="relative z-10 flex items-center">
+        <span className="font-bold text-[#000000] text-2xl">Keshan Jayaweera</span>
       </div>
+
+      {/* Navigation */}
+      <nav className="relative z-10 flex items-center gap-15 text-lg font-semibold">
+        <a href="#about" className="hover:text-gray-300">
+          Home
+        </a>
+        <a href="#skills" className="hover:text-gray-300">
+          About Us
+        </a>
+        <a href="#portfolio" className="hover:text-gray-300">
+          Projects
+        </a>
+        <a
+          href="#contact"
+          className="bg-white text-black px-5 py-1.5 rounded-full font-medium hover:bg-gray-200 transition">
+          CONTACT ME
+        </a>
+      </nav>
     </header>
   );
 }
