@@ -1,20 +1,31 @@
 import React from "react";
+import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
   
-
   return (
     <section className="relative flex items-center bg-[#121828] justify-between min-h-screen overflow-hidden">
 
       {/* Angled Divider */}
         <div className="absolute left-0 -mt-18 top-0 h-full w-3/5 bg-gray-300 -skew-x-12 origin-top-left"></div>
       {/* Left Side */}
-      <div className="w-1/2 flex flex-col justify-center px-20 -mt-60 relative z-10">
+    
+      <div className="w-1/2 flex flex-col justify-center px-20 -mt-120 relative z-10">
+        <h2 className="mb-8 text-xl animate-popup">Web Application Developer</h2>
         <h3 className="text-3xl mb-2 text-black">Hi, I am</h3>
-        <h1 className="text-7xl font-bold mb-3 text-[#19C753]">Keshan Jayaweera</h1>
-        <p className="text-gray-600 font-medium mb-8 text-xl">
+        <h1 className="text-7xl font-bold mb-3 text-[#19C753] hover:scale-101 transition duration-300">Keshan Jayaweera</h1>
+        <p className="text-gray-600 font-medium mb-8 text-xl hover:text-gray-800 transition duration-200">
           IT Student / Undergraduate / Front-end Designer
         </p>
+        <p className="text-[#121828] text-lg transition duration-300">
+          Passionate IT student with expertise in multiple programming languages and core computer science concepts, eager to apply technical skills in real-world projects and collaborative development environments.
+        </p>
+          <div className="flex gap-10 text-5xl mt-5"> {/* Social Media Section */}
+            <h3><FaLinkedin className="transition duration-300 hover:text-[#19C753] cursor-pointer hover:scale-103" /></h3>
+            <h3><FaGithub className="transition duration-300 hover:text-[#19C753] cursor-pointer hover:scale-104" /></h3>
+            <h3><FaFacebook className="transition duration-300 hover:text-[#19C753] cursor-pointer hover:scale-104" /></h3>
+            <h3><FaWhatsapp className="transition duration-300 hover:text-[#19C753] cursor-pointer hover:scale-104" /></h3>
+          </div>
       </div>
 
       {/* Right Side */}
