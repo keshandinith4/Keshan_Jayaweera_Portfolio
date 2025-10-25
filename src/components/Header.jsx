@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header() {  
+
   return (
      <header className="flex items-center justify-between px-10 py-4 bg-[#121828] text-white relative overflow-hidden">
       {/* Left Side Background Shape */}
