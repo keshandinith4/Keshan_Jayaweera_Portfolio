@@ -82,20 +82,6 @@ export default function About_Us() {
                       <SiMysql className="text-[#19C753] hover:scale-103"/>
                         <span className="text-xl text-white hover:scale-103">MySQL</span>
                     </h3>
-                    <h3 className="flex items-center gap-2 -mx-10">
-                      <SiAdobephotoshop className="text-[#19C753] hover:scale-103"/>
-                        <span className="text-xl text-white hover:scale-103">Photoshop</span>
-                    </h3>
-                </div>
-                <div className="flex mt-5 gap-9">
-                  <h3 className="flex items-center gap-2 ">
-                      <SiAutocad className="text-[#19C753] hover:scale-103"/>
-                        <span className="text-xl text-white hover:scale-103">Autocad</span>
-                    </h3>
-                    <h3 className="flex items-center gap-2 ">
-                      <SiAdobeillustrator className="text-[#19C753] hover:scale-103"/>
-                        <span className="text-xl text-white hover:scale-103">Illustrator</span>
-                    </h3>
                 </div>
               </div>
       </div>   
