@@ -1,8 +1,9 @@
-import { IoLogoReact, IoLogoNodejs} from "react-icons/io5";
+import { IoLogoReact, IoLogoNodejs, IoLogoCss3 } from "react-icons/io5";
 import { BiLogoMongodb } from "react-icons/bi";
 import { FaJsSquare } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
-import { FaHtml5 } from "react-icons/fa6";
+import { FaHtml5 } from "react-icons/fa";
+import { SiExpress, SiTailwindcss, SiMysql, SiAdobephotoshop, SiAutocad, SiAdobeillustrator } from "react-icons/si";
+
 
 export default function About_Us() {
     return(
@@ -41,34 +42,60 @@ export default function About_Us() {
             <h2 className="text-4xl font-bold mb-4 mx-5 text-[#fff]">Skills</h2>
               <p className="text-xl text-[#fff] mx-5">I have a solid foundation in full-stack web development, specializing in the MERN stack - MongoDB, Express.js, React, and Node.js. On the frontend, I build clean, responsive user interfaces using HTML5, CSS3, and JavaScript, while leveraging React for dynamic and scalable applications. On the backend, I develop robust APIs with Node.js and Express, and manage data effectively with MongoDB.</p>
               
-              <div className="text-5xl mt-5 ml-5 my-5 transition duration-300 flex-col cursor-pointer "> {/* Tools Section */}
+              <div className="text-5xl mt-5 ml-12 my-5 transition duration-300 flex-col cursor-pointer "> {/* Tools Section */}
                 <div className="flex gap-15">
                   <h3 className="flex items-center gap-2 ">
                   <IoLogoReact className="text-[#19C753] hover:scale-103"/>
-                    <span className="text-2xl text-white hover:scale-103">React</span>
+                    <span className="text-xl text-white hover:scale-103">React</span>
                 </h3>
                 <h3 className="flex items-center gap-2 ">
                   <IoLogoNodejs className="text-[#19C753] hover:scale-103"/>
-                    <span className="text-2xl text-white hover:scale-103">Node</span>
+                    <span className="text-xl text-white hover:scale-103">Node</span>
                 </h3>
                 <h3 className="flex items-center gap-2 ">
                   <BiLogoMongodb className="text-[#19C753] hover:scale-103"/>
-                    <span className="text-2xl text-white hover:scale-103">MongoDB</span>
+                    <span className="text-xl text-white hover:scale-103">MongoDB</span>
                 </h3>
                 <h3 className="flex items-center gap-2 ">
                   <FaJsSquare className="text-[#19C753] hover:scale-103"/>
-                    <span className="text-2xl text-white hover:scale-103">JS</span>
+                    <span className="text-xl text-white hover:scale-103">JS</span>
                 </h3>
                 <h3 className="flex items-center gap-2 ">
                   <SiTailwindcss className="text-[#19C753] hover:scale-103"/>
-                    <span className="text-2xl text-white hover:scale-103">Tailwindcss</span>
+                    <span className="text-xl text-white hover:scale-103">Tailwindcss</span>
                 </h3>
                 </div>
-                <div className="flex mt-5">
-                   <h3 className="flex items-center gap-2 ">
-                  <FaHtml5 className="text-[#19C753] hover:scale-103"/>
-                    <span className="text-2xl text-white hover:scale-103">HTML</span>
-                </h3>
+                <div className="flex mt-5 gap-12">
+                    <h3 className="flex items-center gap-2 ">
+                      <FaHtml5 className="text-[#19C753] hover:scale-103"/>
+                        <span className="text-xl text-white hover:scale-103">HTML</span>
+                    </h3>
+                    <h3 className="flex items-center gap-2 mx-2">
+                      <IoLogoCss3 className="text-[#19C753] hover:scale-103"/>
+                        <span className="text-xl text-white hover:scale-103">CSS</span>
+                    </h3>
+                    <h3 className="flex items-center gap-2 mx-8">
+                      <SiExpress className="text-[#19C753] hover:scale-103"/>
+                        <span className="text-xl text-white hover:scale-103">Express</span>
+                    </h3>
+                    <h3 className="flex items-center gap-2">
+                      <SiMysql className="text-[#19C753] hover:scale-103"/>
+                        <span className="text-xl text-white hover:scale-103">MySQL</span>
+                    </h3>
+                    <h3 className="flex items-center gap-2 -mx-10">
+                      <SiAdobephotoshop className="text-[#19C753] hover:scale-103"/>
+                        <span className="text-xl text-white hover:scale-103">Photoshop</span>
+                    </h3>
+                </div>
+                <div className="flex mt-5 gap-9">
+                  <h3 className="flex items-center gap-2 ">
+                      <SiAutocad className="text-[#19C753] hover:scale-103"/>
+                        <span className="text-xl text-white hover:scale-103">Autocad</span>
+                    </h3>
+                    <h3 className="flex items-center gap-2 ">
+                      <SiAdobeillustrator className="text-[#19C753] hover:scale-103"/>
+                        <span className="text-xl text-white hover:scale-103">Illustrator</span>
+                    </h3>
                 </div>
               </div>
       </div>   
