@@ -41,9 +41,9 @@ export default function About_Us() {
             <h2 className="text-4xl font-bold mb-4 mx-5 text-[#fff]">Skills</h2>
               <p className="text-xl text-[#fff] mx-5">I have a solid foundation in full-stack web development, specializing in the MERN stack - MongoDB, Express.js, React, and Node.js. On the frontend, I build clean, responsive user interfaces using HTML5, CSS3, and JavaScript, while leveraging React for dynamic and scalable applications. On the backend, I develop robust APIs with Node.js and Express, and manage data effectively with MongoDB.</p>
               
-              <div className="text-5xl mt-5 ml-5 my-5 transition duration-300 flex gap-10 cursor-pointer "> {/* Tools Section */}
-                
-                <h3 className="flex items-center gap-2 ">
+              <div className="text-5xl mt-5 ml-5 my-5 transition duration-300 flex-col cursor-pointer "> {/* Tools Section */}
+                <div className="flex gap-15">
+                  <h3 className="flex items-center gap-2 ">
                   <IoLogoReact className="text-[#19C753] hover:scale-103"/>
                     <span className="text-2xl text-white hover:scale-103">React</span>
                 </h3>
@@ -63,10 +63,13 @@ export default function About_Us() {
                   <SiTailwindcss className="text-[#19C753] hover:scale-103"/>
                     <span className="text-2xl text-white hover:scale-103">Tailwindcss</span>
                 </h3>
-                <h3 className="flex items-center gap-2 ">
+                </div>
+                <div className="flex mt-5">
+                   <h3 className="flex items-center gap-2 ">
                   <FaHtml5 className="text-[#19C753] hover:scale-103"/>
                     <span className="text-2xl text-white hover:scale-103">HTML</span>
                 </h3>
+                </div>
               </div>
       </div>   
     </div>
