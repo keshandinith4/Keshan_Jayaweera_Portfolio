@@ -17,8 +17,16 @@ export default function About_Us() {
         <div className="flex-col items-start py-9 space-y-2">
             <h2 className="text-4xl font-bold mb-4 text-[#fff]">Education & Certification</h2>
               <div className="text-[#fff] text-xl font-normal w-7/8">
-                <p>A Ceylon legacy where ancient tradition meets modern artistry.Inspired by the vibrant soul of Sri Lanka, our batik creations are hand-dyed using age-old techniques passed down through generations. Every pattern echoes the island’s history, from sacred motifs to natural landscapes, reimagined with a contemporary eye. At Dyes & Threads, we don’t just craft clothing-we bring to life wearable art, woven with heritage, color, and timeless beauty. Step into a world where tradition is honored, and style is redefined.</p>
-              </div>
+                <p> Currently pursuing a Software Engineering degree, gaining strong foundations in programming, web development, databases, and problem-solving while continuously enhancing skills through practical projects and learning.</p>           </div>
+                  <div className="text-white p-4 rounded-lg max-w-m">
+                    <ul className="list-disc list-inside space-y-2 text-lg">
+                      <li>B.Sc(Hons) in Software Engineering (Ongoing)</li>
+                      <li>Front-End Web Development-Issued by University of Moratuwa</li>
+                      <li>Machine Learning I-Issued by Columbia+ University in the city of NewYork</li>
+                      <li>Introduction to Data Science-Issued by Cisco</li>
+                      <li>Computer Hardware Basics-Issued by Cisco</li>
+                    </ul>
+                  </div>
         </div>
       </div>
       {/* Right Side - about me Section */}
