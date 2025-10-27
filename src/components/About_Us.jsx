@@ -18,15 +18,26 @@ export default function About_Us() {
             <h2 className="text-3xl font-bold mb-4 text-[#fff]">Education & Certification</h2>
               <div className="text-[#fff] text-lg font-normal w-7/8">
                 <p> Currently pursuing a Software Engineering degree, gaining strong foundations in programming, web development, databases, and problem-solving while continuously enhancing skills through practical projects and learning.</p>           </div>
-                  <div className="text-white p-1 rounded-lg max-w-m">
-                    <ul className="list-disc list-inside text-s">
+                  <div className="text-white rounded-lg max-w-m">
+                    <ul className="list-disc list-inside text-sm space-y-2">
                       <li>B.Sc(Hons) in Software Engineering (Ongoing)</li>
                       <li>Front-End Web Development-Issued by University of Moratuwa</li>
-                      <li>Machine Learning I-Issued by Columbia+ University in the city of NewYork</li>
+                      <li>Machine Learning I -Issued by Columbia+ University in the city of NewYork</li>
                       <li>Introduction to Data Science-Issued by Cisco</li>
                       <li>Computer Hardware Basics-Issued by Cisco</li>
                     </ul>
                   </div>
+                <div>
+                  <h2 className="text-3xl font-bold mb-5 mt-9 text-[#fff]">Extra Curiculer</h2>
+                    <ul className="list-disc list-inside text-sm text-[#fff] space-y-2">
+                      <li>President of Saegis Students' Forum-2024/25</li>
+                      <li>Member of Leo club of Wekanda-2025</li>
+                      <li>Club Treasurer of Leo club of Gampaha Circle-2023/24</li>
+                      <li>LCGC Coordinator of Leo club of Gampaha Circle-2023/24</li>
+                      <li>Member of LeoLions Club of Gampaha Victorius-2023/24</li>
+                      <li>Assistant Treasurer of Nawa Eksath Gamunu Youth Club-2023/24</li>
+                    </ul>
+                </div> 
         </div>
       </div>
       {/* Right Side - about me Section */}
@@ -47,7 +58,7 @@ export default function About_Us() {
             remaining essentially unchanged. It was popularised in the 1960s with the release of
             Letraset sheets containing</p>
           </div>
-            <h2 className="text-3xl font-bold mb-4 mx-5 text-[#fff]">Skills</h2>
+            <h2 className="text-3xl font-bold mb-3 mx-5 text-[#fff]">Skills</h2>
               <p className="text-lg text-[#fff] mx-5">I have a solid foundation in full-stack web development, specializing in the MERN stack - MongoDB, Express.js, React, and Node.js. On the frontend, I build clean, responsive user interfaces using HTML5, CSS3, and JavaScript, while leveraging React for dynamic and scalable applications. On the backend, I develop robust APIs with Node.js and Express, and manage data effectively with MongoDB.</p>
               
               <div className="text-4xl mt-5 ml-12 my-5 transition duration-300 flex-col cursor-pointer "> {/* Tools Section */}

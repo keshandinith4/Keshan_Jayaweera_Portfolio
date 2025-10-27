@@ -15,7 +15,7 @@ export default function Hero() {
         <h3 className="text-3xl mb-2 text-black">Hi, I am</h3>
         <h1 className="text-5xl font-bold mb-3 text-[#19C753] hover:scale-101 transition duration-300">Keshan Jayaweera</h1>
         <p className="text-gray-600 font-medium mb-8 text-xl hover:text-gray-800 transition duration-200">
-          IT Student / Undergraduate / Front-end Designer
+          IT Student / Undergraduate / Full Stack Developer
         </p>
         <p className="text-[#121828] text-lg transition duration-300">
           Passionate IT student with expertise in multiple programming languages and core computer science concepts, eager to apply technical skills in real-world projects and collaborative development environments.
