@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import About_Us from '../components/About_Us'
 import Projects from '../components/Projects'
+import Footer from '../components/Footer'
 
 export default function Home_Page() {
     return(
@@ -11,6 +12,7 @@ export default function Home_Page() {
             <Hero />
             <About_Us />
             <Projects />
+            <Footer />
         </div>
     )
 }
