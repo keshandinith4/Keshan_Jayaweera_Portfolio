@@ -19,7 +19,7 @@ export default function About_Us() {
               <div className="text-[#fff] text-lg font-normal w-7/8">
                 <p> Currently pursuing a Software Engineering degree, gaining strong foundations in programming, web development, databases, and problem-solving while continuously enhancing skills through practical projects and learning.</p>           </div>
                   <div className="text-white rounded-lg max-w-m">
-                    <ul className="list-disc list-inside text-sm space-y-2">
+                    <ul className="list-disc list-inside text-sm space-y-2 list-outside">
                       <li>B.Sc(Hons) in Software Engineering (Ongoing)</li>
                       <li>Front-End Web Development-Issued by University of Moratuwa</li>
                       <li>Machine Learning I -Issued by Columbia+ University in the city of NewYork</li>
@@ -29,7 +29,7 @@ export default function About_Us() {
                   </div>
                 <div>
                   <h2 className="text-3xl font-bold mb-5 mt-9 text-[#fff]">Extra Curiculer</h2>
-                    <ul className="list-disc list-inside text-sm text-[#fff] space-y-2">
+                    <ul className="list-disc list-inside text-sm text-[#fff] space-y-2 list-outside">
                       <li>President of Saegis Students' Forum-2024/25</li>
                       <li>Member of Leo club of Wekanda-2025</li>
                       <li>Club Treasurer of Leo club of Gampaha Circle-2023/24</li>
