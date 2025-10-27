@@ -26,7 +26,7 @@ export default function Header() {
         <a
           href="#Contact_Me"
           className="hover:scale-101 bg-white text-[#19C753] px-3 py-1.5 rounded-full font-semibold transition duration-300 hover:bg-[#19C753] hover:text-[#ffff]">
-          CONTACT ME
+          Contact Me
        </a>
       </nav>
     </header>
