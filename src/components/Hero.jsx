@@ -20,12 +20,25 @@ export default function Hero() {
         <p className="text-[#121828] text-lg transition duration-300">
           Passionate IT student with expertise in multiple programming languages and core computer science concepts, eager to apply technical skills in real-world projects and collaborative development environments.
         </p>
-          <div className="flex gap-10 text-5xl mt-5"> {/* Social Media Section */}
-            <h3><FaLinkedin className="transition duration-300 hover:text-[#19C753] cursor-pointer hover:scale-103" /></h3>
-            <h3><FaGithub className="transition duration-300 hover:text-[#19C753] cursor-pointer hover:scale-104" /></h3>
-            <h3><FaFacebook className="transition duration-300 hover:text-[#19C753] cursor-pointer hover:scale-104" /></h3>
-            <h3><FaWhatsapp className="transition duration-300 hover:text-[#19C753] cursor-pointer hover:scale-104" /></h3>
-          </div>
+
+      <div className="flex gap-10 text-5xl mt-5">
+        <a href="https://www.linkedin.com/in/oyage-linkedin-keshandinith4" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+        </a>
+
+        <a href="https://github.com/oyage-github-keshandinith4" target="_blank" rel="noopener noreferrer">
+          <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+        </a>
+
+        <a href="https://facebook.com/oyage-facebook-username" target="_blank" rel="noopener noreferrer">
+          <FaFacebook className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+        </a>
+
+        <a href="https://wa.me/94719943746" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+        </a>
+      </div>
+
       </div>
 
       {/* Right Side */}

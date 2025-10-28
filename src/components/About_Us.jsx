@@ -41,7 +41,7 @@ export default function About_Us() {
         </div>
       </div>
       {/* Right Side - about me Section */}
-      <div className="container w-3/5 mt-20 border-l-4 border-[#19C753]">
+      <div className="container w-3/5 mt-22 border-l-4 border-[#19C753]">
           <h2 className="text-3xl font-bold mb-4 mx-5 text-[#fff]">Introduction</h2>
           <h3 className="text-2xl font-bold mb-4 mx-5 text-[#19C753]">H.D.K.S. Jayaweera</h3>
         
