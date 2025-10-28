@@ -8,11 +8,11 @@ import { SiExpress, SiTailwindcss, SiMysql, SiAdobephotoshop, SiAutocad, SiAdobe
 export default function About_Us() {
     return(
     <section id="About_Us" className="scroll-smooth">
-      <div className="bg-[#121828] w-full flex gap-3 mt-6 px-20 font-poppins">
+      <div className="bg-[#121828] w-full flex gap-3 px-20 font-poppins">
         {/* Left Content */}
       <div className="flex flex-col w-1/2">
         <div className="flex items-center">
-          <h2 className="font-bold text-5xl mt-5 text-[#19C753]">About Me</h2>
+          <h2 className="font-bold text-5xl text-[#19C753]">About Me</h2>
         </div>
         <div className="flex-col items-start py-9 space-y-2">
             <h2 className="text-3xl font-bold mb-4 text-[#fff]">Education & Certification</h2>
@@ -41,7 +41,7 @@ export default function About_Us() {
         </div>
       </div>
       {/* Right Side - about me Section */}
-      <div className="container w-3/5 mt-27 border-l-4 border-[#19C753]">
+      <div className="container w-3/5 mt-20 border-l-4 border-[#19C753]">
           <h2 className="text-3xl font-bold mb-4 mx-5 text-[#fff]">Introduction</h2>
           <h3 className="text-2xl font-bold mb-4 mx-5 text-[#19C753]">H.D.K.S. Jayaweera</h3>
         
