@@ -63,7 +63,7 @@ export default function Contact_Me() {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="w-full md:w-auto bg-[#19C753] hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full transition-all flex items-center justify-center gap-2 mx-auto"
+                  className="w-full md:w-auto bg-[#19C753] hover:bg-green-600 text-white font-semibold py-3 px-39 rounded-full transition-all flex items-center justify-center gap-2 mx-auto"
                 >
                   <FaPaperPlane />
                   Send Message
