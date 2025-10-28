@@ -31,7 +31,7 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-semibold animate-popup">Useful Links</h2>
           <ul className="mt-5 space-y-2 font-medium">
-            {["Home", "About Us", "Products", "Contact Us"].map((item) => (
+            {["Home", "About Us", "Products", "Contact Me"].map((item) => (
               <li key={item}>
                 <a
                   href="#"
@@ -52,11 +52,22 @@ export default function Footer() {
             languages and core<br /> computer science concepts.
           </p>
           <div className="flex gap-5 text-3xl mt-5">
-            <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
-            <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
-            <FaFacebook className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
-            <FaWhatsapp className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
-          </div>
+                  <a href="https://www.linkedin.com/in/oyage-linkedin-keshandinith4" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+                  </a>
+          
+                  <a href="https://github.com/oyage-github-keshandinith4" target="_blank" rel="noopener noreferrer">
+                    <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+                  </a>
+          
+                  <a href="https://facebook.com/oyage-facebook-username" target="_blank" rel="noopener noreferrer">
+                    <FaFacebook className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+                  </a>
+          
+                  <a href="https://wa.me/94719943746" target="_blank" rel="noopener noreferrer">
+                    <FaWhatsapp className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+                  </a>
+                </div>
         </div>
       </footer>
 
