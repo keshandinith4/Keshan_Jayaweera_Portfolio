@@ -21,7 +21,7 @@ export default function Hero() {
           Passionate IT student with expertise in multiple programming languages and core computer science concepts, eager to apply technical skills in real-world projects and collaborative development environments.
         </p>
 
-      <div className="flex gap-10 text-5xl mt-5">
+      <div className="flex gap-8 text-4xl mt-5">
         <a href="https://www.linkedin.com/in/oyage-linkedin-keshandinith4" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
         </a>
