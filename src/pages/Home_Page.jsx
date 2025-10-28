@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import About_Us from '../components/About_Us'
 import Projects from '../components/Projects'
 import Footer from '../components/Footer'
+import Contact_Me from '../components/Contact_Me'
 
 export default function Home_Page() {
     return(
@@ -12,6 +13,7 @@ export default function Home_Page() {
             <Hero />
             <About_Us />
             <Projects />
+            <Contact_Me />
             <Footer />
         </div>
     )
