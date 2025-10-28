@@ -3,7 +3,7 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { FaJsSquare } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { SiExpress, SiTailwindcss, SiMysql, SiAdobephotoshop, SiAutocad, SiAdobeillustrator } from "react-icons/si";
-
+import Keshan from "../assets/images/Keshan.jpg";
 
 export default function About_Us() {
     return(
@@ -47,16 +47,11 @@ export default function About_Us() {
         
           <div className="flex">
             {/* User's img */}
-            <img src="https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/68fc52d50022c543682d/view?project=68fc4f79002e7fc2874a&mode=admin.jpg" alt="Keshan Jayaweera" className="rounded-2xl shadow-lg w-[200px] h-[300px] mb-4 mx-5 object-cover cursor-pointer hover:opacity-80 transition duration-300"/>
+            <img src={Keshan} alt="Profile" className="w-40 h-55 mx-5"/>   
+
             {/* User's about */}
-          
               <p className=" leading-relaxed text-[#fff] text-lg flex-1">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type specimen
-            book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing</p>
+            Hello! I’m Keshan Jayaweera, a passionate and detail-oriented IT undergraduate with a strong interest in full-stack web development. I enjoy building responsive, user-focused web applications using modern technologies and clean code practices.</p>
           </div>
             <h2 className="text-3xl font-bold mb-3 mx-5 text-[#fff]">Skills</h2>
               <p className="text-lg text-[#fff] mx-5">I have a solid foundation in full-stack web development, specializing in the MERN stack - MongoDB, Express.js, React, and Node.js. On the frontend, I build clean, responsive user interfaces using HTML5, CSS3, and JavaScript, while leveraging React for dynamic and scalable applications. On the backend, I develop robust APIs with Node.js and Express, and manage data effectively with MongoDB.</p>
