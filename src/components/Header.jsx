@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 export default function Header() {  
 
   return (
-     <header className="flex items-center justify-between px-10 py-4 bg-[#121828] text-white relative overflow-hidden">
+    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-10 py-4 bg-[#121828] shadow-md text-white overflow-hidden">
       {/* Left Side Background Shape */}
-      <div className="absolute left-0 top-0 h-full w-5/9 bg-gray-300 -skew-x-12 origin-top-left"></div>
+      <div className="absolute left-0 top-0 h-full w-6/11 bg-gray-300 -skew-x-12 origin-top-left"></div>
 
       {/* Name */}
       <div className="relative z-10 flex items-center">

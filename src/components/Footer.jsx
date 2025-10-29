@@ -31,7 +31,7 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-semibold animate-popup">Useful Links</h2>
           <ul className="mt-5 space-y-2 font-medium">
-            {["Home", "About Us", "Products", "Contact Me"].map((item) => (
+            {["Home", "About_Us", "Products", "Contact_Me"].map((item) => (
               <li key={item}>
                 <a
                   href="#"

@@ -47,13 +47,13 @@ export default function About_Us() {
         
           <div className="flex">
             {/* User's img */}
-            <img src={Keshan} alt="Profile" className="w-40 h-55 mx-5"/>   
+            <img src={Keshan} alt="Profile" className="w-35 h-50 mx-5 rounded-xl"/>   
 
             {/* User's about */}
               <p className=" leading-relaxed text-[#fff] text-lg flex-1">
             Hello! I’m Keshan Jayaweera, a passionate and detail-oriented IT undergraduate with a strong interest in full-stack web development. I enjoy building responsive, user-focused web applications using modern technologies and clean code practices.</p>
           </div>
-            <h2 className="text-3xl font-bold mb-3 mx-5 text-[#fff]">Skills</h2>
+            <h2 className="text-3xl font-bold mb-3 mt-5 mx-5 text-[#fff]">Skills</h2>
               <p className="text-lg text-[#fff] mx-5">I have a solid foundation in full-stack web development, specializing in the MERN stack - MongoDB, Express.js, React, and Node.js. On the frontend, I build clean, responsive user interfaces using HTML5, CSS3, and JavaScript, while leveraging React for dynamic and scalable applications. On the backend, I develop robust APIs with Node.js and Express, and manage data effectively with MongoDB.</p>
               
               <div className="text-4xl mt-5 ml-12 my-5 transition duration-300 flex-col cursor-pointer "> {/* Tools Section */}
