@@ -4,7 +4,8 @@ import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 export default function Hero() {
   
   return (
-    <section className="relative flex items-center bg-[#121828] justify-between min-h-screen overflow-hidden">
+    <section id="Home" className="scroll-smooth">
+      <div className="relative flex items-center bg-[#121828] justify-between min-h-screen overflow-hidden">
 
       {/* Angled Divider */}
         <div className="absolute left-0 -mt-18 top-0 h-full w-5/9 bg-gray-300 -skew-x-12 origin-top-left"></div>
@@ -51,6 +52,7 @@ export default function Hero() {
           className="relative z-10  max-w-lg object-contain"
         />
       </div>
+    </div>
     </section>
   );
 }
