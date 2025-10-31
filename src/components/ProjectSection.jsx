@@ -23,13 +23,14 @@ const projects = [
   },
 ];
 
-export default function ProjectsSection() {
+export default function Projects() {
   const [showAll, setShowAll] = useState(false);
 
   const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
-    <section className="bg-[#121828] py-15 px-1 text-white">
+    <section id="Projects" className="scroll-smooth">
+      <div className="bg-[#121828] py-15 px-1 text-white">
         <h1 className="pl-15 text-4xl md:text-5xl font-bold text-left mb-10 text-[#19C753] w-full">
           Projects
         </h1>
@@ -57,6 +58,7 @@ export default function ProjectsSection() {
           {showAll ? "Show Less" : "See More"}
         </button>
       </div>
+    </div>
     </section>
   );
 }
