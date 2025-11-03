@@ -43,7 +43,7 @@ export default function Certificates() {
         {visibleCertificates.map((certificate) => (
           <div
   key={certificate.id}
-  className="bg-[#1B2353] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
+  className="bg-[#182034] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
 >
   <img
     src={certificate.image}
