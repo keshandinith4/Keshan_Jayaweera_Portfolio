@@ -3,23 +3,27 @@ import React, { useState } from "react";
 const certificates = [
   {
     id: 1,
-    title: "ASP.NET Core Web API Development",
-    image: "/images/aspnet-core.png",
+    title: "Front-End Web Development",
+    discription:"Issued by University of Moratuwa",
+    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69084f50000a04ff245f/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
     id: 2,
-    title: "Full-Stack Development (MERN)",
-    image: "/images/mern.png",
+    title: "Machine Learning I",
+    discription:"Issued by Columbia+ University in the city of NewYork",
+    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69085221001f87ff9560/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
     id: 3,
-    title: "Mobile App with React Native",
-    image: "/images/react-native.png",
+    title: "Computer Hardware Basics",
+    discription:"Issued by Cisco",
+    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690853cc002d90f10a64/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
     id: 4,
-    title: "E-Commerce Platform",
-    image: "/images/ecommerce.png",
+    title: "Introduction to Data Science",
+    discription:"Issued by Cisco",
+    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690854b800239a79cdb7/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
 ];
 
@@ -35,19 +39,23 @@ export default function Certificates() {
           Certificates
         </h1>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center px-15 transition duration-300">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-7 justify-center px-15 transition duration-300">
         {visibleCertificates.map((certificate) => (
           <div
-            key={certificate.id}
-            className="bg-[#1B2333] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform">
-            <img
-              src={certificate.image}
-              alt={certificate.title}
-              className="h-48 w-full object-cover"/>
-            <div className="p-4">
-              <h3 className="font-semibold text-lg">{certificate.title}</h3>
-            </div>
-          </div>
+  key={certificate.id}
+  className="bg-[#1B2353] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
+>
+  <img
+    src={certificate.image}
+    alt={`${certificate.title} - ${certificate.description}`}
+    className="h-70 w-full object-cover text-center"
+  />
+  <div className="p-1">
+    <h3 className="font-semibold text-lg text-center">{certificate.title}</h3>
+    <h4 className="font-semibold text-sm text-center">{certificate.discription}</h4>
+  </div>
+</div>
+
         ))}
       </div>
 

@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="w-1/2 flex flex-col justify-center px-20 -mt-19 relative z-10">
         <h2 className="mb-8 text-xl animate-popup">Web Application Developer</h2>
         <h3 className="text-3xl mb-2 text-black">Hi, I am</h3>
-        <h1 className="text-5xl font-bold mb-3 text-[# ] hover:scale-101 transition duration-300">Keshan Jayaweera</h1>
+        <h1 className="text-5xl font-bold mb-3 text-[#19C753] hover:scale-101 transition duration-300">Keshan Jayaweera</h1>
         <p className="text-gray-600 font-medium mb-8 text-xl hover:text-gray-800 transition duration-200">
           IT Student / Undergraduate / Full Stack Developer
         </p>
