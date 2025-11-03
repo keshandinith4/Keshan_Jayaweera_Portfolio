@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Dyes and Thread-Web",
     image: "/images/aspnet-core.png",
-    discription:"React|Mongo db",
+    discription:"React | MongoDB | Express | Node",
   },
   {
     id: 2,
@@ -49,8 +49,8 @@ export default function Projects() {
                 alt={`${projects.title} - ${projects.description}`}
                 className="h-70 w-full object-cover text-center"/>
             <div className="p-4">
-              <h3 className="font-semibold text-lg">{project.title}</h3>
-              <h4 className="font-semibold text-sm text-center">{project.discription}</h4>
+              <h3 className="font-semibold text-lg text-center">{project.title}</h3>
+              <h4 className="font-semibold text-medium text-center text-[#19C753]">{project.discription}</h4>
             </div>
           </div>
         ))}
