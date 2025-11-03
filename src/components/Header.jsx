@@ -13,7 +13,7 @@ export default function Header() {
       </div>
 
       {/* Navigation */}
-      <nav className="relative z-10 flex items-center gap-12 text-medium font-semibold">
+      <nav className="relative z-10 flex items-center gap-3 text-medium font-semibold">
         <a href="#Home" className="hover:scale-101 text-[#19C753] font-semibold transition duration-300 hover:bg-[#19C753] hover:text-[#ffff] rounded-full px-5 py-1.5">
           Home
         </a>
@@ -22,6 +22,9 @@ export default function Header() {
         </a>
         <a href="#Projects" className="hover:scale-101 text-[#19C753] font-semibold transition duration-300 hover:bg-[#19C753] hover:text-[#ffff] rounded-full px-5 py-1.5">
           Projects
+        </a>
+        <a href="#Certificates" className="hover:scale-101 text-[#19C753] font-semibold transition duration-300 hover:bg-[#19C753] hover:text-[#ffff] rounded-full px-5 py-1.5">
+          Certificates
         </a>
         <a
           href="#Contact_Me"
