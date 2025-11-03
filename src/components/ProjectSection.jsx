@@ -3,9 +3,9 @@ import React, { useState } from "react";
 const projects = [
   {
     id: 1,
-    title: "ASP.NET Core Web API Development",
+    title: "Dyes and Thread-Web",
     image: "/images/aspnet-core.png",
-    discription:"Issued by Cisco",
+    discription:"React|Mongo db",
   },
   {
     id: 2,
