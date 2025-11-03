@@ -5,21 +5,25 @@ const projects = [
     id: 1,
     title: "ASP.NET Core Web API Development",
     image: "/images/aspnet-core.png",
+    discription:"Issued by Cisco",
   },
   {
     id: 2,
     title: "Full-Stack Development (MERN)",
     image: "/images/mern.png",
+    discription:"Issued by Cisco",
   },
   {
     id: 3,
     title: "Mobile App with React Native",
     image: "/images/react-native.png",
+    discription:"Issued by Cisco",
   },
   {
     id: 4,
     title: "E-Commerce Platform",
     image: "/images/ecommerce.png",
+    discription:"Issued by Cisco",
   },
 ];
 
@@ -39,13 +43,14 @@ export default function Projects() {
         {visibleProjects.map((project) => (
           <div
             key={project.id}
-            className="bg-[#1B2333] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform">
+            className="bg-[#182034] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform">
             <img
-              src={project.image}
-              alt={project.title}
-              className="h-48 w-full object-cover"/>
+                src={projects.image}
+                alt={`${projects.title} - ${projects.description}`}
+                className="h-70 w-full object-cover text-center"/>
             <div className="p-4">
               <h3 className="font-semibold text-lg">{project.title}</h3>
+              <h4 className="font-semibold text-sm text-center">{project.discription}</h4>
             </div>
           </div>
         ))}
