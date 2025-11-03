@@ -5,6 +5,7 @@ import About_Us from '../components/About_Us'
 import Footer from '../components/Footer'
 import Contact_Me from '../components/Contact_Me'
 import ProjectsSection from '../components/ProjectSection'
+import CertificatesSection from '../components/CertificatesSection'
 
 export default function Home_Page() {
     return(
@@ -13,6 +14,7 @@ export default function Home_Page() {
             <Hero />
             <About_Us />
             <ProjectsSection />
+            <CertificatesSection />
             <Contact_Me />
             <Footer />
         </div>
