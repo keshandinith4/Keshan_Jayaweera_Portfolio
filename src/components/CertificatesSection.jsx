@@ -43,18 +43,20 @@ export default function Certificates() {
         {visibleCertificates.map((certificate) => (
           <div
   key={certificate.id}
-  className="bg-[#182034] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
+  className="bg-[#28303e] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
 >
-  <img
+    <div className="border p-2 rounded-2xl border-[#565d6b]">
+    <img
     src={certificate.image}
     alt={`${certificate.title} - ${certificate.description}`}
-    className="h-70 w-full object-cover text-center"
-  />
-  <div className="p-1">
-    <h3 className="font-semibold text-lg text-center">{certificate.title}</h3>
-    <h4 className="font-semibold text-sm text-center">{certificate.discription}</h4>
+    className="h-70 w-full object-cover text-center"/>
+    
+      <div className="p-1">
+      <h3 className="font-semibold text-lg text-center">{certificate.title}</h3>
+      <h4 className="font-semibold text-sm text-center">{certificate.discription}</h4>
+      </div>
+      </div>
   </div>
-</div>
 
         ))}
       </div>
