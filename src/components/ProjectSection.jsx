@@ -4,7 +4,7 @@ const projects = [
   {
     id: 1,
     title: "Dyes and Thread-Web",
-    image: "/images/aspnet-core.png",
+    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/6909828e001adfbcc275/view?project=68fc4f79002e7fc2874a&mode=admin",
     discription:"React | MongoDB | Express | Node",
   },
   {
@@ -44,6 +44,7 @@ export default function Projects() {
           <div
             key={project.id}
             className="bg-[#182034] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform">
+            <div className="border p-2 rounded-2xl border-[#565d6b]">
             <img
                 src={projects.image}
                 alt={`${projects.title} - ${projects.description}`}
@@ -51,6 +52,7 @@ export default function Projects() {
             <div className="p-4">
               <h3 className="font-semibold text-lg text-center">{project.title}</h3>
               <h4 className="font-semibold text-medium text-center text-[#19C753]">{project.discription}</h4>
+            </div>
             </div>
           </div>
         ))}
