@@ -43,7 +43,7 @@ export default function Certificates() {
         {visibleCertificates.map((certificate) => (
           <div
   key={certificate.id}
-  className="bg-[#28303e] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
+  className="bg-[#182034] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
 >
     <div className="border p-2 rounded-2xl border-[#565d6b]">
     <img
@@ -53,7 +53,7 @@ export default function Certificates() {
     
       <div className="p-1">
       <h3 className="font-semibold text-lg text-center">{certificate.title}</h3>
-      <h4 className="font-semibold text-sm text-center">{certificate.discription}</h4>
+      <h4 className="font-semibold text-sm text-center text-[#19C753]">{certificate.discription}</h4>
       </div>
       </div>
   </div>
