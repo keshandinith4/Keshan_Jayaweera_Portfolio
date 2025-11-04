@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Contact_Me() {
   return (
@@ -11,14 +12,28 @@ export default function Contact_Me() {
           Contact Me
         </h1>
 
-        <div className="flex flex-col md:flex-row gap-6 max-w-5xl w-full p-6">
+        <div className="flex flex-col md:flex-row gap-6 max-w-5xl p-6">
           {/* Left Image Section */}
           <div className="flex-1 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl overflow-hidden">
-            <img
-              src="https://via.placeholder.com/600x400"
-              alt="contact"
-              className="w-full h-full object-cover opacity-70"
-            />
+           <img
+  src="https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690987e10021bd197090/view?project=68fc4f79002e7fc2874a&mode=admin"
+  alt="contact"
+  className="object-cover w-full h-48 sm:h-64 md:h-80 lg:h-[500px]"
+/>
+
+              <div className="flex gap-8 text-4xl mx-35 pt-100">
+                        <a href="https://www.linkedin.com/in/oyage-linkedin-keshandinith4" target="_blank" rel="noopener noreferrer">
+                          <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+                        </a>
+                
+                        <a href="https://github.com/oyage-github-keshandinith4" target="_blank" rel="noopener noreferrer">
+                          <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+                        </a>
+                 
+                        <a href="https://wa.me/94719943746" target="_blank" rel="noopener noreferrer">
+                          <FaWhatsapp className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+                        </a>
+                </div>
           </div>
 
           {/* Right Form Section */}
