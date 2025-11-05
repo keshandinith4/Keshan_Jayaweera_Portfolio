@@ -10,3 +10,19 @@ html {
 :root {
   font-family: 'Inter', sans-serif;
 }
+
+@layer utilities {
+  /* Fluid typography classes */
+  .text-fluid-xl {
+    font-size: clamp(1.25rem, 2.8vw, 2.5rem);
+  }
+  .text-fluid-lg {
+    font-size: clamp(1.125rem, 2.5vw, 2rem);
+  }
+  .text-fluid-md {
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+  }
+  .text-fluid-sm {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+  }
+}
