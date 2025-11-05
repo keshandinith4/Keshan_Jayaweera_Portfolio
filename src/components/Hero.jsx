@@ -8,7 +8,9 @@ export default function Hero() {
       <div className="relative flex items-center bg-[#121828] justify-between min-h-screen h-auto w-full overflow-hidden">
 
       {/* Angled Divider */}
-        <div className="absolute left-0 -mt-18 top-0 h-full w-5/9 bg-gray-300 -skew-x-12 origin-top-left"></div>
+        <div className="absolute left-0 -mt-18 top-0 h-full bg-gray-300 -skew-x-12 origin-top-left"
+        style={{ width: "54.5%" }}
+        ></div>
       {/* Left Side */}
     
       <div className="w-1/2 flex flex-col justify-center px-20 -mt-19 relative z-10">
