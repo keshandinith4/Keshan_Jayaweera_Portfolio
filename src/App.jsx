@@ -4,11 +4,13 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home_Page />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="min-h-screen w-full flex flex-col bg-white text-gray-900 overflow-x-hidden">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home_Page />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 
