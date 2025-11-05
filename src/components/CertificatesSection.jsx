@@ -40,24 +40,25 @@ export default function Certificates() {
           Certificates
         </h1>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-7 justify-center px-15 transition duration-300">
-        {visibleCertificates.map((certificate) => (
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-7 justify-center px-15 transition duration-300">
+          {visibleCertificates.map((certificate) => (
           <div
-  key={certificate.id}
-  className="bg-[#182034] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
->
-    <div className="border p-2 rounded-2xl border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
-    <img
-    src={certificate.image}
-    alt={`${certificate.title} - ${certificate.description}`}
-    className="h-auto w-full object-cover text-center"/>
+            key={certificate.id}
+            className="bg-[#182034] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
+          >
+          <div className="border p-2 rounded-2xl border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
+            <img
+              src={certificate.image}
+              alt={`${certificate.title} - ${certificate.description}`}
+              className="h-auto w-full object-cover text-center"
+            />
     
-      <div className="p-1">
-      <h3 className="font-semibold text-lg text-center">{certificate.title}</h3>
-      <h4 className="font-semibold text-sm text-center text-[#19C753]">{certificate.discription}</h4>
-      </div>
-      </div>
-  </div>
+              <div className="p-1">
+                <h3 className="font-semibold text-lg text-center">{certificate.title}</h3>
+                <h4 className="font-semibold text-sm text-center text-[#19C753]">{certificate.discription}</h4>
+              </div>
+          </div>
+        </div>
 
         ))}
       </div>
@@ -70,7 +71,7 @@ export default function Certificates() {
         </button>
       </div>
     </div>
-      </div>
+    </div>
     </section>
   );
 }
