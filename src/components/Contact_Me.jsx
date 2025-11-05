@@ -5,7 +5,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 export default function Contact_Me() {
   return (
     <section id="Contact_Me" className="scroll-smooth">
-      <div className="bg-[#121828] flex flex-col justify-center items-center min-h-screen text-white px-4 py-12">
+      <div className="bg-[#121828] flex flex-col h-auto w-full justify-center items-center min-h-screen text-white px-4 py-12">
         
         {/* Section Title */}
         <h1 className="pl-15 text-4xl md:text-5xl font-bold text-left mb-10 text-[#19C753] w-full">

@@ -5,7 +5,7 @@ export default function Hero() {
   
   return (
     <section id="Home" className="scroll-smooth">
-      <div className="relative flex items-center bg-[#121828] justify-between min-h-screen overflow-hidden">
+      <div className="relative flex items-center bg-[#121828] justify-between min-h-screen h-auto w-full overflow-hidden">
 
       {/* Angled Divider */}
         <div className="absolute left-0 -mt-18 top-0 h-full w-5/9 bg-gray-300 -skew-x-12 origin-top-left"></div>
