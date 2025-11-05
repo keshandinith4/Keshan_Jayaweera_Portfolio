@@ -1,37 +1,78 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
-export default function Header() {  
+export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-10 py-4 bg-[#121828] shadow-md text-white overflow-hidden">
-      {/* Left Side Background Shape */}
-      <div className="absolute left-0 top-0 h-full w-6/11 bg-gray-300 -skew-x-12 origin-top-left"></div>
+    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 sm:px-10 py-4 bg-[#121828] shadow-md text-white">
+      {/* Background shape */}
+      <div className="absolute left-0 top-0 h-full bg-gray-300 -skew-x-12 origin-top-left"
+      style={{ width: "54.5%" }}
+      ></div>
 
-      {/* Name */}
+      {/* Name / Logo */}
       <div className="relative z-10 flex items-center">
-        <span className="font-bold text-[#121828] text-3xl ml-8 hover:text-[#19C753] hover:scale-101 transition duration-300">Keshan Jayaweera</span>
+        <span className="font-bold text-[#121828] text-xl sm:text-2xl md:text-3xl ml-4 sm:ml-8 hover:text-[#19C753] transition duration-300">
+          Keshan Jayaweera
+        </span>
       </div>
 
-      {/* Navigation */}
-      <nav className="relative z-10 flex items-center gap-3 text-medium font-semibold">
-        <a href="#Home" className="hover:scale-101 text-[#19C753] font-semibold transition duration-300 hover:bg-[#19C753] hover:text-[#ffff] rounded-full px-5 py-1.5">
-          Home
-        </a>
-        <a href="#About_Us" className="hover:scale-101 text-[#19C753] font-semibold transition duration-300 hover:bg-[#19C753] hover:text-[#ffff] rounded-full px-5 py-1.5">
-          About Us
-        </a>
-        <a href="#Projects" className="hover:scale-101 text-[#19C753] font-semibold transition duration-300 hover:bg-[#19C753] hover:text-[#ffff] rounded-full px-5 py-1.5">
-          Projects
-        </a>
-        <a href="#Certificates" className="hover:scale-101 text-[#19C753] font-semibold transition duration-300 hover:bg-[#19C753] hover:text-[#ffff] rounded-full px-5 py-1.5">
-          Certificates
-        </a>
-        <a
-          href="#Contact_Me"
-          className="hover:scale-101 bg-white text-[#19C753] px-3 py-1.5 rounded-full font-semibold transition duration-300 hover:bg-[#19C753] hover:text-[#ffff]">
-          Contact Me
-       </a>
+      {/* Desktop Nav */}
+      <nav className="relative z-10 hidden md:flex items-center gap-3 text-sm md:text-base font-semibold">
+        {[
+          { label: "Home", href: "#Home" },
+          { label: "About Us", href: "#About_Us" },
+          { label: "Projects", href: "#Projects" },
+          { label: "Certificates", href: "#Certificates" },
+          { label: "Contact Me", href: "#Contact_Me", special: true },
+        ].map((item, idx) => (
+          <a
+            key={idx}
+            href={item.href}
+            className={`hover:scale-105 transition duration-300 rounded-full px-4 py-1.5 ${
+              item.special
+                ? "bg-white text-[#19C753] hover:bg-[#19C753] hover:text-white"
+                : "text-[#19C753] hover:bg-[#19C753] hover:text-white"
+            }`}
+          >
+            {item.label}
+          </a>
+        ))}
       </nav>
+
+      {/* Mobile Menu Button */}
+      <button
+        className="relative z-10 md:hidden"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <X size={26} /> : <Menu size={26} />}
+      </button>
+
+      {/* Mobile Dropdown */}
+      {menuOpen && (
+        <nav className="absolute top-full left-0 w-full bg-[#121828] flex flex-col items-center gap-3 py-4 md:hidden">
+          {[
+            { label: "Home", href: "#Home" },
+            { label: "About Us", href: "#About_Us" },
+            { label: "Projects", href: "#Projects" },
+            { label: "Certificates", href: "#Certificates" },
+            { label: "Contact Me", href: "#Contact_Me", special: true },
+          ].map((item, idx) => (
+            <a
+              key={idx}
+              href={item.href}
+              className={`hover:scale-105 transition duration-300 rounded-full px-5 py-2 ${
+                item.special
+                  ? "bg-white text-[#19C753] hover:bg-[#19C753] hover:text-white"
+                  : "text-[#19C753] hover:bg-[#19C753] hover:text-white"
+              }`}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      )}
     </header>
   );
 }

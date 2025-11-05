@@ -9,7 +9,7 @@ import CertificatesSection from '../components/CertificatesSection'
 
 export default function Home_Page() {
     return(
-        <div className="w-full h-auto flex flex-col bg-[#F9EBD3]">
+        <div className="min-h-screen w-full flex flex-col bg-[#F9EBD3] overflow-x-hidden font-sans">
             <Header />
             <Hero />
             <About_Us />

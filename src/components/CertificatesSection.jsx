@@ -34,7 +34,8 @@ export default function Certificates() {
 
   return (
     <section id="Certificates" className="scroll-smooth">
-      <div className="bg-[#121828] py-15 px-1 text-white">
+      <div className="w-full h-auto">
+          <div className="bg-[#121828] py-15 px-1 text-white">
         <h1 className="pl-15 text-4xl md:text-5xl font-bold text-left mb-10 text-[#19C753] w-full">
           Certificates
         </h1>
@@ -45,11 +46,11 @@ export default function Certificates() {
   key={certificate.id}
   className="bg-[#182034] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
 >
-    <div className="border p-2 rounded-2xl border-[#565d6b]">
+    <div className="border p-2 rounded-2xl border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
     <img
     src={certificate.image}
     alt={`${certificate.title} - ${certificate.description}`}
-    className="h-70 w-full object-cover text-center"/>
+    className="h-auto w-full object-cover text-center"/>
     
       <div className="p-1">
       <h3 className="font-semibold text-lg text-center">{certificate.title}</h3>
@@ -69,6 +70,7 @@ export default function Certificates() {
         </button>
       </div>
     </div>
+      </div>
     </section>
   );
 }

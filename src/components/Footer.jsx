@@ -6,7 +6,7 @@ export default function Footer() {
       {/* Top Line */}
       <div className="border-t border-gray-600 w-full"></div>
 
-      <footer className="flex flex-col md:flex-row items-start md:items-center justify-between px-10 py-16 md:px-20 gap-10">
+      <footer className="flex flex-col md:flex-row items-start md:items-center w-full h-auto justify-between px-10 py-16 md:px-20 gap-10">
         {/* Left Side */}
         <div>
           <h2 className="text-3xl text-[#19C753] font-bold animate-popup">
