@@ -31,11 +31,11 @@ export default function About_Us() {
               <h3 className="text-2xl font-bold text-white mb-3">
                 Education & Certification
               </h3>
-              <p className="text-white text-lg leading-relaxed">
+                <p className="text-white text-lg leading-relaxed">
                 Currently pursuing a Software Engineering degree, gaining strong foundations 
                 in programming, web development, databases, and problem-solving while continuously 
                 enhancing skills through practical projects and learning.
-              </p>
+                </p>
               <ul className="list-disc list-inside text-white mt-3 ml-2">
                 <li>B.Sc(Hons) in Software Engineering (Ongoing)</li>
               </ul>
