@@ -20,7 +20,7 @@ export default function Contact_Me() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3  }}
-          className="bg-[#1A2238] w-full lg:w-1/2 mt-15 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
+          className="bg-[#1A2238] w-full lg:w-1/2 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
           
           <div className="flex-1 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl overflow-hidden">
            <img
@@ -50,7 +50,7 @@ export default function Contact_Me() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3  }}
-          className="bg-[#1A2238] w-full lg:w-1/2 mt-15 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
+          className="bg-[#1A2238] w-full lg:w-1/2 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
           <div className="flex-1 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl p-8 shadow-lg">
             <h2 className="text-2xl font-semibold mb-6 text-center">
               Ready To Transform Your Ideas?
