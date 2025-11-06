@@ -17,7 +17,7 @@ export default function About_Us() {
       </div>
 
       {/* Two Card Layout */}
-      <div className="flex flex-col lg:flex-row justify-center items-start gap-10">
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-5">
 
         {/* Left Card - Education & Extra Curricular */}
         <motion.div
@@ -25,7 +25,7 @@ export default function About_Us() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3  }}
-          className="bg-[#1A2238] w-full lg:w-1/2 mt-15 rounded-2xl shadow-lg p-8 border border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
+          className="bg-[#1A2238] w-full lg:w-1/2 mt-25 rounded-2xl shadow-lg p-8 border border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold text-white mb-3">
