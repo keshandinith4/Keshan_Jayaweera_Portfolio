@@ -12,8 +12,14 @@ export default function About_Us() {
       className="scroll-smooth bg-[#121828] py-12 px-8 lg:px-20 font-poppins"
     >
       {/* Title outside cards */}
-      <div className="text-left mb-10">
-        <h2 className="font-bold text-5xl text-[#19C753]">About Me</h2>
+      <div className="text-left -mb-10">
+        <motion.h2 
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.85, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+            className="font-bold text-5xl text-[#19C753]">About Me
+        </motion.h2>
       </div>
 
       {/* Two Card Layout */}
