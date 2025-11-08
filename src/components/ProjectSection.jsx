@@ -10,9 +10,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "Full-Stack Development (MERN)",
+    title: "Inventory Management System-TOYO Cable",
     image: null,
-    description: "Issued by Cisco",
+    description: "c# | .NET",
   },
   {
     id: 3,
