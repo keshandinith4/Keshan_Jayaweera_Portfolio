@@ -34,7 +34,8 @@ export default function Projects() {
 
   return (
     <section id="Projects" className="scroll-smooth">
-      <div className="w-full h-auto bg-[#121828] py-16 px-4 text-white">
+      <div
+       className="w-full h-auto bg-[#121828] py-16 px-4 text-white">
         <h1 className="pl-16 text-4xl md:text-5xl font-bold text-left mb-10 text-[#19C753]">
           Projects
         </h1>

@@ -1,77 +1,115 @@
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const certificates = [
   {
     id: 1,
     title: "Front-End Web Development",
-    discription:"Issued by University of Moratuwa",
-    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69084f50000a04ff245f/view?project=68fc4f79002e7fc2874a&mode=admin",
+    discription: "Issued by University of Moratuwa",
+    image:
+      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69084f50000a04ff245f/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
     id: 2,
     title: "Machine Learning I",
-    discription:"Issued by Columbia+ University in the city of NewYork",
-    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69085221001f87ff9560/view?project=68fc4f79002e7fc2874a&mode=admin",
+    discription: "Issued by Columbia+ University in the city of NewYork",
+    image:
+      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69085221001f87ff9560/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
     id: 3,
     title: "Computer Hardware Basics",
-    discription:"Issued by Cisco",
-    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690853cc002d90f10a64/view?project=68fc4f79002e7fc2874a&mode=admin",
+    discription: "Issued by Cisco",
+    image:
+      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690853cc002d90f10a64/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
     id: 4,
     title: "Introduction to Data Science",
-    discription:"Issued by Cisco",
-    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690854b800239a79cdb7/view?project=68fc4f79002e7fc2874a&mode=admin",
+    discription: "Issued by Cisco",
+    image:
+      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690854b800239a79cdb7/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
 ];
 
 export default function Certificates() {
   const [showAll, setShowAll] = useState(false);
-
   const visibleCertificates = showAll ? certificates : certificates.slice(0, 3);
 
   return (
     <section id="Certificates" className="scroll-smooth">
-      <div className="w-full h-auto">
-          <div className="bg-[#121828] py-15 px-1 text-white">
-        <h1 className="pl-15 text-4xl md:text-5xl font-bold text-left mb-10 text-[#19C753] w-full">
+      <div className="bg-[#121828] text-white flex flex-col justify-center items-center py-16 px-6">
+        
+        {/* Section Title */}
+        <motion.h1
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl font-bold mb-10 text-[#19C753] text-center"
+        >
           Certificates
-        </h1>
+        </motion.h1>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-7 justify-center px-15 transition duration-300">
-          {visibleCertificates.map((certificate) => (
-          <div
-            key={certificate.id}
-            className="bg-[#182034] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
+        {/* Certificates Grid */}
+        <motion.div
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl w-full justify-center"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={{
+            hidden: {},
+            show: {
+              transition: {
+                staggerChildren: 0.15,
+              },
+            },
+          }}
+        >
+          <AnimatePresence>
+            {visibleCertificates.map((certificate) => (
+              <motion.div
+                key={certificate.id}
+                variants={{
+                  hidden: { opacity: 0, y: 40 },
+                  show: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                whileHover={{ scale: 1.05 }}
+                exit={{ opacity: 0, y: 50 }}
+                className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300"
+              >
+                <img
+                  src={certificate.image}
+                  alt={certificate.title}
+                  className="w-full h-56 object-cover"
+                />
+                <div className="p-4 text-center">
+                  <h3 className="font-semibold text-lg">{certificate.title}</h3>
+                  <h4 className="text-sm text-[#19C753] font-medium">
+                    {certificate.discription}
+                  </h4>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
+
+        {/* Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-center mt-10"
+        >
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="bg-[#19C753] hover:bg-green-600 text-white px-8 py-3 rounded-full font-medium transition duration-300"
           >
-          <div className="border p-2 rounded-2xl border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
-            <img
-              src={certificate.image}
-              alt={`${certificate.title} - ${certificate.description}`}
-              className="h-auto w-full object-cover text-center"
-            />
-    
-              <div className="p-1">
-                <h3 className="font-semibold text-lg text-center">{certificate.title}</h3>
-                <h4 className="font-semibold text-sm text-center text-[#19C753]">{certificate.discription}</h4>
-              </div>
-          </div>
-        </div>
-
-        ))}
+            {showAll ? "Show Less" : "See More"}
+          </button>
+        </motion.div>
       </div>
-
-      <div className="text-center mt-10">
-        <button
-          onClick={() => setShowAll(!showAll)}
-          className="bg-[#19C753] hover:bg-green-600 text-white px-6 py-2 rounded-lg transition-colors font-medium transition duration-300">
-          {showAll ? "Show Less" : "See More"}
-        </button>
-      </div>
-    </div>
-    </div>
     </section>
   );
 }
