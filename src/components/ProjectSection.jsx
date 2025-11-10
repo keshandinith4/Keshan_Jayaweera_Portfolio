@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import project1 from "../assets/images/project1.png";
 
 const projects = [
@@ -12,19 +13,19 @@ const projects = [
     id: 2,
     title: "Inventory Management System-TOYO Cable",
     image: null,
-    description: "c# | .NET",
+    description: "C# | .NET",
   },
   {
     id: 3,
     title: "Mobile App with React Native",
     image: null,
-    description: "Issued by Cisco",
+    description: "React Native | Firebase",
   },
   {
     id: 4,
     title: "E-Commerce Platform",
     image: null,
-    description: "Issued by Cisco",
+    description: "MERN Stack | Stripe | Cloudinary",
   },
 ];
 
@@ -32,47 +33,85 @@ export default function Projects() {
   const [showAll, setShowAll] = useState(false);
   const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
+  // Animation Variants
+  const containerVariants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
+
   return (
     <section id="Projects" className="scroll-smooth">
-      <div
-       className="w-full h-auto bg-[#121828] py-16 px-4 text-white">
+      <div className="w-full h-auto bg-[#121828] py-16 px-4 text-white">
+        {/* Title */}
         <h1 className="pl-16 text-4xl md:text-5xl font-bold text-left mb-10 text-[#19C753]">
           Projects
         </h1>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center transition duration-300">
+        {/* Project Grid with animation */}
+        <motion.div
+          key={visibleProjects.length} // triggers re-animation when showAll toggles
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center transition duration-300"
+        >
           {visibleProjects.map((project) => (
-            <div
+            <motion.div
               key={project.id}
-              className="bg-[#182034] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform"
+              variants={cardVariants}
+              whileHover={{ scale: 1.05 }}
+              className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300"
             >
-              <div className="border p-2 rounded-2xl border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
-                <img
-                  src={project.image}
-                  alt={`${project.title} - ${project.description}`}
-                  className="h-auto w-full object-cover text-center"
-                />
-                <div className="p-1">
-                  <h3 className="font-semibold text-lg text-center">
-                    {project.title}
-                  </h3>
-                  <h4 className="font-semibold text-medium text-center text-[#19C753]">
+              <div className="p-2 rounded-2xl">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-auto w-full object-cover rounded-lg"
+                  />
+                ) : (
+                  <div className="h-56 w-full bg-[#0f1422] flex items-center justify-center text-gray-400 italic">
+                    No Image Available
+                  </div>
+                )}
+                <div className="p-4 text-center">
+                  <h3 className="font-semibold text-lg">{project.title}</h3>
+                  <h4 className="font-medium text-sm text-[#19C753] mt-1">
                     {project.description}
                   </h4>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="text-center mt-10">
+        {/* Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-center mt-10"
+        >
           <button
             onClick={() => setShowAll(!showAll)}
             className="bg-[#19C753] hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium transition duration-300"
           >
             {showAll ? "Show Less" : "See More"}
           </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
