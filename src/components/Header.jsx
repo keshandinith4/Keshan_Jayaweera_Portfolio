@@ -19,7 +19,7 @@ export default function Header() {
       </div>
 
       {/* Desktop Nav */}
-      <nav className="relative z-10 hidden md:flex items-center gap-3 text-sm md:text-base font-semibold">
+      <nav className="relative z-10 hidden md:flex items-center gap-4 text-sm md:text-base font-semibold">
         {[
           { label: "Home", href: "#Home" },
           { label: "About Me", href: "#About_Me" },
