@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const certificates = [
   {
@@ -36,6 +36,22 @@ export default function Certificates() {
   const [showAll, setShowAll] = useState(false);
   const visibleCertificates = showAll ? certificates : certificates.slice(0, 3);
 
+  // Parent animation variants (for staggered fade-in)
+  const containerVariants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  // Individual card animation variants
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  };
+
   return (
     <section id="Certificates" className="scroll-smooth">
       <div className="bg-[#121828] text-white flex flex-col justify-center items-center py-16 px-6">
@@ -53,46 +69,32 @@ export default function Certificates() {
 
         {/* Certificates Grid */}
         <motion.div
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl w-full justify-center"
+          key={visibleCertificates.length} // re-trigger animation when toggled
+          variants={containerVariants}
           initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
-          variants={{
-            hidden: {},
-            show: {
-              transition: {
-                staggerChildren: 0.15,
-              },
-            },
-          }}
+          animate="show"
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl w-full justify-center"
         >
-          <AnimatePresence>
-            {visibleCertificates.map((certificate) => (
-              <motion.div
-                key={certificate.id}
-                variants={{
-                  hidden: { opacity: 0, y: 40 },
-                  show: { opacity: 1, y: 0 },
-                }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                whileHover={{ scale: 1.05 }}
-                exit={{ opacity: 0, y: 50 }}
-                className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300"
-              >
-                <img
-                  src={certificate.image}
-                  alt={certificate.title}
-                  className="w-full h-56 object-cover"
-                />
-                <div className="p-4 text-center">
-                  <h3 className="font-semibold text-lg">{certificate.title}</h3>
-                  <h4 className="text-sm text-[#19C753] font-medium">
-                    {certificate.discription}
-                  </h4>
-                </div>
-              </motion.div>
-            ))}
-          </AnimatePresence>
+          {visibleCertificates.map((certificate) => (
+            <motion.div
+              key={certificate.id}
+              variants={cardVariants}
+              whileHover={{ scale: 1.05 }}
+              className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300"
+            >
+              <img
+                src={certificate.image}
+                alt={certificate.title}
+                className="w-full h-56 object-cover"
+              />
+              <div className="p-4 text-center">
+                <h3 className="font-semibold text-lg">{certificate.title}</h3>
+                <h4 className="text-sm text-[#19C753] font-medium">
+                  {certificate.discription}
+                </h4>
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
 
         {/* Button */}
