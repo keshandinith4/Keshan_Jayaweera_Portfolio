@@ -55,10 +55,15 @@ export default function Projects() {
   return (
     <section id="Projects" className="scroll-smooth">
       <div className="w-full h-auto bg-[#121828] py-16 px-6 md:px-16 text-white">
-        {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left mb-10 text-[#19C753]">
-          Projects
-        </h1>
+        <div className="text-left mb-5">
+        <motion.h2 
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.85, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+            className="font-bold text-5xl text-[#19C753]">Projects
+        </motion.h2>
+      </div>
 
         {/* Project Grid */}
         <motion.div
@@ -86,7 +91,7 @@ export default function Projects() {
                   No Image Available
                 </div>
               )}
-              <div className="p-4 text-center">
+              <div className="p-2 text-center">
                 <h3 className="font-semibold text-lg">{project.title}</h3>
                 <h4 className="font-medium text-sm text-[#19C753] mt-1">
                   {project.description}

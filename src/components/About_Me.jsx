@@ -18,7 +18,7 @@ export default function About_Me() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
-            className="font-bold text-5xl text-[#19C753]">About Me
+            className="font-bold text-5xl text-[#19C753] mt-5">About Me
         </motion.h2>
       </div>
 
