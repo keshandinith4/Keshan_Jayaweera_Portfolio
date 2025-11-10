@@ -62,7 +62,7 @@ export default function Certificates() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold mb-10 text-[#19C753] text-center"
+          className="text-4xl md:text-5xl font-bold text-center md:text-left mb-10 text-[#19C753]"
         >
           Certificates
         </motion.h1>

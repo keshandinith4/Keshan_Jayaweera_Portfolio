@@ -5,10 +5,10 @@ import { SiExpress, SiTailwindcss, SiMysql } from "react-icons/si";
 import { motion } from "framer-motion";
 import Keshan from "../assets/images/Keshan.jpg";
 
-export default function About_Us() {
+export default function About_Me() {
   return (
     <section
-      id="About_Us"
+      id="About_Me"
       className="scroll-smooth bg-[#121828] py-12 px-8 lg:px-20 font-poppins"
     >
       {/* Title outside cards */}
@@ -88,13 +88,13 @@ export default function About_Us() {
           <div className="mt-8">
             <h2 className="text-3xl font-bold mb-3 text-white">Skills</h2>
             <p className="text-lg text-white leading-relaxed mb-5">
-              I have a solid foundation in full-stack web development, specializing in the MERN stack — 
-              MongoDB, Express.js, React, and Node.js. On the frontend, I build clean, responsive UIs using 
+              I have a solid foundation in full-stack web development, specializing in the MERN stack
+               [<span className="text-[#19C753]">MongoDB, Express.js, React, and Node.js</span>]. On the frontend, I build clean, responsive UIs using 
               HTML5, CSS3, and JavaScript, while leveraging React for dynamic and scalable applications.
             </p>
 
             {/* Skills Icons */}
-            <div className="text-4xl mt-5 flex flex-wrap gap-8">
+            <div className="text-4xl mt-5 flex flex-wrap gap-8 cursor-pointer">
               <div className="flex items-center gap-2">
                 <IoLogoReact className="text-[#19C753] hover:scale-110 transition" />
                 <span className="text-white text-lg">React</span>
@@ -108,12 +108,12 @@ export default function About_Us() {
                 <span className="text-white text-lg">MongoDB</span>
               </div>
               <div className="flex items-center gap-2">
-                <FaJsSquare className="text-[#19C753] hover:scale-110 transition" />
-                <span className="text-white text-lg">JavaScript</span>
-              </div>
-              <div className="flex items-center gap-2">
                 <FaHtml5 className="text-[#19C753] hover:scale-110 transition" />
                 <span className="text-white text-lg">HTML</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <FaJsSquare className="text-[#19C753] hover:scale-110 transition" />
+                <span className="text-white text-lg">JavaScript</span>
               </div>
               <div className="flex items-center gap-2">
                 <IoLogoCss3 className="text-[#19C753] hover:scale-110 transition" />

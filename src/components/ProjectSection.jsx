@@ -54,15 +54,15 @@ export default function Projects() {
 
   return (
     <section id="Projects" className="scroll-smooth">
-      <div className="w-full h-auto bg-[#121828] py-16 px-4 text-white">
+      <div className="w-full h-auto bg-[#121828] py-16 px-6 md:px-16 text-white">
         {/* Title */}
-        <h1 className="pl-16 text-4xl md:text-5xl font-bold text-left mb-10 text-[#19C753]">
+        <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left mb-10 text-[#19C753]">
           Projects
         </h1>
 
-        {/* Project Grid with animation */}
+        {/* Project Grid */}
         <motion.div
-          key={visibleProjects.length} // triggers re-animation when showAll toggles
+          key={visibleProjects.length}
           variants={containerVariants}
           initial="hidden"
           animate="show"
@@ -75,24 +75,22 @@ export default function Projects() {
               whileHover={{ scale: 1.05 }}
               className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300"
             >
-              <div className="p-2 rounded-2xl">
-                {project.image ? (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="h-auto w-full object-cover rounded-lg"
-                  />
-                ) : (
-                  <div className="h-56 w-full bg-[#0f1422] flex items-center justify-center text-gray-400 italic">
-                    No Image Available
-                  </div>
-                )}
-                <div className="p-4 text-center">
-                  <h3 className="font-semibold text-lg">{project.title}</h3>
-                  <h4 className="font-medium text-sm text-[#19C753] mt-1">
-                    {project.description}
-                  </h4>
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-56 object-cover"
+                />
+              ) : (
+                <div className="h-56 w-full bg-[#0f1422] flex items-center justify-center text-gray-400 italic">
+                  No Image Available
                 </div>
+              )}
+              <div className="p-4 text-center">
+                <h3 className="font-semibold text-lg">{project.title}</h3>
+                <h4 className="font-medium text-sm text-[#19C753] mt-1">
+                  {project.description}
+                </h4>
               </div>
             </motion.div>
           ))}
@@ -107,7 +105,7 @@ export default function Projects() {
         >
           <button
             onClick={() => setShowAll(!showAll)}
-            className="bg-[#19C753] hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium transition duration-300"
+            className="bg-[#19C753] hover:bg-green-600 text-white px-8 py-3 rounded-full font-medium transition duration-300"
           >
             {showAll ? "Show Less" : "See More"}
           </button>
