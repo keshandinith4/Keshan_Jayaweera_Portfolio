@@ -13,7 +13,7 @@ export default function Header() {
 
       {/* Name / Logo */}
       <div className="relative z-10 flex items-center">
-        <span className="font-bold text-[#121828] text-xl sm:text-2xl md:text-3xl ml-4 sm:ml-8 hover:text-[#19C753] transition duration-300">
+        <span className="font-bold text-[#121828] text-xl sm:text-2xl md:text-3xl ml-4 sm:ml-8 hover:text-[#19C753] transition duration-300 cursor-pointer">
           Keshan Jayaweera
         </span>
       </div>
@@ -22,7 +22,7 @@ export default function Header() {
       <nav className="relative z-10 hidden md:flex items-center gap-3 text-sm md:text-base font-semibold">
         {[
           { label: "Home", href: "#Home" },
-          { label: "About Us", href: "#About_Us" },
+          { label: "About Me", href: "#About_Me" },
           { label: "Projects", href: "#Projects" },
           { label: "Certificates", href: "#Certificates" },
           { label: "Contact Me", href: "#Contact_Me", special: true },
@@ -54,7 +54,7 @@ export default function Header() {
         <nav className="absolute top-full left-0 w-full bg-[#121828] flex flex-col items-center gap-3 py-4 md:hidden">
           {[
             { label: "Home", href: "#Home" },
-            { label: "About Us", href: "#About_Us" },
+            { label: "About Me", href: "#About_Me" },
             { label: "Projects", href: "#Projects" },
             { label: "Certificates", href: "#Certificates" },
             { label: "Contact Me", href: "#Contact_Me", special: true },

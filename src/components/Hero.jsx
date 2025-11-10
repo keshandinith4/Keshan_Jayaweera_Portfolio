@@ -18,7 +18,7 @@ export default function Hero() {
             Web Application Developer
           </h2>
           <h3 className="text-fluid-lg mb-2 text-black">Hi, I am</h3>
-          <h1 className="text-fluid-xl font-bold mb-3 text-[#19C753] hover:scale-105 transition duration-300">
+          <h1 className="text-fluid-xl font-bold mb-3 text-[#19C753] hover:scale-105 transition duration-300 cursor-pointer">
             Keshan Jayaweera
           </h1>
           <p className="text-gray-700 font-medium mb-6 text-fluid-md hover:text-gray-900 transition duration-200">
