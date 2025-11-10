@@ -54,8 +54,8 @@ export default function Certificates() {
 
   return (
     <section id="Certificates" className="scroll-smooth">
-      <div className="bg-[#121828] text-white flex flex-col justify-center py-16 px-6">
-        
+      <div className="w-full h-auto bg-[#121828] py-16 px-6 md:px-16 text-white">
+ 
         {/* Section Title */}
         <div className="text-left mb-5">
         <motion.h2 
@@ -63,7 +63,7 @@ export default function Certificates() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
-            className="font-bold text-5xl text-[#19C753] mt-5 mx-18">Certificates
+            className="font-bold text-5xl text-[#19C753] mt-10">Certificates
         </motion.h2>
       </div>
 
@@ -73,7 +73,7 @@ export default function Certificates() {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-6xl w-full justify-center items-center mx-auto"
+          className="grid sm:grid-cols-5 md:grid-cols-3 gap-10 justify-center transition duration-300 mt-10"
         >
           {visibleCertificates.map((certificate) => (
             <motion.div
@@ -85,7 +85,7 @@ export default function Certificates() {
               <img
                 src={certificate.image}
                 alt={certificate.title}
-                className="w-full h-60 object-cover"
+                className="w-full h-auto object-cover"
               />
               <div className="p-3 text-center">
                 <h3 className="font-semibold text-lg">{certificate.title}</h3>
