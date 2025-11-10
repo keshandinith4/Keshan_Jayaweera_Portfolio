@@ -15,7 +15,7 @@ export default function Contact_Me() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
-          className="text-4xl md:text-5xl font-bold mb-5 mr-240 text-[#19C753] text-left">
+          className="text-4xl md:text-5xl font-bold mt-5 mr-240 text-[#19C753] text-left">
           Contact Me
         </motion.h1>
 

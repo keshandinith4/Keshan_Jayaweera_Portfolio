@@ -54,18 +54,18 @@ export default function Certificates() {
 
   return (
     <section id="Certificates" className="scroll-smooth">
-      <div className="bg-[#121828] text-white flex flex-col justify-center items-center py-16 px-6">
+      <div className="bg-[#121828] text-white flex flex-col justify-center py-16 px-6">
         
         {/* Section Title */}
-        <motion.h1
-          initial={{ opacity: 0, y: -40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center md:text-left mb-10 text-[#19C753]"
-        >
-          Certificates
-        </motion.h1>
+        <div className="text-left mb-5">
+        <motion.h2 
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.85, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+            className="font-bold text-5xl text-[#19C753] mt-5 mx-18">Certificates
+        </motion.h2>
+      </div>
 
         {/* Certificates Grid */}
         <motion.div
@@ -73,7 +73,7 @@ export default function Certificates() {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl w-full justify-center"
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-6xl w-full justify-center items-center mx-auto"
         >
           {visibleCertificates.map((certificate) => (
             <motion.div
@@ -85,9 +85,9 @@ export default function Certificates() {
               <img
                 src={certificate.image}
                 alt={certificate.title}
-                className="w-full h-56 object-cover"
+                className="w-full h-60 object-cover"
               />
-              <div className="p-4 text-center">
+              <div className="p-3 text-center">
                 <h3 className="font-semibold text-lg">{certificate.title}</h3>
                 <h4 className="text-sm text-[#19C753] font-medium">
                   {certificate.discription}
