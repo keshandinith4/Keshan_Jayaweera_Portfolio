@@ -61,7 +61,7 @@ export default function Projects() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
-            className="font-bold text-5xl text-[#19C753]">Projects
+            className="font-bold text-5xl text-[#19C753] mt-15">Projects
         </motion.h2>
       </div>
 
@@ -71,7 +71,7 @@ export default function Projects() {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center transition duration-300"
+          className="grid sm:grid-cols-5 md:grid-cols-3 gap-10 justify-center transition duration-300 mt-10"
         >
           {visibleProjects.map((project) => (
             <motion.div
@@ -84,10 +84,10 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-56 object-cover"
+                  className="w-full h-auto object-cover"
                 />
               ) : (
-                <div className="h-56 w-full bg-[#0f1422] flex items-center justify-center text-gray-400 italic">
+                <div className="h-auto w-full bg-[#0f1422] flex items-center justify-center text-gray-400 italic">
                   No Image Available
                 </div>
               )}
