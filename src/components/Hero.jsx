@@ -1,11 +1,33 @@
 import React from "react";
+import { HiArrowSmDown } from "react-icons/hi";
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
+  const handleDownloadCV = async () => {
+    const cvUrl = "/H.D.K.S.Jayaweera_CV.pdf"; // put your PDF in public folder
+    const fileName = "H.D.K.S.Jayaweera_CV.pdf";
+
+    try {
+      const res = await fetch(cvUrl, { cache: "no-store" });
+      if (!res.ok) throw new Error("Failed to fetch file");
+      const blob = await res.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = fileName;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (err) {
+      // fallback: open in new tab
+      window.open(cvUrl, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <section id="Home" className="scroll-smooth">
       <div className="relative flex flex-col lg:flex-row items-center justify-between min-h-screen w-full bg-[#121828] overflow-hidden">
-        
         {/* Angled Divider (Left Shape) */}
         <div
           className="absolute left-0 top-0 h-full bg-gray-300 -skew-x-12 origin-top-left hidden md:block"
@@ -31,8 +53,8 @@ export default function Hero() {
             development environments.
           </p>
 
-          {/* Social Icons */}
-          <div className="flex justify-center lg:justify-start gap-6 text-3xl mt-8">
+          {/* Social Icons + CV Button */}
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-3xl mt-8 items-center">
             <a
               href="https://www.linkedin.com/in/oyage-linkedin-keshandinith4"
               target="_blank"
@@ -64,6 +86,15 @@ export default function Hero() {
             >
               <FaWhatsapp className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
             </a>
+
+            {/* Download CV Button */}
+            <button
+            onClick={handleDownloadCV}
+            className="flex items-center px-2 py-1 bg-[#121828] text-white font-semibold rounded-xl shadow hover:bg-[#15a544] transition text-sm duration-300"
+            >
+              <HiArrowSmDown className="text-lg" />
+              <span>Download CV</span>
+            </button>
           </div>
         </div>
 
