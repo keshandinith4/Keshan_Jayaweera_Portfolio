@@ -53,8 +53,17 @@ export default function Hero() {
             development environments.
           </p>
 
-          {/* Social Icons + CV Button */}
-          <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-3xl mt-8 items-center">
+            {/* Download CV Button */}
+            <button
+              onClick={handleDownloadCV}
+              className="flex items-center justify-left px-2 py-1.5 w-[120px] bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#15a544] transition text-sm duration-300 mx-auto lg:mx-0 mt-6"
+              >
+              <HiArrowSmDown className="text-base" />
+              <span>Download CV</span>
+            </button>
+
+          {/* Social Icons */}
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-4xl mt-3 items-center">
             <a
               href="https://www.linkedin.com/in/oyage-linkedin-keshandinith4"
               target="_blank"
@@ -86,15 +95,6 @@ export default function Hero() {
             >
               <FaWhatsapp className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
             </a>
-
-            {/* Download CV Button */}
-            <button
-            onClick={handleDownloadCV}
-            className="flex items-center px-2 py-1 bg-[#121828] text-white font-semibold rounded-xl shadow hover:bg-[#15a544] transition text-sm duration-300"
-            >
-              <HiArrowSmDown className="text-lg" />
-              <span>Download CV</span>
-            </button>
           </div>
         </div>
 
