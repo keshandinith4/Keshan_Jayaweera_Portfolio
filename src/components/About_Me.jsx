@@ -31,7 +31,7 @@ export default function About_Me() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3  }}
-          className="bg-[#1A2238] w-full lg:w-1/2 mt-25 rounded-2xl shadow-lg p-8 border border-[#19C753]/30 hover:border-[#19C753] transition duration-300">
+          className="w-full lg:w-1/2 mt-25 p-8 transition duration-300">
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold text-white mb-3">
@@ -67,7 +67,7 @@ export default function About_Me() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3  }}
-          className="bg-[#1A2238] w-full lg:w-1/2 rounded-2xl shadow-lg p-8 border border-[#19C753]/30 hover:border-[#19C753] transition duration-300"
+          className=" w-full lg:w-1/2 p-8 border  transition duration-300"
         >
           <h2 className="text-3xl font-bold mb-4 text-white">Introduction</h2>
           <h3 className="text-2xl font-bold mb-4 text-[#19C753]">H.D.K.S. Jayaweera</h3>
