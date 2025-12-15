@@ -61,7 +61,8 @@ export default function Hero() {
 
 
 
-  {/* Download CV Button */}
+  <div className="flex lg:justify-start gap-4 sm:gap-6 lg:gap-10 xl:gap-12 text-2xl sm:text-3xl lg:text-5xl">
+    {/* Download CV Button */}
   <button
     onClick={handleDownloadCV}
     className="flex items-center justify-left px-2 py-1.5 w-[120px] bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#15a544] transition text-sm duration-300 mx-auto lg:mx-0 mt-6"
@@ -76,11 +77,12 @@ export default function Hero() {
     className="flex items-center justify-left px-2 py-1.5 w-[120px] bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#15a544] transition text-sm duration-300 mx-auto lg:mx-0 mt-6"
   >
     <HiArrowSmDown className="text-base" />
-    <span>Download Cover Letter</span>
+    <span>Cover Letter</span>
   </button>
+</div>
 
   {/* Social Icons */}
-  <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-10 xl:gap-12 text-2xl sm:text-3xl lg:text-5xl mt-4 items-center">
+  <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-10 xl:gap-12 text-2xl sm:text-3xl lg:text-5xl mt-5 items-center">
   <a href="https://www.linkedin.com/in/oyage-linkedin-keshandinith4" target="_blank" rel="noopener noreferrer">
     <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
   </a>
