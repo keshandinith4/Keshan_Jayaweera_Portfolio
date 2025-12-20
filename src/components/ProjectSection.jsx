@@ -106,7 +106,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-center mt-10"
+          className="text-center mt-10 text-xs lg:text-base"
         >
           <button
             onClick={() => setShowAll(!showAll)}
