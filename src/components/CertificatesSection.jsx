@@ -54,18 +54,18 @@ export default function Certificates() {
 
   return (
     <section id="Certificates" className="scroll-smooth">
-      <div className="w-full h-auto bg-[#121828] py-16 px-6 md:px-16 text-white">
+      <div className="w-full h-auto bg-[#121828] py-3 px-6 text-white text-sm md:text-sm lg:text-lg md:px-16">
  
         {/* Section Title */}
         <div className="text-left mb-5">
-        <motion.h2 
+          <motion.h2 
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
-            className="font-bold text-5xl text-[#19C753] mt-10">Certificates
-        </motion.h2>
-      </div>
+            className="font-bold text-3xl text-[#19C753] lg:text-5xl xl:mt-15">Certificates
+          </motion.h2>
+          </div>
 
         {/* Certificates Grid */}
         <motion.div
@@ -73,7 +73,7 @@ export default function Certificates() {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid sm:grid-cols-5 md:grid-cols-3 gap-10 justify-center transition duration-300 mt-10"
+          className="grid gap-10 justify-center transition duration-300 mt-10 grid-cols-2 lg:grid-cols-3"
         >
           {visibleCertificates.map((certificate) => (
             <motion.div
@@ -87,9 +87,9 @@ export default function Certificates() {
                 alt={certificate.title}
                 className="w-full h-auto object-cover"
               />
-              <div className="p-3 text-center">
-                <h3 className="font-semibold text-lg">{certificate.title}</h3>
-                <h4 className="text-sm text-[#19C753] font-medium">
+              <div className="p-1 text-center lg:p-3">
+                <h3 className="font-semibold text-xs xl:text-2xl">{certificate.title}</h3>
+                <h4 className="text-xs text-[#19C753] font-normal xl:text-lg">
                   {certificate.discription}
                 </h4>
               </div>
@@ -106,7 +106,7 @@ export default function Certificates() {
         >
           <button
             onClick={() => setShowAll(!showAll)}
-            className="bg-[#19C753] hover:bg-green-600 text-white px-8 py-3 rounded-full font-medium transition duration-300"
+            className="bg-[#19C753] hover:bg-green-600 text-white px-2 py-1 md:px-8 md:py-3 rounded-full font-medium transition duration-300"
           >
             {showAll ? "Show Less" : "See More"}
           </button>

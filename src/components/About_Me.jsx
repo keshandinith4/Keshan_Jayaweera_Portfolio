@@ -42,7 +42,7 @@ export default function About_Me() {
               alt="Profile"
               className="w-32 h-40 lg:w-38 lg:h-52 object-cover rounded-xl border-2 border-[#19C753] flex-shrink-0"
             />
-            <p className="text-white text-base leading-relaxed lg:text-xl text-center lg:text-left">
+            <p className="text-white text-base leading-relaxed lg:text-xl text-left lg:text-left">
               Hello! I'm Keshan Jayaweera, a passionate and detail-oriented IT undergraduate 
               with a strong interest in full-stack web development. I enjoy building responsive, 
               user-focused web applications using modern technologies and clean code practices.
@@ -111,7 +111,7 @@ export default function About_Me() {
               <h3 className="text-2xl font-bold mb-3 text-white lg:text-4xl">
                 Education & Certification
               </h3>
-                <p className="text-white text-base leading-relaxed lg:text-xl">
+                <p className="text-white text-base leading-relaxed lg:text-xl text-left">
                 Currently pursuing a Software Engineering degree, gaining strong foundations 
                 in programming, web development, databases, and problem-solving while continuously 
                 enhancing skills through practical projects and learning.
