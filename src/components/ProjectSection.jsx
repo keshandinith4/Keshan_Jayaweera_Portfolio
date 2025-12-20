@@ -54,14 +54,14 @@ export default function Projects() {
 
   return (
     <section id="Projects" className="scroll-smooth">
-      <div className="w-full h-auto bg-[#121828] py-16 px-6 md:px-16 text-white">
-        <div className="text-left mb-5">
+      <div className="w-full h-auto bg-[#121828]  py-3 xl:py-16 px-6 md:px-16 text-white">
+        <div className="text-left mb-1">
         <motion.h2 
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
-            className="font-bold text-5xl text-[#19C753] mt-15">Projects
+            className="font-bold text-3xl text-[#19C753] lg:text-5xl xl:mt-15">Projects
         </motion.h2>
       </div>
 
@@ -71,7 +71,7 @@ export default function Projects() {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid sm:grid-cols-5 md:grid-cols-3 gap-10 justify-center transition duration-300 mt-10"
+          className="grid gap-10 justify-center transition duration-300 mt-10 grid-cols-2 lg:grid-cols-3"
         >
           {visibleProjects.map((project) => (
             <motion.div
@@ -91,9 +91,9 @@ export default function Projects() {
                   No Image Available
                 </div>
               )}
-              <div className="p-2 text-center">
-                <h3 className="font-semibold text-lg">{project.title}</h3>
-                <h4 className="font-medium text-sm text-[#19C753] mt-1">
+              <div className="p-1 text-center lg:p-3">
+                <h3 className="font-semibold text-xs xl:text-2xl">{project.title}</h3>
+                <h4 className="text-xs text-[#19C753] font-normal xl:text-lg">
                   {project.description}
                 </h4>
               </div>
@@ -110,7 +110,7 @@ export default function Projects() {
         >
           <button
             onClick={() => setShowAll(!showAll)}
-            className="bg-[#19C753] hover:bg-green-600 text-white px-8 py-3 rounded-full font-medium transition duration-300"
+            className="bg-[#19C753] hover:bg-green-600 text-white px-2 py-1 md:px-8 md:py-3 rounded-full font-medium transition duration-300"
           >
             {showAll ? "Show Less" : "See More"}
           </button>
