@@ -1,7 +1,7 @@
 // App.jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home_Page from './pages/Home_Page.jsx';
-import './index.css'; // make sure we load your global styles
+import './index.css';
 
 function App() {
   return (

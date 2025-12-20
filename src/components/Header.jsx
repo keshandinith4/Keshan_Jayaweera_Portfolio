@@ -51,7 +51,7 @@ export default function Header() {
       </div>
 
       {/* Desktop Nav */}
-      <nav className="relative z-10 hidden md:flex items-center gap-4 text-sm md:text-base font-semibold">
+      <nav className="relative z-10 hidden lg:flex items-center gap-4 text-sm md:text-base font-semibold">
         {sections.map((item, idx) => (
           <a
             key={idx}
@@ -71,7 +71,7 @@ export default function Header() {
 
       {/* Mobile Menu Button */}
       <button
-        className="relative z-10 md:hidden"
+        className="relative z-10 :hidden"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         {menuOpen ? <X size={26} /> : <Menu size={26} />}
