@@ -18,12 +18,12 @@ export default function About_Me() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
-            className="font-bold text-3xl text-[#19C753] ml-6">About Me
+            className="font-bold text-3xl text-[#19C753] ml-6 lg:text-5xl lg:mt-15">About Me
         </motion.h2>
       </div>
 
       {/* Two Card Layout */}
-      <div className="flex flex-col lg:flex-row justify-center items-start gap-4 sm:gap-5 text-sm sm:text-sm md:text-lg">
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-4 md:gap-5 text-sm md:text-sm lg:text-lg">
 
         {/* Right Card - Introduction & Skills (First on mobile) */}
         <motion.div
@@ -31,18 +31,18 @@ export default function About_Me() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3  }}
-          className="w-full lg:w-1/2 lg:order-2 p-5 border transition duration-300"
+          className="w-full w-1/2 lg:order-2 p-5 border transition duration-300"
         >
-          <h2 className="text-2xl font-bold mb-3 text-white">Introduction</h2>
-          <h3 className="text-xl  font-bold mb-3 text-[#19C753]">H.D.K.S. Jayaweera</h3>
+          <h2 className="text-2xl font-bold mb-3 text-white lg:text-4xl">Introduction</h2>
+          <h3 className="text-xl lg:text-3xl font-bold mb-3 text-[#19C753]">H.D.K.S. Jayaweera</h3>
 
-          <div className="flex flex-col items-start gap-4">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-4">
             <img
               src={Keshan}
               alt="Profile"
-              className="w-32 h-40 object-cover rounded-xl border-2 border-[#19C753] mx-auto"
+              className="w-32 h-40 lg:w-38 lg:h-52 object-cover rounded-xl border-2 border-[#19C753] flex-shrink-0"
             />
-            <p className="text-white text-base leading-relaxed">
+            <p className="text-white text-base leading-relaxed lg:text-xl text-center lg:text-left">
               Hello! I'm Keshan Jayaweera, a passionate and detail-oriented IT undergraduate 
               with a strong interest in full-stack web development. I enjoy building responsive, 
               user-focused web applications using modern technologies and clean code practices.
@@ -50,8 +50,8 @@ export default function About_Me() {
           </div>
 
           <div className="mt-6">
-            <h2 className="text-2xl font-bold mb-2 text-white">Skills</h2>
-            <p className="text-base text-white leading-relaxed mb-4">
+            <h2 className="text-2xl font-bold mb-2 text-white lg:text-4xl">Skills</h2>
+            <p className="text-base text-white leading-relaxed mb-4 lg:text-xl">
               I have a solid foundation in full-stack web development, specializing in the MERN stack
                [<span className="text-[#19C753]">MongoDB, Express.js, React, and Node.js</span>]. On the frontend, I build clean, responsive UIs using 
               HTML5, CSS3, and JavaScript, while leveraging React for dynamic and scalable applications.
@@ -108,10 +108,10 @@ export default function About_Me() {
           className="w-full p-6 transition duration-300">
           <div className="space-y-5">
             <div>
-              <h3 className="text-2xl font-bold mb-3 text-white">
+              <h3 className="text-2xl font-bold mb-3 text-white lg:text-4xl">
                 Education & Certification
               </h3>
-                <p className="text-white text-base leading-relaxed">
+                <p className="text-white text-base leading-relaxed lg:text-xl">
                 Currently pursuing a Software Engineering degree, gaining strong foundations 
                 in programming, web development, databases, and problem-solving while continuously 
                 enhancing skills through practical projects and learning.
@@ -122,7 +122,7 @@ export default function About_Me() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold mb-3 text-white">Extra Curricular</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white lg:text-4xl">Extra Curricular</h3>
               <ul className="list-disc list-inside text-white space-y-1.5 ml-2">
                 <li>President of Saegis Students' Forum-2024/25</li>
                 <li>Member of Leo club of Wekanda-2025</li>
