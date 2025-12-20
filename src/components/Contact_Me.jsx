@@ -6,7 +6,7 @@ import Keshansq from "../assets/images/Keshansq.jpg";
 export default function Contact_Me() {
   return (
     <section id="Contact_Me" className="scroll-smooth">
-      <div className="bg-[#121828] flex flex-col justify-center items-center min-h-screen text-white px-4 py-12">
+      <div className="bg-[#121828] flex flex-col justify-center items-center text-white px-4 py-5 md:py-12">
         
         {/* Section Title */}
         <motion.h1
@@ -14,7 +14,7 @@ export default function Contact_Me() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.85, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.2 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#19C753] mb-5 mt-8 text-center md:text-left w-full max-w-5xl"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#19C753] mb-5 text-left lg:text-center md:text-left w-full max-w-5xl"
         >
           Contact Me
         </motion.h1>
@@ -33,7 +33,7 @@ export default function Contact_Me() {
             <img
               src={Keshansq}
               alt="contact"
-              className="object-cover w-full h-auto sm:h-80 md:h-[450px] rounded-2xl"
+              className="object-cover w-full h-auto  rounded-2xl"
             />
 
             {/* Social Links */}
@@ -59,15 +59,15 @@ export default function Contact_Me() {
             className="bg-[#1A2238] w-full md:w-1/2 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300"
           >
             <div className="flex-1 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg">
-              <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center">
+              <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center xl:text-3xl xl:py-4">
                 Ready To Transform Your Ideas?
               </h2>
 
               <form className="space-y-6">
                 {/* Name & Email */}
-                <div className="flex flex-col md:flex-row gap-4">
+                <div className="flex flex-col md:flex-row gap-4 lg:gap-6">
                   <div className="flex-1">
-                    <label className="block font-semibold mb-2 text-sm sm:text-base">Name:</label>
+                    <label className="block font-semibold mb-2 text-sm sm:text-base lg:text-lg">Name:</label>
                     <input
                       type="text"
                       placeholder="Enter your name"
@@ -75,7 +75,7 @@ export default function Contact_Me() {
                     />
                   </div>
                   <div className="flex-1">
-                    <label className="block font-semibold mb-2 text-sm sm:text-base">Email:</label>
+                    <label className="block font-semibold mb-2 text-sm sm:text-base lg:text-lg">Email:</label>
                     <input
                       type="email"
                       placeholder="Enter your email"
@@ -85,8 +85,8 @@ export default function Contact_Me() {
                 </div>
 
                 {/* Message */}
-                <div>
-                  <label className="block font-semibold mb-2 text-sm sm:text-base">Message:</label>
+                <div className="lg:mt-5">
+                  <label className="block font-semibold mb-2 text-sm sm:text-base lg:text-lg">Message:</label>
                   <textarea
                     rows="5"
                     placeholder="Enter your message"
@@ -95,10 +95,10 @@ export default function Contact_Me() {
                 </div>
 
                 {/* Submit Button */}
-                <div className="text-center">
+                <div className="text-center xl:py-5">
                   <button
                     type="submit"
-                    className="w-full bg-[#19C753] hover:bg-green-600 text-white font-semibold py-3 px-10 rounded-full transition-all flex flex-row items-center justify-center gap-2 whitespace-nowrap"
+                    className="w-full bg-[#19C753] hover:bg-green-600 text-white font-semibold py-3 px-10 rounded-full transition-all flex flex-row items-center justify-center gap-2 whitespace-nowrap lg:text-lg"
                   >
                     <FaPaperPlane />
                     <span>Send Message</span>
