@@ -23,7 +23,7 @@ export default function About_Me() {
       </div>
 
       {/* Two Card Layout */}
-      <div className="flex flex-col lg:flex-row justify-center items-start gap-4 sm:gap-5 text-sm sm:text-sm md:text-lg">
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-4 md:gap-5 text-sm md:text-sm lg:text-lg">
 
         {/* Right Card - Introduction & Skills (First on mobile) */}
         <motion.div
@@ -31,7 +31,7 @@ export default function About_Me() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3  }}
-          className="w-full lg:w-1/2 lg:order-2 p-5 border transition duration-300"
+          className="w-full xl:w-1/2 lg:order-2 p-5 border transition duration-300"
         >
           <h2 className="text-2xl font-bold mb-3 text-white">Introduction</h2>
           <h3 className="text-xl  font-bold mb-3 text-[#19C753]">H.D.K.S. Jayaweera</h3>
