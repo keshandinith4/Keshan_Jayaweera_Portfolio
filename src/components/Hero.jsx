@@ -4,7 +4,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
   const handleDownloadCV = async () => {
-    const cvUrl = "/H.D.K.S.Jayaweera_CV.pdf"; // put your PDF in public folder
+    const cvUrl = "/H.D.K.S.Jayaweera_CV.pdf";
     const fileName = "H.D.K.S.Jayaweera_CV.pdf";
 
     try {
@@ -20,7 +20,6 @@ export default function Hero() {
       a.remove();
       window.URL.revokeObjectURL(url);
     } catch (err) {
-      // fallback: open in new tab
       window.open(cvUrl, "_blank", "noopener,noreferrer");
     }
   };
@@ -52,54 +51,70 @@ export default function Hero() {
             IT Student / Undergraduate / Full Stack Developer
           </p>
 
-          <p className="text-xs sm:text-sm lg:text-lg text-[#121828] max-w-2xl mx-auto lg:mx-0 transition duration-300 leading-relaxed">
+          <p className="text-xs sm:text-sm lg:text-lg text-[#121828] max-w-2xl mx-auto lg:mx-0 transition duration-300 leading-relaxed mb-8">
             Passionate IT student with expertise in multiple programming
             languages and core computer science concepts, eager to apply
             technical skills in real-world projects and collaborative
             development environments.
           </p>
 
+          {/* Buttons Container */}
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4 mb-6">
+            {/* Download CV Button */}
+            <button
+              onClick={handleDownloadCV}
+              className="flex items-center justify-center gap-2 px-4 py-2.5 w-full sm:w-auto min-w-[160px] bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#15a544] transition text-sm duration-300"
+            >
+              <HiArrowSmDown className="text-lg" />
+              <span>Download CV</span>
+            </button>
 
+            {/* Download Cover Letter Button */}
+            <button
+              onClick={handleDownloadCV}
+              className="flex items-center justify-center gap-2 px-4 py-2.5 w-full sm:w-auto min-w-[160px] bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#15a544] transition text-sm duration-300"
+            >
+              <HiArrowSmDown className="text-lg" />
+              <span>Cover Letter</span>
+            </button>
+          </div>
 
-  <div className="flex lg:justify-start gap-4 sm:gap-6 lg:gap-10 xl:gap-12 text-2xl sm:text-3xl lg:text-5xl">
-    {/* Download CV Button */}
-  <button
-    onClick={handleDownloadCV}
-    className="flex items-center justify-left px-2 py-1.5 w-[120px] bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#15a544] transition text-sm duration-300 mx-auto lg:mx-0 mt-6"
-  >
-    <HiArrowSmDown className="text-base" />
-    <span>Download CV</span>
-  </button>
-
-  {/* Download Cover Letter Button */}
-  <button
-    onClick={handleDownloadCV}
-    className="flex items-center justify-left px-2 py-1.5 w-[120px] bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#15a544] transition text-sm duration-300 mx-auto lg:mx-0 mt-6"
-  >
-    <HiArrowSmDown className="text-base" />
-    <span>Cover Letter</span>
-  </button>
-</div>
-
-  {/* Social Icons */}
-  <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-10 xl:gap-12 text-2xl sm:text-3xl lg:text-5xl mt-5 items-center">
-  <a href="https://www.linkedin.com/in/oyage-linkedin-keshandinith4" target="_blank" rel="noopener noreferrer">
-    <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
-  </a>
-  <a href="https://github.com/oyage-github-keshandinith4" target="_blank" rel="noopener noreferrer">
-    <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
-  </a>
-  <a href="https://facebook.com/oyage-facebook-username" target="_blank" rel="noopener noreferrer">
-    <FaFacebook className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
-  </a>
-  <a href="https://wa.me/94719943746" target="_blank" rel="noopener noreferrer">
-    <FaWhatsapp className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
-  </a>
-</div>
-
-
-</div>
-
+          {/* Social Icons Container */}
+          <div className="flex justify-center lg:justify-start gap-6 sm:gap-8 text-3xl sm:text-4xl lg:text-5xl xl:gap-12">
+            <a
+              href="https://www.linkedin.com/in/oyage-linkedin-keshandinith4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/oyage-github-keshandinith4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://facebook.com/oyage-facebook-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://wa.me/94719943746"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"
+            >
+              <FaWhatsapp />
+            </a>
+          </div>
+        </div>
 
         {/* Right Side */}
         <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-end items-center mt-10 lg:mt-0 px-4">
