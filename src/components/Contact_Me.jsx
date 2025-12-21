@@ -14,7 +14,7 @@ export default function Contact_Me() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.85, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.2 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#19C753] mb-5 text-left lg:text-center md:text-left w-full max-w-5xl"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#19C753] mb-5 text-left lg:text-center md:text-left w-full max-w-5xl xl:mt-5"
         >
           Contact Me
         </motion.h1>
@@ -28,12 +28,12 @@ export default function Contact_Me() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.3 }}
-            className="bg-[#1A2238] w-full md:w-1/2 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300 overflow-hidden relative"
+            className="bg-[#1A2238] w-full md:w-1/2 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300 overflow-hidden relative xl:h-120 xl:w-100"
           >
             <img
               src={Keshansq}
               alt="contact"
-              className="object-cover w-full h-auto  rounded-2xl"
+              className="object-cover w-full h-auto rounded-2xl xl:h-120 xl:w-100"
             />
 
             {/* Social Links */}
@@ -59,7 +59,7 @@ export default function Contact_Me() {
             className="bg-[#1A2238] w-full md:w-1/2 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300"
           >
             <div className="flex-1 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg">
-              <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center xl:text-3xl xl:py-4">
+              <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center xl:text-3xl">
                 Ready To Transform Your Ideas?
               </h2>
 
@@ -85,7 +85,7 @@ export default function Contact_Me() {
                 </div>
 
                 {/* Message */}
-                <div className="lg:mt-5">
+                <div>
                   <label className="block font-semibold mb-2 text-sm sm:text-base lg:text-lg">Message:</label>
                   <textarea
                     rows="5"
@@ -95,7 +95,7 @@ export default function Contact_Me() {
                 </div>
 
                 {/* Submit Button */}
-                <div className="text-center xl:py-5">
+                <div className="text-center">
                   <button
                     type="submit"
                     className="w-full bg-[#19C753] hover:bg-green-600 text-white font-semibold py-3 px-10 rounded-full transition-all flex flex-row items-center justify-center gap-2 whitespace-nowrap lg:text-lg"

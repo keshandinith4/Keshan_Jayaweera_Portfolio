@@ -18,12 +18,12 @@ export default function About_Me() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
-            className="font-bold text-3xl text-[#19C753] ml-6 lg:text-5xl lg:mt-15">About Me
+            className="font-bold text-3xl text-[#19C753] ml-6 lg:text-5xl lg:mt-10">About Me
         </motion.h2>
       </div>
 
       {/* Two Card Layout */}
-      <div className="flex flex-col lg:flex-row justify-center items-start gap-4 md:gap-5 text-sm md:text-sm lg:text-lg">
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-4 md:gap-5 text-sm md:text-sm lg:text-base">
 
         {/* Right Card - Introduction & Skills (First on mobile) */}
         <motion.div
@@ -40,9 +40,9 @@ export default function About_Me() {
             <img
               src={Keshan}
               alt="Profile"
-              className="w-32 h-40 lg:w-38 lg:h-52 object-cover rounded-xl border-2 border-[#19C753] flex-shrink-0"
+              className="w-32 h-40 lg:w-28 lg:h-38 object-cover rounded-xl border-2 border-[#19C753] flex-shrink-0"
             />
-            <p className="text-white text-base leading-relaxed lg:text-xl text-left lg:text-left">
+            <p className="text-white text-base leading-relaxed lg:text-lg text-left lg:text-left">
               Hello! I'm Keshan Jayaweera, a passionate and detail-oriented IT undergraduate 
               with a strong interest in full-stack web development. I enjoy building responsive, 
               user-focused web applications using modern technologies and clean code practices.
@@ -51,7 +51,7 @@ export default function About_Me() {
 
           <div className="mt-6">
             <h2 className="text-2xl font-bold mb-2 text-white lg:text-4xl">Skills</h2>
-            <p className="text-base text-white leading-relaxed mb-4 lg:text-xl">
+            <p className="text-base text-white leading-relaxed mb-4 lg:text-lg">
               I have a solid foundation in full-stack web development, specializing in the MERN stack
                [<span className="text-[#19C753]">MongoDB, Express.js, React, and Node.js</span>]. On the frontend, I build clean, responsive UIs using 
               HTML5, CSS3, and JavaScript, while leveraging React for dynamic and scalable applications.
@@ -111,7 +111,7 @@ export default function About_Me() {
               <h3 className="text-2xl font-bold mb-3 text-white lg:text-4xl">
                 Education & Certification
               </h3>
-                <p className="text-white text-base leading-relaxed lg:text-xl text-left">
+                <p className="text-white text-base leading-relaxed lg:text-lg text-left">
                 Currently pursuing a Software Engineering degree, gaining strong foundations 
                 in programming, web development, databases, and problem-solving while continuously 
                 enhancing skills through practical projects and learning.
