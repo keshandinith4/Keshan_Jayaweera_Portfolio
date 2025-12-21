@@ -71,7 +71,7 @@ export default function Header() {
 
       {/* Mobile Menu Button */}
       <button
-        className="relative z-10 :hidden"
+        className="relative z-10 lg:hidden"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         {menuOpen ? <X size={26} /> : <Menu size={26} />}
