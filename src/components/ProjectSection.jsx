@@ -55,13 +55,13 @@ export default function Projects() {
   return (
     <section id="Projects" className="scroll-smooth">
       <div className="w-full h-auto bg-[#121828]  py-3 xl:py-16 px-6 md:px-16 text-white">
-        <div className="text-left mb-1">
+        <div className="text-left mb-1 xl:mt-20">
         <motion.h2 
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
-            className="font-bold text-3xl text-[#19C753] lg:text-5xl xl:mt-15">Projects
+            className="font-bold text-3xl text-[#19C753] lg:text-5xl">Projects
         </motion.h2>
       </div>
 
@@ -92,8 +92,8 @@ export default function Projects() {
                 </div>
               )}
               <div className="p-1 text-center lg:p-3">
-                <h3 className="font-semibold text-xs xl:text-2xl">{project.title}</h3>
-                <h4 className="text-xs text-[#19C753] font-normal xl:text-lg">
+                <h3 className="font-semibold text-xs xl:text-xl">{project.title}</h3>
+                <h4 className="text-xs text-[#19C753] font-normal lg:text-base xl:text-lg">
                   {project.description}
                 </h4>
               </div>

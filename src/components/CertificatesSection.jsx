@@ -88,8 +88,8 @@ export default function Certificates() {
                 className="w-full h-auto object-cover"
               />
               <div className="p-1 text-center lg:p-3">
-                <h3 className="font-semibold text-xs xl:text-2xl">{certificate.title}</h3>
-                <h4 className="text-xs text-[#19C753] font-normal xl:text-lg">
+                <h3 className="font-semibold text-xs xl:text-xl">{certificate.title}</h3>
+                <h4 className="text-xs text-[#19C753] font-normal lg:text-base xl:text-lg">
                   {certificate.discription}
                 </h4>
               </div>
