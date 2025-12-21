@@ -1,4 +1,5 @@
-import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
@@ -59,9 +60,9 @@ export default function Footer() {
                   <a href="https://github.com/oyage-github-keshandinith4" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
                   </a>
-          
-                  <a href="https://facebook.com/oyage-facebook-username" target="_blank" rel="noopener noreferrer">
-                    <FaFacebook className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+
+                  <a href="https://gmail.com/keshandinith4@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <MdEmail className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
                   </a>
           
                   <a href="https://wa.me/94719943746" target="_blank" rel="noopener noreferrer">
