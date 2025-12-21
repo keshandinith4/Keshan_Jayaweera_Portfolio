@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPaperPlane, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { MdEmail } from "react-icons/md";
 import Keshansq from "../assets/images/Keshansq.jpg";
 
 export default function Contact_Me() {
@@ -20,7 +21,7 @@ export default function Contact_Me() {
         </motion.h1>
 
         {/* Container */}
-        <div className="flex flex-col md:flex-row gap-8 max-w-6xl w-full items-center justify-center">
+        <div className="flex flex-col md:flex-row gap-8 max-w-6xl w-full items-center justify-center ">
 
           {/* Left Image Section */}
           <motion.div
@@ -43,6 +44,9 @@ export default function Contact_Me() {
               </a>
               <a href="https://github.com/oyage-github-keshandinith4" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
+              </a>
+              <a href="mailto:keshandinith4@gmail.com" target="_blank" rel="noopener noreferrer">
+                <MdEmail className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
               </a>
               <a href="https://wa.me/94719943746" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />

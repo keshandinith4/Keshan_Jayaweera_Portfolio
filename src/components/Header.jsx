@@ -43,7 +43,7 @@ export default function Header() {
         style={{ width: "54.5%" }}
       ></div>
 
-      {/* Name / Logo */}
+      {/* Name*/}
       <div className="relative z-10 flex items-center">
         <span className="font-bold text-[#121828] text-xl sm:text-2xl md:text-3xl ml-4 sm:ml-8 hover:text-[#19C753] transition duration-300 cursor-pointer">
           Keshan Jayaweera

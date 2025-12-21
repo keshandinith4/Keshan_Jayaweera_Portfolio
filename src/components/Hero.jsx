@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowSmDown } from "react-icons/hi";
-import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function Hero() {
   const handleDownloadCV = async () => {
@@ -98,12 +99,12 @@ export default function Hero() {
               <FaGithub />
             </a>
             <a
-              href="https://facebook.com/oyage-facebook-username"
+              href="https://gmail.com/keshandinith4@"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"
             >
-              <FaFacebook />
+              <MdEmail />
             </a>
             <a
               href="https://wa.me/94719943746"
@@ -119,9 +120,9 @@ export default function Hero() {
         {/* Right Side */}
         <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-end items-center mt-10 lg:mt-0 px-4">
           <img
-            src="https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/68fc52d50022c543682d/view?project=68fc4f79002e7fc2874a&mode=admin.jpg"
+            src="https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69481876002e4c58c6df/view?project=68fc4f79002e7fc2874a&mode=admin.png"
             alt="Profile"
-            className="relative z-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain"
+            className="relative z-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w object-contain mt-25"
           />
         </div>
       </div>
