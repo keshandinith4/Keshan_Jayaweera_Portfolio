@@ -69,28 +69,28 @@ export default function Hero() {
             </div>
 
           {/* Buttons Container */}
-          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4 mb-6">
-            {/* Download CV Button */}
-            <button
-              onClick={handleDownloadCV}
-              className="flex items-center justify-center gap-2 px-4 py-2.5 w-full sm:w-auto min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#15a544] transition text-sm duration-300"
-            >
-              <HiArrowSmDown className="text-lg" />
-              <span>Download CV</span>
-            </button>
+            <div className="flex flex-row justify-center lg:justify-start gap-3 sm:gap-4 mb-6">
+              {/* Download CV Button */}
+              <button
+                onClick={handleDownloadCV}
+                className="flex items-center justify-center gap-2 px-4 py-2.5 flex-1 sm:flex-initial sm:w-auto sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
+              >
+                <HiArrowSmDown className="text-lg" />
+                <span>Download CV</span>
+              </button>
 
-            {/* Download Cover Letter Button */}
-            <button
-              onClick={handleDownloadCV}
-              className="flex items-center justify-center gap-2 px-4 py-2.5 w-full sm:w-auto min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#15a544] transition text-sm duration-300"
-            >
-              <HiArrowSmDown className="text-lg" />
-              <span>Cover Letter</span>
-            </button>
-          </div>
+              {/* Download Cover Letter Button */}
+              <button
+                onClick={handleDownloadCV}
+                className="flex items-center justify-center gap-2 px-4 py-2.5 flex-1 sm:flex-initial sm:w-auto sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
+              >
+                <HiArrowSmDown className="text-lg" />
+                <span>Cover Letter</span>
+              </button>
+            </div>
 
           {/* Social Icons Container */}
-          <div className="flex justify-center lg:justify-start gap-6 sm:gap-8 text-3xl sm:text-4xl lg:text-5xl xl:gap-12 text-white lg:text-gray-800">
+          <div className="flex justify-center lg:justify-start gap-6 sm:gap-8 text-4xl sm:text-4xl lg:text-5xl xl:gap-12 text-white lg:text-gray-800">
             <a
               href="https://www.linkedin.com/in/keshandinith4"
               target="_blank"
@@ -131,7 +131,7 @@ export default function Hero() {
           <img
             src="https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69481876002e4c58c6df/view?project=68fc4f79002e7fc2874a&mode=admin.png"
             alt="Profile"
-            className="relative z-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w object-contain"
+            className="relative z-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w object-contain xl:mt-25"
           />
         </div>
       </div>
