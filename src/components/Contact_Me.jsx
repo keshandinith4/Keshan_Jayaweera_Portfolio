@@ -39,10 +39,10 @@ export default function Contact_Me() {
 
             {/* Social Links */}
             <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-8 text-3xl sm:text-4xl bg-black/40 backdrop-blur-md py-3 rounded-b-2xl">
-              <a href="https://www.linkedin.com/in/oyage-linkedin-keshandinith4" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/keshandinith4" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
               </a>
-              <a href="https://github.com/oyage-github-keshandinith4" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/keshandinith4" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
               </a>
               <a href="mailto:keshandinith4@gmail.com" target="_blank" rel="noopener noreferrer">
