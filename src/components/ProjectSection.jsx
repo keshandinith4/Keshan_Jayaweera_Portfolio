@@ -4,25 +4,25 @@ import project1 from "../assets/images/project1.png";
 
 const projects = [
   {
-    id: 1,
+    id: 4,
     title: "Dyes and Thread-Web",
     image: project1,
     description: "React | MongoDB | Express | Node",
   },
   {
-    id: 2,
+    id: 3,
     title: "Inventory Management System-TOYO Cable",
     image: null,
     description: "C# | .NET",
   },
   {
-    id: 3,
+    id: 2,
     title: "Mobile App with React Native",
     image: null,
     description: "React Native | Firebase",
   },
   {
-    id: 4,
+    id: 1,
     title: "E-Commerce Platform",
     image: null,
     description: "MERN Stack | Stripe | Cloudinary",
