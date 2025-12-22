@@ -3,28 +3,28 @@ import { motion } from "framer-motion";
 
 const certificates = [
   {
-    id: 1,
+    id: 4,
     title: "Front-End Web Development",
     discription: "Issued by University of Moratuwa",
     image:
       "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69084f50000a04ff245f/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
-    id: 2,
+    id: 3,
     title: "Machine Learning I",
     discription: "Issued by Columbia+ University in the city of NewYork",
     image:
       "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69085221001f87ff9560/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
-    id: 3,
+    id: 2,
     title: "Computer Hardware Basics",
     discription: "Issued by Cisco",
     image:
       "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690853cc002d90f10a64/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
-    id: 4,
+    id: 1,
     title: "Introduction to Data Science",
     discription: "Issued by Cisco",
     image:

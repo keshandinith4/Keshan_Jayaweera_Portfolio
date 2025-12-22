@@ -1,10 +1,49 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { FaPaperPlane, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
 import B from "../assets/images/B.png";
+import emailjs from '@emailjs/browser';
 
 export default function Contact_Me() {
+  const formRef = useRef();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    // EmailJS configuration
+    emailjs.sendForm(
+      'service_980k8fs',  // Replace with your EmailJS service ID 
+      'template_7dv79ki', // Replace with your EmailJS template ID
+      formRef.current,
+      '-FxRnjvpzruu4-Oo5'   // Replace with your EmailJS public key
+    )
+    .then((result) => {
+      console.log(result.text);
+      setStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => setStatus(''), 3000);
+    }, (error) => {
+      console.log(error.text);
+      setStatus('error');
+      setTimeout(() => setStatus(''), 3000);
+    });
+  };
+
   return (
     <section id="Contact_Me" className="scroll-smooth">
       <div className="bg-[#121828] flex flex-col justify-center items-center text-white px-4 py-5 md:py-12">
@@ -67,14 +106,18 @@ export default function Contact_Me() {
                 Ready To Transform Your Ideas?
               </h2>
 
-              <form className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 {/* Name & Email */}
                 <div className="flex flex-col md:flex-row gap-4 lg:gap-6">
                   <div className="flex-1">
                     <label className="block font-semibold mb-2 text-sm sm:text-base lg:text-lg">Name:</label>
                     <input
                       type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       placeholder="Enter your name"
+                      required
                       className="w-full px-4 py-2 rounded-lg bg-transparent border border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19C753] placeholder-gray-400"
                     />
                   </div>
@@ -82,7 +125,11 @@ export default function Contact_Me() {
                     <label className="block font-semibold mb-2 text-sm sm:text-base lg:text-lg">Email:</label>
                     <input
                       type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="Enter your email"
+                      required
                       className="w-full px-4 py-2 rounded-lg bg-transparent border border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19C753] placeholder-gray-400"
                     />
                   </div>
@@ -93,19 +140,36 @@ export default function Contact_Me() {
                   <label className="block font-semibold mb-2 text-sm sm:text-base lg:text-lg">Message:</label>
                   <textarea
                     rows="5"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     placeholder="Enter your message"
+                    required
                     className="w-full px-4 py-2 rounded-lg bg-transparent border border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19C753] placeholder-gray-400 resize-none"
                   ></textarea>
                 </div>
+
+                {/* Status Messages */}
+                {status === 'success' && (
+                  <div className="text-[#19C753] text-center font-semibold">
+                    ✓ Message sent successfully!
+                  </div>
+                )}
+                {status === 'error' && (
+                  <div className="text-red-500 text-center font-semibold">
+                    Failed to send message. Please try again.
+                  </div>
+                )}
 
                 {/* Submit Button */}
                 <div className="text-center">
                   <button
                     type="submit"
-                    className="w-full bg-[#19C753] hover:bg-green-600 text-white font-semibold py-3 px-10 rounded-full transition-all flex flex-row items-center justify-center gap-2 whitespace-nowrap lg:text-lg"
+                    disabled={status === 'sending'}
+                    className="w-full bg-[#19C753] hover:bg-green-600 text-white font-semibold py-3 px-10 rounded-full transition-all flex flex-row items-center justify-center gap-2 whitespace-nowrap lg:text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <FaPaperPlane />
-                    <span>Send Message</span>
+                    <span>{status === 'sending' ? 'Sending...' : 'Send Message'}</span>
                   </button>
                 </div>
               </form>

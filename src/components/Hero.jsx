@@ -73,7 +73,7 @@ export default function Hero() {
               {/* Download CV Button */}
               <button
                 onClick={handleDownloadCV}
-                className="flex items-center justify-center gap-2 px-4 py-2.5 flex-1 sm:flex-initial sm:w-auto sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 flex-1 sm:flex-initial sm:w-auto sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] transition text-sm duration-300"
               >
                 <HiArrowSmDown className="text-lg" />
                 <span>Download CV</span>
