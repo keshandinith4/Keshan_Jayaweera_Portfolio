@@ -2,7 +2,7 @@ import React from "react";
 import { FaPaperPlane, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
-import Keshansq from "../assets/images/Keshansq.jpg";
+import B from "../assets/images/B.png";
 
 export default function Contact_Me() {
   return (
@@ -32,7 +32,7 @@ export default function Contact_Me() {
             className="bg-[#1A2238] w-full md:w-1/2 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300 overflow-hidden relative xl:h-120 xl:w-100"
           >
             <img
-              src={Keshansq}
+              src={B}
               alt="contact"
               className="object-cover w-full h-auto rounded-2xl xl:h-120 xl:w-100"
             />
