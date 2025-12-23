@@ -80,7 +80,7 @@ export default function Certificates() {
               key={certificate.id}
               variants={cardVariants}
               whileHover={{ scale: 1.05 }}
-              className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300"
+              className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300 cursor-pointer"
             >
               <img
                 src={certificate.image}
