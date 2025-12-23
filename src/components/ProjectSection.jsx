@@ -66,8 +66,22 @@ const projectsData = [
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showAll, setShowAll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile screen size
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
   
-  const visibleProjects = showAll ? projectsData : projectsData.slice(0, 3);
+  // Show 2 on mobile (initially or all), show 3 initially or all on desktop
+  const visibleProjects = isMobile 
+    ? (showAll ? projectsData : projectsData.slice(0, 2))
+    : (showAll ? projectsData : projectsData.slice(0, 3));
 
   const containerVariants = {
     hidden: {},
