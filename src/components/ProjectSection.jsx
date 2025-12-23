@@ -61,6 +61,25 @@ const projectsData = [
     duration: "4 months",
     role: "Mobile Developer"
   },
+  {
+    id: 1,
+    title: "Mobile App with React Native",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800",
+    description: "React Native | Firebase",
+    fullDescription: "Cross-platform mobile application with real-time data synchronization. Features include user authentication, push notifications, and offline support.",
+    technologies: ["React Native", "Firebase", "Redux", "Expo", "AsyncStorage"],
+    features: [
+      "Cross-platform compatibility",
+      "Real-time data sync",
+      "Push notifications",
+      "Offline mode",
+      "Social media integration"
+    ],
+    github: "https://github.com/yourusername/mobile-app",
+    liveDemo: null,
+    duration: "4 months",
+    role: "Mobile Developer"
+  },
 ];
 
 export default function Projects() {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const letters = [
@@ -35,47 +35,62 @@ const letters = [
 export default function Letters() {
   const [showAll, setShowAll] = useState(false);
   const [selectedLetter, setSelectedLetter] = useState(null);
-  const visibleLetters = showAll ? letters : letters.slice(0, 3);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // Parent animation variants (for staggered fade-in)
+  // 🔹 Detect mobile
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // 🔹 Correct slicing logic
+  const visibleLetters = isMobile
+    ? showAll
+      ? letters
+      : letters.slice(0, 2)
+    : showAll
+    ? letters
+    : letters.slice(0, 3);
+
   const containerVariants = {
     hidden: {},
     show: {
-      transition: {
-        staggerChildren: 0.15,
-      },
+      transition: { staggerChildren: 0.15 },
     },
   };
 
-  // Individual card animation variants
   const cardVariants = {
     hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   return (
-    <section id="Letters" className="scroll-smooth">
+    <section id="Letters">
       <div className="w-full h-auto bg-[#121828] py-3 px-6 text-white text-sm md:text-sm lg:text-lg md:px-16">
- 
-        {/* Section Title */}
-        <div className="text-left mb-5">
-          <motion.h2 
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.85, ease: "easeOut" }}
-            viewport={{ once: false, amount: 0.2 }}
-            className="font-bold text-3xl text-[#19C753] lg:text-5xl xl:mt-15">
-            Projects That I Led
-          </motion.h2>
-        </div>
 
-        {/* Letters Grid */}
+        {/* Title */}
+        <motion.h2
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.85 }}
+          className="font-bold text-3xl text-[#19C753] lg:text-5xl"
+        >
+          Projects That I Led
+        </motion.h2>
+
+        {/* Grid */}
         <motion.div
           key={visibleLetters.length}
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid gap-10 justify-center transition duration-300 mt-10 grid-cols-2 lg:grid-cols-3"
+          className="grid gap-10 mt-10 grid-cols-2 lg:grid-cols-3"
         >
           {visibleLetters.map((letter) => (
             <motion.div
@@ -83,71 +98,71 @@ export default function Letters() {
               variants={cardVariants}
               whileHover={{ scale: 1.05 }}
               onClick={() => setSelectedLetter(letter)}
-              className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300 cursor-pointer"
+              className="bg-[#182034] rounded-2xl overflow-hidden cursor-pointer border border-[#19C753]/30 hover:border-[#19C753]"
             >
               <img
                 src={letter.image}
                 alt={letter.title}
-                className="w-full h-auto object-cover"
+                className="w-full object-cover"
               />
-              <div className="p-1 text-center lg:p-3">
-                <h3 className="font-semibold text-xs xl:text-xl">{letter.title}</h3>
-                <h4 className="text-xs text-[#19C753] font-normal lg:text-base xl:text-lg">
+              <div className="p-3 text-center">
+                <h3 className="font-semibold text-xs xl:text-xl">
+                  {letter.title}
+                </h3>
+                <p className="text-[#19C753] text-xs lg:text-base">
                   {letter.discription}
-                </h4>
+                </p>
               </div>
             </motion.div>
           ))}
         </motion.div>
 
-        {/* Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="text-center mt-10 text-xs lg:text-base"
-        >
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="bg-[#19C753] hover:bg-green-600 text-white px-2 py-1 md:px-8 md:py-3 rounded-full font-medium transition duration-300"
-          >
-            {showAll ? "Show Less" : "See More"}
-          </button>
-        </motion.div>
+        {/* See More Button (auto hide) */}
+        {letters.length > (isMobile ? 2 : 3) && (
+          <div className="text-center mt-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="text-center mt-10 text-xs lg:text-base"
+            >
+              <button
+                onClick={() => setShowAll(!showAll)}
+                className="bg-[#19C753] hover:bg-green-600 text-white px-2 py-1 md:px-8 md:py-3 rounded-full font-medium transition duration-300"
+              >
+                {showAll ? "Show Less" : "See More"}
+              </button>
+            </motion.div>
+          </div>
+        )}
 
-        {/* Letter Modal - Fixed variable name from selectedCertificate to selectedLetter */}
+        {/* Modal */}
         {selectedLetter && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+          <div
             onClick={() => setSelectedLetter(null)}
             className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
           >
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
+              initial={{ scale: 0.85, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-[#182034] rounded-2xl overflow-hidden max-w-lg w-full border-2 border-[#19C753] relative"
+              className="bg-[#182034] rounded-2xl max-w-lg w-full border-2 border-[#19C753]"
             >
-              <button
-                onClick={() => setSelectedLetter(null)}
-                className="absolute top-4 right-4 bg-[#19C753] hover:bg-green-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl z-10"
-              >
-                ×
-              </button>
               <img
                 src={selectedLetter.image}
                 alt={selectedLetter.title}
-                className="w-full h-auto"
+                className="w-full object-contain"
               />
               <div className="p-6 text-center">
-                <h3 className="font-bold text-2xl mb-2">{selectedLetter.title}</h3>
-                <p className="text-[#19C753] text-lg">{selectedLetter.discription}</p>
+                <h3 className="text-2xl font-bold">
+                  {selectedLetter.title}
+                </h3>
+                <p className="text-[#19C753] mt-2">
+                  {selectedLetter.discription}
+                </p>
               </div>
             </motion.div>
-          </motion.div>
+          </div>
         )}
       </div>
     </section>
