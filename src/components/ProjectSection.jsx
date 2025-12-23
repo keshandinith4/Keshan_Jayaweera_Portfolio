@@ -150,7 +150,7 @@ export default function Projects() {
         >
           <button
             onClick={() => setShowAll(!showAll)}
-            className="bg-[#19C753] hover:bg-green-600 text-white px-6 py-3 md:px-8 md:py-3 rounded-full font-medium transition duration-300"
+            className="bg-[#19C753] hover:bg-green-600 text-white px-2 py-1 md:px-8 md:py-3 rounded-full font-medium transition duration-300"
           >
             {showAll ? "Show Less" : "See More"}
           </button>
