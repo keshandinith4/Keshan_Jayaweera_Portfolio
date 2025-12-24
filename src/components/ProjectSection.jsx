@@ -20,7 +20,7 @@ const projectsData = [
     ],
     github: "https://github.com/yourusername/dyes-thread-web",
     liveDemo: "https://dyes-thread-web.com",
-    duration: "3 months",
+    duration: "Ongoing",
     role: "Full Stack Developer"
   },
   {

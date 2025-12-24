@@ -3,32 +3,11 @@ import { motion } from "framer-motion";
 
 const letters = [
   {
-    id: 4,
-    title: "Front-End Web Development",
-    discription: "Issued by University of Moratuwa",
-    image:
-      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69084f50000a04ff245f/view?project=68fc4f79002e7fc2874a&mode=admin",
-  },
-  {
-    id: 3,
-    title: "Machine Learning I",
-    discription: "Issued by Columbia+ University in the city of NewYork",
-    image:
-      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69085221001f87ff9560/view?project=68fc4f79002e7fc2874a&mode=admin",
-  },
-  {
-    id: 2,
-    title: "Computer Hardware Basics",
-    discription: "Issued by Cisco",
-    image:
-      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690853cc002d90f10a64/view?project=68fc4f79002e7fc2874a&mode=admin",
-  },
-  {
     id: 1,
-    title: "Introduction to Data Science",
-    discription: "Issued by Cisco",
+    title: "Saegis Study Abroad Mini Expo-2025",
+    discription: "Issued by Saegis Campus",
     image:
-      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690854b800239a79cdb7/view?project=68fc4f79002e7fc2874a&mode=admin",
+      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b86c7001624368b51/view?project=68fc4f79002e7fc2874a&mode=admin.png",
   },
 ];
 
@@ -72,7 +51,7 @@ export default function Letters() {
 
   return (
     <section id="Letters">
-      <div className="w-full h-auto bg-[#121828] py-3 px-6 text-white text-sm md:text-sm lg:text-lg md:px-16">
+      <div className="w-full h-auto py-6 bg-[#121828] py-3 px-6 text-white text-sm md:text-sm lg:text-lg md:px-16">
 
         {/* Title */}
         <motion.h2
