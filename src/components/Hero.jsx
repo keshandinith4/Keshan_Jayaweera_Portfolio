@@ -73,7 +73,7 @@ export default function Hero() {
               {/* Download CV Button */}
               <button
                 onClick={handleDownloadCV}
-                className="flex items-center justify-center gap-2 px-4 py-2.5 flex-1 sm:flex-initial sm:w-auto sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] transition text-sm duration-300"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 flex-1 sm:flex-initial sm:w-auto sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
               >
                 <HiArrowSmDown className="text-lg" />
                 <span>Download CV</span>
@@ -92,7 +92,7 @@ export default function Hero() {
           {/* Social Icons Container */}
           <div className="flex justify-center lg:justify-start gap-6 sm:gap-8 text-4xl sm:text-4xl lg:text-5xl xl:gap-12 text-white lg:text-gray-800">
             <a
-              href="https://www.linkedin.com/in/keshandinith4"
+              href="https://www.linkedin.com/in/your_profile"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"
@@ -100,7 +100,7 @@ export default function Hero() {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/keshandinith4"
+              href="https://github.com/your_profile"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"
@@ -108,7 +108,7 @@ export default function Hero() {
               <FaGithub />
             </a>
             <a
-              href="mailto:keshandinith4@gmail.com"
+              href="mailto:your_gmail4@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"

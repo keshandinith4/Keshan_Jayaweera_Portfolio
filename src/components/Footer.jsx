@@ -14,16 +14,15 @@ export default function Footer() {
             Keshan Jayaweera
           </h2>
           <h3 className="font-medium mt-5">
-            No.164 Balummahara, <br />
-            Mudungoda <br />
+            No.01 Town, <br />
             Sri Lanka
           </h3>
           <div className="mt-5 font-medium">
             <p>
-              <span className="font-semibold">Phone:</span> +94 76 830 9738
+              <span className="font-semibold">Phone:</span> +94 71 99 43 746
             </p>
             <p>
-              <span className="font-semibold">Email:</span> keshandinith4@gmail.com
+              <span className="font-semibold">Email:</span> your_gmail@gmail.com
             </p>
           </div>
         </div>
@@ -53,18 +52,18 @@ export default function Footer() {
             languages and core<br /> computer science concepts.
           </p>
           <div className="flex gap-5 text-3xl mt-5">
-                  <a href="https://www.linkedin.com/in/keshandinith4" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/your_profile" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
                   </a>
-          
-                  <a href="https://github.com/keshandinith4" target="_blank" rel="noopener noreferrer">
+
+                  <a href="https://github.com/your_profile" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
                   </a>
 
-                  <a href="mailto:keshandinith4@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:your_gmail@gmail.com" target="_blank" rel="noopener noreferrer">
                     <MdEmail className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
                   </a>
-          
+
                   <a href="https://wa.me/94719943746" target="_blank" rel="noopener noreferrer">
                     <FaWhatsapp className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
                   </a>

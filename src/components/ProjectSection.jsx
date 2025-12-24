@@ -5,43 +5,66 @@ import project1 from "../assets/images/project1.png";
 // Mock project data with full details
 const projectsData = [
   {
-    id: 2,
-    title: "Dyes and Thread-Web",
-    image: project1,
-    description: "React | MongoDB | Express | Node",
-    fullDescription: "A comprehensive web application for managing dyes and thread inventory. Built with the MERN stack, featuring real-time inventory tracking, order management, and analytics dashboard.",
-    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],
-    features: [
-      "Real-time inventory management",
-      "Order tracking system",
-      "Analytics dashboard",
-      "User authentication and authorization",
-      "Responsive design"
-    ],
-    github: "https://github.com/yourusername/dyes-thread-web",
-    liveDemo: "https://dyes-thread-web.com",
-    duration: "Ongoing",
-    role: "Full Stack Developer"
-  },
-  {
-    id: 1,
-    title: "RABBIT TOURS",
-    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b95e4000c439d7071/view?project=68fc4f79002e7fc2874a&mode=admin.png",
-    description: "React | MongoDB | Express | Node | Bootstrap",
-    fullDescription: "Enterprise-level inventory management system for TOYO Cable company. Streamlines stock control, automates reordering processes, and provides comprehensive reporting.",
-    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS", "Bootstrap"],
-    features: [
-      "Automated stock tracking",
-      "Purchase order management",
-      "Barcode scanning integration",
-      "Multi-location support",
-      "Comprehensive reporting"
-    ],
-    github: null,
-    liveDemo: null,
-    duration: "6 months",
-    role: "Backend Developer"
-  },
+  id: 3,
+  title: "Smart Attendance System",
+  image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
+  description: "React | Firebase | Face Recognition",
+  fullDescription:
+    "A smart attendance management system using facial recognition. Lecturers can mark attendance automatically using a camera feed and generate reports in real time.",
+  technologies: ["React", "Firebase", "Face API", "Tailwind CSS"],
+  features: [
+    "Face recognition based attendance",
+    "Student & lecturer dashboards",
+    "Real-time attendance updates",
+    "Export reports as PDF",
+    "Cloud database integration"
+  ],
+  github: "https://github.com/yourusername/smart-attendance-system",
+  liveDemo: "https://smart-attendance.vercel.app",
+  duration: "3 months",
+  role: "Full Stack Developer"
+},
+{
+  id: 2,
+  title: "E-Commerce Web App",
+  image: "https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg",
+  description: "React | Node | MongoDB | Stripe",
+  fullDescription:
+    "A fully functional e-commerce web application with secure authentication, product management, cart system and Stripe payment integration.",
+  technologies: ["React", "Node.js", "Express.js", "MongoDB", "Stripe", "Tailwind CSS"],
+  features: [
+    "Product & category management",
+    "Shopping cart & checkout",
+    "Stripe payment gateway",
+    "Admin dashboard",
+    "Order history & tracking"
+  ],
+  github: "https://github.com/yourusername/ecommerce-web-app",
+  liveDemo: "https://ecommerce-web-app.vercel.app",
+  duration: "4 months",
+  role: "Full Stack Developer"
+},
+{
+  id: 1,
+  title: "Online Examination System",
+  image: "https://images.pexels.com/photos/4144144/pexels-photo-4144144.jpeg",
+  description: "React | Laravel | MySQL",
+  fullDescription:
+    "An online exam platform for institutes to create exams, manage students and analyze results with automated grading.",
+  technologies: ["React", "Laravel", "MySQL", "Bootstrap"],
+  features: [
+    "Exam creation panel",
+    "Timer-based online exams",
+    "Automated grading",
+    "Student performance analytics",
+    "Secure login system"
+  ],
+  github: null,
+  liveDemo: null,
+  duration: "5 months",
+  role: "Backend Developer"
+}
+
 ];
 
 export default function Projects() {
