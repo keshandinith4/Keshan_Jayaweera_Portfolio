@@ -3,7 +3,15 @@ import { motion } from "framer-motion";
 
 const certificates = [
   {
-    id: 4,
+    id: 7,
+    title: "ASP.NET Core Web API",
+    description: "Issued by Udemy",
+    credentialUrl: "https://open.uom.lk/verify",
+    image:
+      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b89a5003d1e6f1aa9/view?project=68fc4f79002e7fc2874a&mode=admin",
+  },
+  {
+    id: 6,
     title: "Front-End Web Development",
     description: "Issued by University of Moratuwa",
     credentialUrl: "https://open.uom.lk/verify",
@@ -11,13 +19,31 @@ const certificates = [
       "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69084f50000a04ff245f/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
-    id: 3,
+    id: 5,
     title: "Machine Learning I",
     description: "Issued by Columbia+ University in the city of New York",
     credentialUrl:
       "https://badges.plus.columbia.edu/bb66c2d3-f6e5-4202-94e6-021ad99550d3",
     image:
       "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69085221001f87ff9560/view?project=68fc4f79002e7fc2874a&mode=admin",
+  },
+  {
+    id: 4,
+    title: "Research Circle Presents-2025",
+    description: "Issued by LYCEUM Campus",
+    credentialUrl:
+      "",
+    image:
+      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b87ed002aa5db8c03/view?project=68fc4f79002e7fc2874a&mode=admin.png",
+  },
+  {
+    id: 3,
+    title: "Saegis Code Pulse-2024",
+    description: "Issued by Saegis Campus",
+    credentialUrl:
+      "",
+    image:
+      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b872200371e4dcb96/view?project=68fc4f79002e7fc2874a&mode=admin.png",
   },
   {
     id: 2,
@@ -86,7 +112,7 @@ export default function Certificates() {
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.85 }}
-          className="font-bold text-3xl lg:text-5xl text-[#19C753]"
+          className="font-bold text-3xl lg:mt-20 lg:text-5xl text-[#19C753]"
         >
           Certificates
         </motion.h2>
@@ -170,7 +196,7 @@ export default function Certificates() {
                   href={selectedCertificate.credentialUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-[#19C753] px-6 py-2 rounded-full"
+                  className="inline-block mt-4 bg-[#19C753] px-4 py-1 text-xs rounded-full"
                 >
                   Open Link
                 </a>
