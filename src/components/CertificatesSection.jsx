@@ -6,8 +6,8 @@ const certificates = [
     id: 7,
     title: "ASP.NET Core Web API",
     description: "Issued by Udemy",
-    credentialId: "UC-f27e231e-b85f-413d-863a-9782a3d6c9e8",
-    credentialUrl: "https://www.udemy.com/certificate/UC-f27e231e-b85f-413d-863a-9782a3d6c9e8/",
+    credentialId: "UC-12345678",
+    credentialUrl: "https://open.uom.lk/verify",
     image:
       "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b89a5003d1e6f1aa9/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
@@ -15,7 +15,7 @@ const certificates = [
     id: 6,
     title: "Front-End Web Development",
     description: "Issued by University of Moratuwa",
-    credentialId: "JWAwQiY3Lh",
+    credentialId: "FE-2024-789",
     credentialUrl: "https://open.uom.lk/verify",
     image:
       "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69084f50000a04ff245f/view?project=68fc4f79002e7fc2874a&mode=admin",
@@ -24,7 +24,7 @@ const certificates = [
     id: 5,
     title: "Machine Learning I",
     description: "Issued by Columbia+ University in the city of New York",
-    credentialId: "160307524",
+    credentialId: "bb66c2d3-f6e5-4202-94e6-021ad99550d3",
     credentialUrl:
       "https://badges.plus.columbia.edu/bb66c2d3-f6e5-4202-94e6-021ad99550d3",
     image:
@@ -129,18 +129,20 @@ export default function Certificates() {
               variants={cardVariants}
               whileHover={{ scale: 1.05 }}
               onClick={() => setSelectedCertificate(certificate)}
-              className="bg-[#182034] rounded-2xl overflow-hidden cursor-pointer border border-[#19C753]/30 hover:border-[#19C753]"
+              className="bg-[#182034] rounded-2xl overflow-hidden cursor-pointer border border-[#19C753]/30 hover:border-[#19C753] flex flex-col h-full"
             >
-              <img
-                src={certificate.image}
-                alt={certificate.title}
-                className="w-full object-cover"
-              />
-              <div className="p-3 text-center">
-                <h3 className="font-semibold text-sm xl:text-xl">
+              <div className="flex-shrink-0">
+                <img
+                  src={certificate.image}
+                  alt={certificate.title}
+                  className="w-full h-48 md:h-56 lg:h-64 object-cover"
+                />
+              </div>
+              <div className="p-3 text-center flex-grow flex flex-col justify-center">
+                <h3 className="font-semibold text-sm xl:text-xl line-clamp-2">
                   {certificate.title}
                 </h3>
-                <p className="text-[#19C753] text-xs lg:text-base">
+                <p className="text-[#19C753] text-xs lg:text-base mt-1 line-clamp-2">
                   {certificate.description}
                 </p>
               </div>
@@ -189,7 +191,7 @@ export default function Certificates() {
                 </p>
 
                 {selectedCertificate.credentialId && (
-                  <div className="mt-2">
+                  <div className="mt-4">
                     <p className="text-gray-400 text-xs mb-1">Credential ID</p>
                     <p className="text-white text-sm font-mono">
                       {selectedCertificate.credentialId}
