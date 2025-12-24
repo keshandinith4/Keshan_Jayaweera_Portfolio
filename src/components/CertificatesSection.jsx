@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const certificates = [
   {
-    id: 7,
+    id: 8,
     title: "ASP.NET Core Web API",
     description: "Issued by Udemy",
     credentialId: "UC-12345678",
@@ -12,7 +12,7 @@ const certificates = [
       "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b89a5003d1e6f1aa9/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
-    id: 6,
+    id: 7,
     title: "Front-End Web Development",
     description: "Issued by University of Moratuwa",
     credentialId: "FE-2024-789",
@@ -21,7 +21,7 @@ const certificates = [
       "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69084f50000a04ff245f/view?project=68fc4f79002e7fc2874a&mode=admin",
   },
   {
-    id: 5,
+    id: 6,
     title: "Machine Learning I",
     description: "Issued by Columbia+ University in the city of New York",
     credentialId: "bb66c2d3-f6e5-4202-94e6-021ad99550d3",
@@ -29,6 +29,14 @@ const certificates = [
       "https://badges.plus.columbia.edu/bb66c2d3-f6e5-4202-94e6-021ad99550d3",
     image:
       "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69085221001f87ff9560/view?project=68fc4f79002e7fc2874a&mode=admin",
+  },
+  {
+    id: 5,
+    title: "SLIIT CODE FEST-2025",
+    description: "Issued by SLIIT Campus",
+    credentialUrl: "",
+    image:
+      "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b9aec001fbf27196e/view?project=68fc4f79002e7fc2874a&mode=admin.png",
   },
   {
     id: 4,

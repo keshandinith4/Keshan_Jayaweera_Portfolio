@@ -5,12 +5,12 @@ import project1 from "../assets/images/project1.png";
 // Mock project data with full details
 const projectsData = [
   {
-    id: 4,
+    id: 2,
     title: "Dyes and Thread-Web",
     image: project1,
     description: "React | MongoDB | Express | Node",
     fullDescription: "A comprehensive web application for managing dyes and thread inventory. Built with the MERN stack, featuring real-time inventory tracking, order management, and analytics dashboard.",
-    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Redux", "Tailwind CSS"],
+    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],
     features: [
       "Real-time inventory management",
       "Order tracking system",
@@ -24,12 +24,12 @@ const projectsData = [
     role: "Full Stack Developer"
   },
   {
-    id: 3,
-    title: "Inventory Management System-TOYO Cable",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800",
-    description: "C# | .NET",
+    id: 1,
+    title: "RABBIT TOURS",
+    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b95e4000c439d7071/view?project=68fc4f79002e7fc2874a&mode=admin.png",
+    description: "React | MongoDB | Express | Node | Bootstrap",
     fullDescription: "Enterprise-level inventory management system for TOYO Cable company. Streamlines stock control, automates reordering processes, and provides comprehensive reporting.",
-    technologies: ["C#", ".NET Framework", "SQL Server", "WPF", "Entity Framework"],
+    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS", "Bootstrap"],
     features: [
       "Automated stock tracking",
       "Purchase order management",
@@ -41,44 +41,6 @@ const projectsData = [
     liveDemo: null,
     duration: "6 months",
     role: "Backend Developer"
-  },
-  {
-    id: 2,
-    title: "Mobile App with React Native",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800",
-    description: "React Native | Firebase",
-    fullDescription: "Cross-platform mobile application with real-time data synchronization. Features include user authentication, push notifications, and offline support.",
-    technologies: ["React Native", "Firebase", "Redux", "Expo", "AsyncStorage"],
-    features: [
-      "Cross-platform compatibility",
-      "Real-time data sync",
-      "Push notifications",
-      "Offline mode",
-      "Social media integration"
-    ],
-    github: "https://github.com/yourusername/mobile-app",
-    liveDemo: null,
-    duration: "4 months",
-    role: "Mobile Developer"
-  },
-  {
-    id: 1,
-    title: "Mobile App with React Native",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800",
-    description: "React Native | Firebase",
-    fullDescription: "Cross-platform mobile application with real-time data synchronization. Features include user authentication, push notifications, and offline support.",
-    technologies: ["React Native", "Firebase", "Redux", "Expo", "AsyncStorage"],
-    features: [
-      "Cross-platform compatibility",
-      "Real-time data sync",
-      "Push notifications",
-      "Offline mode",
-      "Social media integration"
-    ],
-    github: "https://github.com/yourusername/mobile-app",
-    liveDemo: null,
-    duration: "4 months",
-    role: "Mobile Developer"
   },
 ];
 
