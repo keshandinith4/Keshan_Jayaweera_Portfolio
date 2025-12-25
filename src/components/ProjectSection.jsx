@@ -9,16 +9,17 @@ const projectsData = [
     title: "Dyes and Thread-Web",
     image: project1,
     description: "React | MongoDB | Express | Node",
-    fullDescription: "A comprehensive web application for managing dyes and thread inventory. Built with the MERN stack, featuring real-time inventory tracking, order management, and analytics dashboard.",
+    fullDescription: "A MERN stack web application designed for a batik textile business that allows customers to place and customize orders online, while enabling real-time management of dyes and thread inventory. The system includes order tracking, customer feedback, and an analytics dashboard to improve operational efficiency and customer satisfaction.",
     technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],
     features: [
       "Real-time inventory management",
-      "Order tracking system",
-      "Analytics dashboard",
-      "User authentication and authorization",
-      "Responsive design"
+      "Online batik product browsing & ordering",
+      "Admin dashboard for order & stock management",
+      "Customer feedback & review system",
+      "Implemented full CRUD operations",
+      "Responsive design for all devices"
     ],
-    github: "https://github.com/yourusername/dyes-thread-web",
+    github: "https://github.com/keshandinith4/Dyes_And_Thread",
     liveDemo: "https://dyes-thread-web.com",
     duration: "Ongoing",
     role: "Full Stack Developer"
@@ -28,18 +29,20 @@ const projectsData = [
     title: "RABBIT TOURS",
     image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b95e4000c439d7071/view?project=68fc4f79002e7fc2874a&mode=admin.png",
     description: "React | MongoDB | Express | Node | Bootstrap",
-    fullDescription: "Enterprise-level inventory management system for TOYO Cable company. Streamlines stock control, automates reordering processes, and provides comprehensive reporting.",
+    fullDescription: "A React-based tourism web application developed by converting a Bootstrap template into a fully functional system. The platform allows customers to explore Sri Lanka tour destinations, book tour packages, and share feedback, while enabling administrators and drivers to manage tours, locations, and images through a complete CRUD system.",
     technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS", "Bootstrap"],
     features: [
-      "Automated stock tracking",
-      "Purchase order management",
-      "Barcode scanning integration",
-      "Multi-location support",
-      "Comprehensive reporting"
+      "Browse and book Sri Lanka tour packages",
+      "Tour package management (CRUD)",
+      "Separate tour categories & packages",
+      "Customer feedback & review system",
+      "Location-based tour listings",
+      "Admin panel for managing tours & bookings",
+      "Fully mobile responsive design compatible with smartphones, tablets, and desktops"
     ],
-    github: null,
+    github: "https://github.com/keshandinith4/Rabbit-Tourism-Backend",
     liveDemo: null,
-    duration: "6 months",
+    duration: "Ongoing",
     role: "Backend Developer"
   },
 ];
