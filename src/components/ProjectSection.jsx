@@ -5,66 +5,47 @@ import project1 from "../assets/images/project1.png";
 // Mock project data with full details
 const projectsData = [
   {
-  id: 3,
-  title: "Smart Attendance System",
-  image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
-  description: "React | Firebase | Face Recognition",
-  fullDescription:
-    "A smart attendance management system using facial recognition. Lecturers can mark attendance automatically using a camera feed and generate reports in real time.",
-  technologies: ["React", "Firebase", "Face API", "Tailwind CSS"],
-  features: [
-    "Face recognition based attendance",
-    "Student & lecturer dashboards",
-    "Real-time attendance updates",
-    "Export reports as PDF",
-    "Cloud database integration"
-  ],
-  github: "https://github.com/yourusername/smart-attendance-system",
-  liveDemo: "https://smart-attendance.vercel.app",
-  duration: "3 months",
-  role: "Full Stack Developer"
-},
-{
-  id: 2,
-  title: "E-Commerce Web App",
-  image: "https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg",
-  description: "React | Node | MongoDB | Stripe",
-  fullDescription:
-    "A fully functional e-commerce web application with secure authentication, product management, cart system and Stripe payment integration.",
-  technologies: ["React", "Node.js", "Express.js", "MongoDB", "Stripe", "Tailwind CSS"],
-  features: [
-    "Product & category management",
-    "Shopping cart & checkout",
-    "Stripe payment gateway",
-    "Admin dashboard",
-    "Order history & tracking"
-  ],
-  github: "https://github.com/yourusername/ecommerce-web-app",
-  liveDemo: "https://ecommerce-web-app.vercel.app",
-  duration: "4 months",
-  role: "Full Stack Developer"
-},
-{
-  id: 1,
-  title: "Online Examination System",
-  image: "https://images.pexels.com/photos/4144144/pexels-photo-4144144.jpeg",
-  description: "React | Laravel | MySQL",
-  fullDescription:
-    "An online exam platform for institutes to create exams, manage students and analyze results with automated grading.",
-  technologies: ["React", "Laravel", "MySQL", "Bootstrap"],
-  features: [
-    "Exam creation panel",
-    "Timer-based online exams",
-    "Automated grading",
-    "Student performance analytics",
-    "Secure login system"
-  ],
-  github: null,
-  liveDemo: null,
-  duration: "5 months",
-  role: "Backend Developer"
-}
 
+    id: 2,
+    title: "Dyes and Thread-Web",
+    image: project1,
+    description: "React | MongoDB | Express | Node",
+    fullDescription: "A MERN stack web application designed for a batik textile business that allows customers to place and customize orders online, while enabling real-time management of dyes and thread inventory. The system includes order tracking, customer feedback, and an analytics dashboard to improve operational efficiency and customer satisfaction.",
+    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],
+    features: [
+      "Real-time inventory management",
+      "Online batik product browsing & ordering",
+      "Admin dashboard for order & stock management",
+      "Customer feedback & review system",
+      "Implemented full CRUD operations",
+      "Responsive design for all devices"
+    ],
+    github: "https://github.com/keshandinith4/Dyes_And_Thread",
+    liveDemo: "https://dyes-thread-web.com",
+    duration: "Ongoing",
+    role: "Full Stack Developer"
+  },
+  {
+    id: 1,
+    title: "RABBIT TOURS",
+    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b95e4000c439d7071/view?project=68fc4f79002e7fc2874a&mode=admin.png",
+    description: "React | MongoDB | Express | Node | Bootstrap",
+    fullDescription: "A React-based tourism web application developed by converting a Bootstrap template into a fully functional system. The platform allows customers to explore Sri Lanka tour destinations, book tour packages, and share feedback, while enabling administrators and drivers to manage tours, locations, and images through a complete CRUD system.",
+    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS", "Bootstrap"],
+    features: [
+      "Browse and book Sri Lanka tour packages",
+      "Tour package management (CRUD)",
+      "Separate tour categories & packages",
+      "Customer feedback & review system",
+      "Location-based tour listings",
+      "Admin panel for managing tours & bookings",
+      "Fully mobile responsive design compatible with smartphones, tablets, and desktops"
+    ],
+    github: "https://github.com/keshandinith4/Rabbit-Tourism-Backend",
+    liveDemo: null,
+    duration: "Ongoing",
+    role: "Backend Developer"
+  },
 ];
 
 export default function Projects() {
