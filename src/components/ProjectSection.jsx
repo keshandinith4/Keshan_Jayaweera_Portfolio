@@ -5,6 +5,7 @@ import project1 from "../assets/images/project1.png";
 // Mock project data with full details
 const projectsData = [
   {
+
     id: 2,
     title: "Dyes and Thread-Web",
     image: project1,
