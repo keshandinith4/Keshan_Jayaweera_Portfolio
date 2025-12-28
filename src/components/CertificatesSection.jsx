@@ -113,7 +113,7 @@ export default function Certificates() {
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.85 }}
-          className="font-bold text-3xl lg:mt-20 lg:text-5xl text-[#19C753]"
+          className="font-bold text-3xl lg:mt-15 lg:text-5xl text-[#19C753]"
         >
           Certificates
         </motion.h2>
@@ -177,12 +177,12 @@ export default function Certificates() {
               initial={{ scale: 0.85, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-[#182034] rounded-2xl max-w-lg w-full border-2 border-[#19C753]"
+              className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300 cursor-pointer"
             >
               <img
                 src={selectedCertificate.image}
                 alt={selectedCertificate.title}
-                className="max-h-[70vh] object-contain w-full"
+                className="w-full h-auto object-cover"
               />
               <div className="p-6 text-center">
                 <h3 className="text-2xl font-bold">
