@@ -52,15 +52,15 @@ export default function Footer() {
             languages and core<br /> computer science concepts.
           </p>
           <div className="flex gap-5 text-3xl mt-5">
-                  <a href="https://www.linkedin.com/in/your_profile" target="_blank" rel="noopener noreferrer">
+                  <a href="linkedin.com/in/keshan-jayaweera-0b120a265" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
                   </a>
 
-                  <a href="https://github.com/your_profile" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/keshandinith4" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
                   </a>
 
-                  <a href="mailto:your_gmail@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:keshandinith4@gmail.com" target="_blank" rel="noopener noreferrer">
                     <MdEmail className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
                   </a>
 

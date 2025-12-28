@@ -27,10 +27,10 @@ export default function Contact_Me() {
 
     // EmailJS configuration
     emailjs.sendForm(
-      'EmailJS service ID',  // Replace with your EmailJS service ID 
-      'EmailJS template ID', // Replace with your EmailJS template ID
+      'service_980k8fs',  // My EmailJS service ID 
+      'template_7dv79ki', // My EmailJS template ID
       formRef.current,
-      'EmailJS public key'   // Replace with your EmailJS public key
+      '-FxRnjvpzruu4-Oo5'   // My EmailJS public key
     )
     .then((result) => {
       console.log(result.text);
@@ -78,13 +78,13 @@ export default function Contact_Me() {
 
             {/* Social Links */}
             <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-8 text-3xl sm:text-4xl bg-black/40 backdrop-blur-md py-3 rounded-b-2xl">
-              <a href="https://www.linkedin.com/in/your_profile" target="_blank" rel="noopener noreferrer">
+              <a href="linkedin.com/in/keshan-jayaweera-0b120a265" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
               </a>
-              <a href="https://github.com/your_profile" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/keshandinith4" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
               </a>
-              <a href="mailto:your_gmail@gmail.com" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:keshandinith4@gmail.com" target="_blank" rel="noopener noreferrer">
                 <MdEmail className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer" />
               </a>
               <a href="https://wa.me/94719943746" target="_blank" rel="noopener noreferrer">

@@ -92,7 +92,7 @@ export default function Hero() {
           {/* Social Icons Container */}
           <div className="flex justify-center lg:justify-start gap-6 sm:gap-8 text-4xl sm:text-4xl lg:text-5xl xl:gap-12 text-white lg:text-gray-800">
             <a
-              href="https://www.linkedin.com/in/your_profile"
+              href="linkedin.com/in/keshan-jayaweera-0b120a265"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"
@@ -100,7 +100,7 @@ export default function Hero() {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/your_profile"
+              href="https://github.com/keshandinith4"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"
@@ -108,7 +108,7 @@ export default function Hero() {
               <FaGithub />
             </a>
             <a
-              href="mailto:your_gmail4@gmail.com"
+              href="mailto:keshandinith4@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-[#19C753] hover:scale-110 cursor-pointer"

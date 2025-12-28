@@ -3,7 +3,7 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { FaJsSquare, FaHtml5 } from "react-icons/fa";
 import { SiExpress, SiTailwindcss, SiMysql } from "react-icons/si";
 import { motion } from "framer-motion";
-import My from "../assets/images/My.png";
+import K from "../assets/images/K.png";
 
 export default function About_Me() {
   return (
@@ -38,7 +38,7 @@ export default function About_Me() {
 
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-4">
             <img
-              src={My}
+              src={K}
               alt="Profile"
               className="w-32 h-40 lg:w-28 lg:h-38 object-cover rounded-xl border-2 border-[#19C753] flex-shrink-0"
             />
@@ -109,22 +109,25 @@ export default function About_Me() {
           <div className="space-y-5">
             <div>
               <h3 className="text-2xl font-bold mb-3 text-white lg:text-4xl">
-                Education & Certification
+                Education
               </h3>
                 <p className="text-white text-base leading-relaxed lg:text-lg text-left">
                 Currently pursuing a Software Engineering degree, gaining strong foundations 
                 in programming, web development, databases, and problem-solving while continuously 
                 enhancing skills through practical projects and learning.
                 </p>
-              <ul className="list-disc list-inside text-white mt-2 ml-2">
-                <li>B.Sc(Hons) in Software Engineering (Ongoing)</li>
-              </ul>
+              
             </div>
 
             <div>
               <h3 className="text-2xl font-bold mb-3 text-white lg:text-4xl">Extra Curricular</h3>
               <ul className="list-disc list-inside text-white space-y-1.5 ml-2">
-                <li>Member of LEO Club-2024/25</li>
+                <li>President of Saegis Students' Forum-2024/25</li>
+                <li>Member of Leo Club of Wakanda-2025/26</li>
+                <li>Club Treasurer of Leo Club of Gampaha Circle-2023/24</li>
+                <li>LCGC Coordinator of Leo Club of Gampaha Circle-2023/24</li>
+                <li>Member of LeoLionss Club of Gampaha Victorius-2023/24</li>
+                <li>Assistant Treasurer of Nawa Eksath Gamunu Youth Club-2023/24</li>
               </ul>
             </div>
           </div>
