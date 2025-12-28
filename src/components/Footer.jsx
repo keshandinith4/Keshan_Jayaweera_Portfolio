@@ -14,15 +14,15 @@ export default function Footer() {
             Keshan Jayaweera
           </h2>
           <h3 className="font-medium mt-5">
-            No.01 Town, <br />
-            Sri Lanka
+            No. 164, Balummahara,<br/> Mudungoda, <br/>
+            Sri Lanka.
           </h3>
           <div className="mt-5 font-medium">
             <p>
               <span className="font-semibold">Phone:</span> +94 71 99 43 746
             </p>
             <p>
-              <span className="font-semibold">Email:</span> your_gmail@gmail.com
+              <span className="font-semibold">Email:</span> keshandinith4@gmail.com
             </p>
           </div>
         </div>
