@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import project1 from "../assets/images/project1.png";
+
 
 // Mock project data with full details
 const projectsData = [
@@ -8,7 +8,7 @@ const projectsData = [
 
     id: 2,
     title: "Dyes and Thread-Web",
-    image: project1,
+    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690c6d2e001a1356ecc9/view?project=68fc4f79002e7fc2874a&mode=admin.png",
     description: "React | MongoDB | Express | Node",
     fullDescription: "A MERN stack web application designed for a batik textile business that allows customers to place and customize orders online, while enabling real-time management of dyes and thread inventory. The system includes order tracking, customer feedback, and an analytics dashboard to improve operational efficiency and customer satisfaction.",
     technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],

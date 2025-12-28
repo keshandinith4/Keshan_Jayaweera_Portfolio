@@ -3,44 +3,69 @@ import { motion } from "framer-motion";
 
 const certificates = [
   {
-  id: 5,
-  title: "React - The Complete Guide",
+  id: 8,
+  title: "ASP.NET Core Web API",
   description: "Issued by Udemy",
-  credentialId: "Null",
-  credentialUrl: "https://www.udemy.com/certificate/UC-REACT-2025-001",
-  image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg"
+  credentialId: "UC-f27e231e-b85f-413d-863a-9782a3d6c9e8",
+  credentialUrl: "https://www.udemy.com/certificate/UC-f27e231e-b85f-413d-863a-9782a3d6c9e8/",
+  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b89a5003d1e6f1aa9/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
+},
+  {
+  id: 7,
+  title: "Front-End Web Development",
+  description: "Issued by University of Moratuwa",
+  credentialId: "JWAwQiY3Lh",
+  credentialUrl: "https://open.uom.lk/verify",
+  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/6950fe4e0038dc1b5bd9/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
+},
+  
+  {
+  id: 6,
+  title: "Machine Learning I",
+  description: "Issued by University of Columbia+ in the City of New York",
+  credentialId: "160307524",
+  credentialUrl: "https://badges.plus.columbia.edu/bb66c2d3-f6e5-4202-94e6-021ad99550d3",
+  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/6950fd37003adc7c2c3b/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
+},
+  {
+  id: 5,
+  title: "SLIIT CODE FEST-2025-Participation Certificate",
+  description: "Issued by SLIIT Campus",
+  credentialId: "",
+  credentialUrl: "",
+  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b9aec001fbf27196e/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
 },
 {
   id: 4,
-  title: "Python for Everybody",
-  description: "Issued by Coursera - University of Michigan",
-  credentialId: "Null",
-  credentialUrl: "https://www.coursera.org/account/accomplishments/PY-COURSERA-2025-002",
-  image: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg"
+  title: "LYCEUM Campus Research Circle - 2025 -Participation Certificate",
+  description: "Issued by Lyceum Campus",
+  credentialId: "",
+  credentialUrl: "",
+  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b87ed002aa5db8c03/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
 },
 {
   id: 3,
-  title: "Google IT Support Professional",
-  description: "Issued by Google via Coursera",
-  credentialId: "Null",
-  credentialUrl: "https://www.coursera.org/account/accomplishments/GOOGLE-IT-2025-003",
-  image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+  title: "Saegis Code Pulse 2024-Participation Certificate",
+  description: "Issued by Saegis Campus",
+  credentialId: "",
+  credentialUrl: "",
+  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b872200371e4dcb96/view?project=68fc4f79002e7fc2874a&mode=admin.jpg"
 },
 {
   id: 2,
-  title: "Java Programming Masterclass",
-  description: "Issued by Udemy",
-  credentialId: "Null",
-  credentialUrl: "https://www.udemy.com/certificate/UC-JAVA-2025-004",
-  image: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg"
+  title: "Computer Hardware Basics",
+  description: "Issued by Cisco",
+  credentialId: "1be44ce2-a3ef-4583-8918-15bff3ff729f",
+  credentialUrl: "https://www.credly.com/earner/earned/badge/1be44ce2-a3ef-4583-8918-15bff3ff729f",
+  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690853cc002d90f10a64/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
 },
 {
   id: 1,
-  title: "AI Foundations",
-  description: "Issued by IBM",
-  credentialId: "Null",
-  credentialUrl: "https://www.credly.com/badges/IBM-AI-2025-005",
-  image: "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg"
+  title: "Introduction to Data Science",
+  description: "Issued by Cisco",
+  credentialId: "c03ab3a2-f46e-4124-bb12-2c419c5275d8",
+  credentialUrl: "https://www.credly.com/earner/earned/badge/c03ab3a2-f46e-4124-bb12-2c419c5275d8",
+  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690854b800239a79cdb7/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
 }
 
 ];
