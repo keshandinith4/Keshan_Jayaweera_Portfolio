@@ -46,7 +46,7 @@ export default function Contact_Me() {
 
   return (
     <section id="Contact_Me" className="scroll-smooth">
-      <div className="bg-[#121828] flex flex-col justify-center items-center text-white px-4 py-5 md:py-12">
+      <div className="bg-[#121828] flex flex-col justify-center items-center text-white px-4 py-5 md:py-12 lg:py-16">
         
         {/* Section Title */}
         <motion.h1
@@ -68,7 +68,7 @@ export default function Contact_Me() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.3 }}
-            className="bg-[#1A2238] w-full md:w-1/2 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300 overflow-hidden relative xl:h-120 xl:w-100"
+            className="bg-[#1A2238] w-full md:w-1/2 rounded-2xl shadow-lg border border-[#19C753]/30 hover:border-[#19C753] transition duration-300 overflow-hidden relative lg:h-120 lg:w-100"
           >
             <img
               src={B}

@@ -92,7 +92,7 @@ export default function Projects() {
 
   return (
     <section id="Projects" className="scroll-smooth">
-      <div className="w-full h-auto bg-[#121828] py-3 px-6 text-white text-sm md:text-sm lg:text-lg md:px-16">
+      <div className="w-full h-auto bg-[#121828] py-3 px-6 text-white text-sm md:text-sm lg:text-lg md:px-16 lg:py-10">
         <div className="text-left mb-1 xl:mt-20">
           <motion.h2 
             initial={{ x: -100, opacity: 0 }}
