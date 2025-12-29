@@ -137,11 +137,11 @@ export default function Certificates() {
                 <img
                   src={certificate.image}
                   alt={certificate.title}
-                  className="w-full h-48 md:h-56 lg:h-64 object-cover"
+                  className="w-full h-28 lg:h-auto object-cover"
                 />
               </div>
               <div className="p-3 text-center flex-grow flex flex-col justify-center">
-                <h3 className="font-semibold text-sm xl:text-xl line-clamp-2">
+                <h3 className="font-semibold text-xs xl:text-xl line-clamp-2">
                   {certificate.title}
                 </h3>
                 <p className="text-[#19C753] text-xs lg:text-base mt-1 line-clamp-2">
