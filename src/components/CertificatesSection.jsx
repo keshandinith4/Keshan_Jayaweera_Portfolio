@@ -131,7 +131,7 @@ export default function Certificates() {
               variants={cardVariants}
               whileHover={{ scale: 1.05 }}
               onClick={() => setSelectedCertificate(certificate)}
-              className="bg-[#182034] rounded-2xl overflow-hidden cursor-pointer border border-[#19C753]/30 hover:border-[#19C753] flex flex-col h-full"
+              className="bg-[#182034] rounded-lg overflow-hidden cursor-pointer border border-[#19C753]/30 hover:border-[#19C753] flex flex-col h-full"
             >
               <div className="flex-shrink-0">
                 <img

@@ -118,7 +118,7 @@ export default function Projects() {
               variants={cardVariants}
               whileHover={{ scale: 1.05 }}
               onClick={() => setSelectedProject(project)}
-              className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300 cursor-pointer"
+              className="bg-[#182034] rounded-lg overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300 cursor-pointer"
             >
               {project.image ? (
                 <img
