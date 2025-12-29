@@ -212,7 +212,7 @@ export default function Certificates() {
                           rel="noopener noreferrer"
                           className="bg-[#19C753] hover:bg-green-600 px-3 md:px-6 py-2 text-xs md:text-sm rounded-full transition duration-300 whitespace-nowrap"
                         >
-                          Open
+                          Verify
                         </a>
                       )}
                       <button
