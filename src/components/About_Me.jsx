@@ -112,9 +112,7 @@ export default function About_Me() {
                 Education
               </h3>
                 <p className="text-white text-base leading-relaxed lg:text-lg text-left">
-                Currently pursuing a Software Engineering degree, gaining strong foundations 
-                in programming, web development, databases, and problem-solving while continuously 
-                enhancing skills through practical projects and learning.
+                I am currently pursuing a Bachelor of Science (Honours) in Software Engineering at Saegis Campus, a four-year degree programme, where I am building strong foundations in programming, web development, databases, software design principles, and problem-solving through practical coursework and project-based learning. I have successfully completed my G.C.E. Advanced Level in the Mathematics stream, including Combined Mathematics, Physics, and Chemistry, which has provided a solid academic background for my studies in software engineering. In addition, I actively enhance my technical knowledge through continuous self-learning using recognized online learning platforms.
                 </p>
               
             </div>
