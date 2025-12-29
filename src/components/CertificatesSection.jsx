@@ -123,7 +123,7 @@ export default function Certificates() {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid gap-10 mt-10 grid-cols-2 lg:grid-cols-3"
+          className="grid gap-6 md:gap-10 mt-10 grid-cols-2 lg:grid-cols-3"
         >
           {visibleCertificates.map((certificate) => (
             <motion.div
@@ -131,20 +131,21 @@ export default function Certificates() {
               variants={cardVariants}
               whileHover={{ scale: 1.05 }}
               onClick={() => setSelectedCertificate(certificate)}
-              className="bg-[#182034] rounded-lg overflow-hidden cursor-pointer border border-[#19C753]/30 hover:border-[#19C753] flex flex-col h-full"
+              className="bg-[#182034] rounded-lg overflow-hidden cursor-pointer border border-[#19C753]/30 hover:border-[#19C753] flex flex-col"
+              style={{ height: '100%' }}
             >
-              <div className="flex-shrink-0">
+              <div className="relative w-full" style={{ paddingBottom: '75%' }}>
                 <img
                   src={certificate.image}
                   alt={certificate.title}
-                  className="w-full h-28 lg:h-auto object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
-              <div className="p-3 text-center flex-grow flex flex-col justify-center">
-                <h3 className="font-semibold text-xs xl:text-xl line-clamp-2">
+              <div className="p-3 flex flex-col justify-center" style={{ height: '120px' }}>
+                <h3 className="font-semibold text-xs xl:text-xl line-clamp-2 text-center">
                   {certificate.title}
                 </h3>
-                <p className="text-[#19C753] text-xs lg:text-base mt-1 line-clamp-2">
+                <p className="text-[#19C753] text-xs lg:text-base mt-1 line-clamp-2 text-center">
                   {certificate.description}
                 </p>
               </div>
@@ -171,46 +172,58 @@ export default function Certificates() {
         {selectedCertificate && (
           <div
             onClick={() => setSelectedCertificate(null)}
-            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-2 md:p-4"
           >
             <motion.div
-              initial={{ scale: 0.85, opacity: 0 }}
+              initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-[#182034] rounded-2xl overflow-hidden shadow-md border border-[#19C753]/30 hover:border-[#19C753] transition-all duration-300 cursor-pointer"
+              className="relative w-full h-full flex items-center justify-center"
             >
-              <img
-                src={selectedCertificate.image}
-                alt={selectedCertificate.title}
-                className="w-full h-auto object-cover"
-              />
-              <div className="p-6 text-center">
-                <h3 className="text-2xl font-bold">
-                  {selectedCertificate.title}
-                </h3>
-                <p className="text-[#19C753] mt-2">
-                  {selectedCertificate.description}
-                </p>
-
-                {selectedCertificate.credentialId && (
-                  <div className="mt-4">
-                    <p className="text-gray-400 text-xs mb-1">Credential ID</p>
-                    <p className="text-white text-sm font-mono">
-                      {selectedCertificate.credentialId}
-                    </p>
+              <div className="relative max-w-[95vw] max-h-[95vh] flex flex-col bg-[#182034] rounded-lg overflow-hidden">
+                <div className="flex-1 overflow-hidden flex items-center justify-center">
+                  <img
+                    src={selectedCertificate.image}
+                    alt={selectedCertificate.title}
+                    className="w-full h-full object-contain"
+                    style={{ maxHeight: '85vh' }}
+                  />
+                </div>
+                <div className="p-3 md:p-4 bg-[#121828] border-t border-[#19C753]/20">
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="flex-1 text-left">
+                      <h3 className="text-sm md:text-lg font-bold text-white">
+                        {selectedCertificate.title}
+                      </h3>
+                      <p className="text-[#19C753] text-xs md:text-sm mt-1">
+                        {selectedCertificate.description}
+                      </p>
+                      {selectedCertificate.credentialId && (
+                        <p className="text-gray-400 text-xs mt-1">
+                          ID: {selectedCertificate.credentialId}
+                        </p>
+                      )}
+                    </div>
+                    <div className="flex gap-2 flex-shrink-0">
+                      {selectedCertificate.credentialUrl && (
+                        <a
+                          href={selectedCertificate.credentialUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-[#19C753] hover:bg-green-600 px-3 md:px-6 py-2 text-xs md:text-sm rounded-full transition duration-300 whitespace-nowrap"
+                        >
+                          Open
+                        </a>
+                      )}
+                      <button
+                        onClick={() => setSelectedCertificate(null)}
+                        className="bg-gray-600 hover:bg-gray-700 px-3 md:px-6 py-2 text-xs md:text-sm rounded-full transition duration-300"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
-                )}
-
-                {selectedCertificate.credentialUrl && (
-                  <a
-                    href={selectedCertificate.credentialUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-4 bg-[#19C753] hover:bg-green-600 px-6 py-2 text-sm rounded-full transition duration-300"
-                  >
-                    Open Link
-                  </a>
-                )}
+                </div>
               </div>
             </motion.div>
           </div>
