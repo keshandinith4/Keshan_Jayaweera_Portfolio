@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-
 // Mock project data with full details
 const lettersData = [
   {
     id: 1,
     title: "Saegis Study Abroad Mini Expo-2025",
-    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b86c7001624368b51/view?project=68fc4f79002e7fc2874a&mode=admin.png",
+    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b86c7001624368b51/view?project=68fc4f79002e7fc2874a&mode=admin",
     description: "Student Committee Appreciation Letter",
+    fullDescription: "This appreciation letter recognizes the outstanding contribution and dedication of the student committee members who made the Saegis Study Abroad Mini Expo-2025 a tremendous success. Their hard work, commitment, and collaborative spirit were instrumental in organizing and executing this significant event.",
+    duration: "30th of August 2025",
+    role: "Student Committee Member",
   },
 ];
 
@@ -105,19 +107,21 @@ export default function LetterSection() {
           ))}
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="text-center mt-10 text-xs lg:text-base"
-        >
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="bg-[#19C753] hover:bg-green-600 text-white px-2 py-1 md:px-8 md:py-3 rounded-full font-medium transition duration-300"
+        {lettersData.length > (isMobile ? 2 : 3) && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-center mt-10 text-xs lg:text-base"
           >
-            {showAll ? "Show Less" : "See More"}
-          </button>
-        </motion.div>
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="bg-[#19C753] hover:bg-green-600 text-white px-2 py-1 md:px-8 md:py-3 rounded-full font-medium transition duration-300"
+            >
+              {showAll ? "Show Less" : "See More"}
+            </button>
+          </motion.div>
+        )}
       </div>
     </section>
   );
@@ -150,8 +154,8 @@ function LetterDetailView({ letter, onBack }) {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.1 }}
         >
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">{letter.title}</h1>
-          <p className="text-[#19C753] text-xl mb-6">{letter.description}</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{letter.title}</h1>
+          <p className="text-[#19C753] text-lg md:text-xl mb-6">{letter.description}</p>
         </motion.div>
 
         {/* Letter Image */}
@@ -161,10 +165,10 @@ function LetterDetailView({ letter, onBack }) {
           transition={{ delay: 0.2 }}
           className="mb-10"
         >
-          {project.image ? (
+          {letter.image ? (
             <img
-              src={project.image}
-              alt={project.title}
+              src={letter.image}
+              alt={letter.title}
               className="w-full h-auto object-cover rounded-2xl shadow-2xl"
             />
           ) : (
@@ -174,24 +178,20 @@ function LetterDetailView({ letter, onBack }) {
           )}
         </motion.div>
 
-        {/* Project Details Grid */}
-        <div className="grid md:grid-cols-2 gap-10 mb-10">
-          {/* Left Column */}
+        {/* Letter Details Grid */}
+        <div className="grid md:grid-cols-2 gap-6 md:gap-10 mb-10">
+
+          {/* Right Column - Letter Info */}
           <motion.div
-            initial={{ x: -30, opacity: 0 }}
+            initial={{ x: 30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            <div className="bg-[#182034] rounded-2xl p-6 border border-[#19C753]/30 mb-6">
-              <h2 className="text-2xl font-semibold mb-4 text-[#19C753]">Overview</h2>
-              <p className="text-gray-300 leading-relaxed">{letter.fullDescription}</p>
-            </div>
-
-            <div className="bg-[#182034] rounded-2xl p-6 border border-[#19C753]/30">
-              <h2 className="text-2xl font-semibold mb-4 text-[#19C753]">Project Info</h2>
-              <div className="space-y-3">
+            <div className="bg-[#182034] rounded-2xl p-4 md:p-6 border border-[#19C753]/30 ">
+              <h2 className="text-xl md:text-2xl font-semibold mb-4 text-[#19C753]">Letter Info</h2>
+              <div className="space-y-3 text-sm md:text-base">
                 <div>
-                  <span className="text-gray-400">Duration:</span>
+                  <span className="text-gray-400">Date:</span>
                   <span className="ml-2 font-medium">{letter.duration}</span>
                 </div>
                 <div>
@@ -201,14 +201,7 @@ function LetterDetailView({ letter, onBack }) {
               </div>
             </div>
           </motion.div>
-
-          
-            
-
-            
         </div>
-
-        
       </motion.div>
     </div>
   );
