@@ -141,11 +141,11 @@ export default function Certificates() {
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
-              <div className="p-3 flex flex-col justify-center" style={{ height: '120px' }}>
-                <h3 className="font-semibold text-xs xl:text-xl line-clamp-2 text-center">
+              <div className="p-3 flex flex-col justify-center">
+                <h3 className="font-semibold text-xs xl:text-xl text-center leading-tight line-clamp-2">
                   {certificate.title}
                 </h3>
-                <p className="text-[#19C753] text-xs lg:text-base mt-1 line-clamp-2 text-center">
+                <p className="text-[#19C753] text-xs lg:text-base mt-0.5 text-center leading-tight line-clamp-2">
                   {certificate.description}
                 </p>
               </div>
