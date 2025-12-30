@@ -22,7 +22,7 @@ const certificates = [
   {
   id: 6,
   title: "Machine Learning I",
-  description: "Issued by University of Columbia+ in the City of New York",
+  description: "Issued by University of Columbia+",
   credentialId: "160307524",
   credentialUrl: "https://badges.plus.columbia.edu/bb66c2d3-f6e5-4202-94e6-021ad99550d3",
   image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/6950fd37003adc7c2c3b/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 
@@ -9,7 +9,7 @@ const projectsData = [
     id: 2,
     title: "Dyes and Thread-Web",
     image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690c6d2e001a1356ecc9/view?project=68fc4f79002e7fc2874a&mode=admin.png",
-    description: "React | MongoDB | Express | Node",
+    description: "MERN Stack",
     fullDescription: "A MERN stack web application designed for a batik textile business that allows customers to place and customize orders online, while enabling real-time management of dyes and thread inventory. The system includes order tracking, customer feedback, and an analytics dashboard to improve operational efficiency and customer satisfaction.",
     technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],
     features: [
@@ -29,7 +29,7 @@ const projectsData = [
     id: 1,
     title: "RABBIT TOURS",
     image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b95e4000c439d7071/view?project=68fc4f79002e7fc2874a&mode=admin.png",
-    description: "React | MongoDB | Express | Node | Bootstrap",
+    description: "MERN Stack | Bootstrap",
     fullDescription: "A React-based tourism web application developed by converting a Bootstrap template into a fully functional system. The platform allows customers to explore Sri Lanka tour destinations, book tour packages, and share feedback, while enabling administrators and drivers to manage tours, locations, and images through a complete CRUD system.",
     technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS", "Bootstrap"],
     features: [
@@ -54,7 +54,7 @@ export default function Projects() {
   const [isMobile, setIsMobile] = useState(false);
 
   // Detect mobile screen size
-  React.useEffect(() => {
+  useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
@@ -62,6 +62,8 @@ export default function Projects() {
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
+
+
   
   // Show 2 on mobile (initially or all), show 3 initially or all on desktop
   const visibleProjects = isMobile 
@@ -133,7 +135,7 @@ export default function Projects() {
               )}
               <div className="p-1 text-center lg:p-3">
                 <h3 className="font-semibold text-xs xl:text-xl">{project.title}</h3>
-                <h4 className="text-xs text-[#19C753] font-normal lg:text-base xl:text-lg">
+                <h4 className="text-xs text-[#19C753] font-normal lg:text-base">
                   {project.description}
                 </h4>
               </div>
@@ -160,8 +162,17 @@ export default function Projects() {
 }
 
 function ProjectDetailView({ project, onBack }) {
+  const detailRef = React.useRef(null);
+
+  // Scroll to detail view when component mounts
+  useEffect(() => {
+    if (detailRef.current) {
+      detailRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, []);
+
   return (
-    <div className="w-full min-h-screen bg-[#121828] text-white">
+    <div ref={detailRef} className="w-full min-h-screen bg-[#121828] text-white">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -186,7 +197,7 @@ function ProjectDetailView({ project, onBack }) {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.1 }}
         >
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">{project.title}</h1>
+          <h1 className="text-3xl lg:text-5xl font-bold mb-4">{project.title}</h1>
           <p className="text-[#19C753] text-xl mb-6">{project.description}</p>
         </motion.div>
 
@@ -279,16 +290,16 @@ function ProjectDetailView({ project, onBack }) {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="flex flex-wrap gap-4 justify-center"
+          className="flex flex-nowrap gap-2 md:gap-4 justify-center overflow-x-auto"
         >
           {project.github && (
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#182034] hover:bg-[#1f2937] border border-[#19C753]/30 hover:border-[#19C753] text-white px-8 py-3 rounded-full font-medium transition duration-300 flex items-center gap-2"
+              className="bg-[#182034] hover:bg-[#1f2937] border border-[#19C753]/30 hover:border-[#19C753] text-white px-3 py-2 lg:px-8 lg:py-3 rounded-full lg:text-base text-xs font-medium transition duration-300 flex items-center gap-1 lg:gap-2 whitespace-nowrap flex-shrink-0"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 lg:w-5 lg:h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
               </svg>
               View on GitHub
@@ -299,14 +310,21 @@ function ProjectDetailView({ project, onBack }) {
               href={project.liveDemo}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#19C753] hover:bg-green-600 text-white px-8 py-3 rounded-full font-medium transition duration-300 flex items-center gap-2"
+              className="bg-[#19C753] hover:bg-green-600 text-white px-3 py-2 lg:px-8 lg:py-3 rounded-full font-medium transition duration-300 lg:text-base flex items-center gap-1 lg:gap-2 text-xs whitespace-nowrap flex-shrink-0"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 lg:w-5 lg:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
               Live Demo
             </a>
           )}
+          <button
+            onClick={onBack}
+            className="bg-[#182034] hover:bg-red-600/20 border px-3 py-2 border-[#19C753]/30 hover:border-red-500 text-white lg:px-8 text-xs lg:py-3 rounded-full lg:text-base font-medium transition duration-300 flex items-center gap-1 lg:gap-2 whitespace-nowrap flex-shrink-0"
+          >
+            <span>Close</span>
+          </button>
+
         </motion.div>
       </motion.div>
     </div>
