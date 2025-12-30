@@ -9,7 +9,7 @@ const projectsData = [
     id: 2,
     title: "Dyes and Thread-Web",
     image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690c6d2e001a1356ecc9/view?project=68fc4f79002e7fc2874a&mode=admin.png",
-    description: "React | MongoDB | Express | Node",
+    description: "MERN Stack",
     fullDescription: "A MERN stack web application designed for a batik textile business that allows customers to place and customize orders online, while enabling real-time management of dyes and thread inventory. The system includes order tracking, customer feedback, and an analytics dashboard to improve operational efficiency and customer satisfaction.",
     technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],
     features: [
@@ -29,7 +29,7 @@ const projectsData = [
     id: 1,
     title: "RABBIT TOURS",
     image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b95e4000c439d7071/view?project=68fc4f79002e7fc2874a&mode=admin.png",
-    description: "React | MongoDB | Express | Node | Bootstrap",
+    description: "MERN Stack | Bootstrap",
     fullDescription: "A React-based tourism web application developed by converting a Bootstrap template into a fully functional system. The platform allows customers to explore Sri Lanka tour destinations, book tour packages, and share feedback, while enabling administrators and drivers to manage tours, locations, and images through a complete CRUD system.",
     technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS", "Bootstrap"],
     features: [
@@ -135,7 +135,7 @@ export default function Projects() {
               )}
               <div className="p-1 text-center lg:p-3">
                 <h3 className="font-semibold text-xs xl:text-xl">{project.title}</h3>
-                <h4 className="text-xs text-[#19C753] font-normal lg:text-base xl:text-lg">
+                <h4 className="text-xs text-[#19C753] font-normal lg:text-base">
                   {project.description}
                 </h4>
               </div>
