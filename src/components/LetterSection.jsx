@@ -202,6 +202,15 @@ function LetterDetailView({ letter, onBack }) {
             </div>
           </motion.div>
         </div>
+          {/* Close Button */}
+        <div className="flex justify-end mt-8">
+          <button
+            onClick={onBack}
+            className="bg-[#182034] hover:bg-red-600/20 border px-4 py-2 md:px-8 md:py-3 border-[#19C753]/30 hover:border-red-500 text-white rounded-full text-sm md:text-base font-medium transition duration-300 flex items-center gap-2"
+          >
+            <span>Close</span>
+          </button>
+        </div>
       </motion.div>
     </div>
   );
