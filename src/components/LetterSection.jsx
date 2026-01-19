@@ -181,13 +181,13 @@ function LetterDetailView({ letter, onBack }) {
         {/* Letter Details Grid */}
         <div className="grid md:grid-cols-2 gap-6 md:gap-10 mb-10">
 
-          {/* Right Column - Letter Info */}
+          {/* Left Column - Letter Info */}
           <motion.div
             initial={{ x: 30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            <div className="bg-[#182034] rounded-2xl p-4 md:p-6 border border-[#19C753]/30 ">
+            <div className="bg-[#182034] rounded-2xl p-4 md:p-6 border border-[#19C753]/30">
               <h2 className="text-xl md:text-2xl font-semibold mb-4 text-[#19C753]">Letter Info</h2>
               <div className="space-y-3 text-sm md:text-base">
                 <div>
@@ -201,15 +201,21 @@ function LetterDetailView({ letter, onBack }) {
               </div>
             </div>
           </motion.div>
-        </div>
-          {/* Close Button */}
-        <div className="flex justify-end mt-8">
-          <button
-            onClick={onBack}
-            className="bg-[#182034] hover:bg-red-600/20 border px-4 py-2 md:px-8 md:py-3 border-[#19C753]/30 hover:border-red-500 text-white rounded-full text-sm md:text-base font-medium transition duration-300 flex items-center gap-2"
+
+          {/* Right Column - Close Button */}
+          <motion.div
+            initial={{ x: 30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="flex items-start justify-end"
           >
-            <span>Close</span>
-          </button>
+            <button
+              onClick={onBack}
+              className="bg-[#182034] hover:bg-red-600/20 border px-4 py-2 md:px-8 md:py-3 border-[#19C753]/30 hover:border-red-500 text-white rounded-full text-sm md:text-base font-medium transition duration-300 flex items-center gap-2"
+            >
+              <span>Close</span>
+            </button>
+          </motion.div>
         </div>
       </motion.div>
     </div>
