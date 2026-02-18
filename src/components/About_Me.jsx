@@ -126,6 +126,8 @@ export default function About_Me() {
                 <li>LCGC Coordinator of Leo Club of Gampaha Circle-2023/24</li>
                 <li>Member of LeoLionss Club of Gampaha Victorius-2023/24</li>
                 <li>Assistant Treasurer of Nawa Eksath Gamunu Youth Club-2023/24</li>
+                <li>Member of Saegis Rifle Shooting Club-2025/26</li>
+                <li>Member of Saegis ICT Club 2023-Present</li>
               </ul>
             </div>
           </div>
