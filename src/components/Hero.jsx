@@ -53,23 +53,13 @@ export default function Hero() {
             <span>Download CV</span>
          </a>
           
-          {/* Download Cover Letter */}
-         <a
-            href="/Cover_Letter.pdf"
-            download
-            className="flex items-center justify-center gap-2 px-4 py-2.5 sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
-          >
-            <HiArrowSmDown className="text-lg" />
-            <span>Cover Letter</span>
-          </a>
-          
         </div>
 
           {/* Social Icons */}
           <div className="flex justify-center lg:justify-start gap-6 text-4xl lg:text-5xl text-white lg:text-gray-800">
 
             <a
-              href="https://linkedin.com/in/keshan-jayaweera-0b120a265"
+              href="https://www.linkedin.com/in/keshan-jayaweera-0b120a265"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-[#19C753] hover:scale-110"
