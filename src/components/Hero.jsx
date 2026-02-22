@@ -69,7 +69,7 @@ export default function Hero() {
           <div className="flex justify-center lg:justify-start gap-6 text-4xl lg:text-5xl text-white lg:text-gray-800">
 
             <a
-              href="https://linkedin.com/in/keshan-jayaweera-0b120a265"
+              href="https://www.linkedin.com/in/keshan-jayaweera-0b120a265"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-[#19C753] hover:scale-110"
