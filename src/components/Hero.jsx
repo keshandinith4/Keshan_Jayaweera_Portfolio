@@ -45,12 +45,13 @@ export default function Hero() {
 
          {/* Download CV */}
          <a
-           href="/Keshan_Jayaweera_CV.pdf"
-           download
+           href="/Keshan Jayaweera-CV.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
            className="flex items-center justify-center gap-2 px-4 py-2.5 sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
          >
            <HiArrowSmDown className="text-lg" />
-            <span>Download CV</span>
+           <span>Download CV</span>
          </a>
           
         </div>
