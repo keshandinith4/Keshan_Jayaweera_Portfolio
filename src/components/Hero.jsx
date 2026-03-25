@@ -5,113 +5,105 @@ import { MdEmail } from "react-icons/md";
 
 export default function Hero() {
   return (
-    <>
-      <section id="Home" className="scroll-smooth">
-        <div className="relative flex flex-col lg:flex-row items-center justify-between min-h-screen w-full bg-[#121828] overflow-hidden">
+    <section id="Home" className="scroll-smooth">
+      <div className="relative flex flex-col lg:flex-row items-center justify-between min-h-screen w-full bg-[#121828] overflow-hidden">
 
-          {/* Left Shape */}
-          <div
-            className="absolute left-0 top-0 h-full bg-gray-300 -skew-x-12 origin-top-left hidden lg:block"
-            style={{ width: "55%" }}
-          />
+        {/* Left Shape */}
+        <div
+          className="absolute left-0 top-0 h-full bg-gray-300 -skew-x-12 origin-top-left hidden lg:block"
+          style={{ width: "55%" }}
+        ></div>
 
-          {/* Left Content */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-20 py-8 lg:py-24 text-center lg:text-left relative z-10">
+        {/* Left Content */}
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-20 py-8 lg:py-24 text-center lg:text-left relative z-10">
 
-            <h2 className="mb-4 text-base sm:text-lg lg:text-2xl text-white lg:text-gray-800 font-semibold">
-              Web Application Developer
-            </h2>
+          <h2 className="mb-4 text-base sm:text-lg lg:text-2xl text-white lg:text-gray-800 font-semibold">
+            Web Application Developer
+          </h2>
 
-            <h3 className="text-lg sm:text-xl lg:text-3xl mb-2 text-gray-300 lg:text-black">
-              Hi, I am
-            </h3>
+          <h3 className="text-lg sm:text-xl lg:text-3xl mb-2 text-gray-300 lg:text-black">
+            Hi, I am
+          </h3>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-3 text-[#19C753] hover:scale-105 transition duration-300 cursor-pointer">
-              Keshan Jayaweera
-            </h1>
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-3 text-[#19C753] hover:scale-105 transition duration-300 cursor-pointer">
+            Keshan Jayaweera
+          </h1>
 
-            <p className="text-sm sm:text-base lg:text-xl text-gray-300 lg:text-gray-700 font-medium mb-6">
-              IT Student / Undergraduate / Full Stack Developer
-            </p>
+          <p className="text-sm sm:text-base lg:text-xl text-gray-300 lg:text-gray-700 font-medium mb-6">
+            IT Student / Undergraduate / Full Stack Developer
+          </p>
 
-            <p className="text-xs sm:text-sm lg:text-lg text-gray-400 lg:text-[#121828] max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8">
-              Passionate IT student with expertise in multiple programming
-              languages and core computer science concepts, eager to apply
-              technical skills in real-world projects and collaborative
-              development environments.
-            </p>
+          <p className="text-xs sm:text-sm lg:text-lg text-gray-400 lg:text-[#121828] max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8">
+            Passionate IT student with expertise in multiple programming
+            languages and core computer science concepts, eager to apply
+            technical skills in real-world projects and collaborative
+            development environments.
+          </p>
 
           {/* Buttons */}
           <div className="flex flex-row justify-center lg:justify-start gap-3 sm:gap-4 mb-6">
-            {/* Download CV */}
-            <a
-              href="/Keshan_Jayaweera_CV.pdf"
-              download
-              className="flex items-center justify-center gap-2 px-4 py-2.5 sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
-            >
-              <HiArrowSmDown className="text-lg" />
-              <span>Download CV</span>
-            </a>
-          </div>
-
-            {/* Social Icons */}
-            <div className="flex justify-center lg:justify-start gap-6 text-4xl lg:text-5xl text-white lg:text-gray-800 mb-4">
-              <a
-                href="https://www.linkedin.com/in/keshan-jayaweera-0b120a265"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition duration-300 hover:text-[#19C753] hover:scale-110"
-              >
-                <FaLinkedin />
-              </a>
-
-              <a
-                href="https://github.com/keshandinith4"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition duration-300 hover:text-[#19C753] hover:scale-110"
-              >
-                <FaGithub />
-              </a>
-
-              <a
-                href="mailto:keshandinith4@gmail.com"
-                className="transition duration-300 hover:text-[#19C753] hover:scale-110"
-              >
-                <MdEmail />
-              </a>
-
-              <a
-                href="https://wa.me/94719943746"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition duration-300 hover:text-[#19C753] hover:scale-110"
-              >
-                <FaWhatsapp />
-              </a>
-            </div>
-
-            {/* View Counter */}
-            <div className="flex justify-center lg:justify-start mt-1">
-              <img
-                src="https://hits.sh/github.com/keshandinith4/portfolio.svg?style=flat-square&label=Profile Views&color=19C753&labelColor=1e2a3a"
-                alt="Visit counter"
-                className="h-5"
-              />
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="hidden lg:flex relative w-full lg:w-1/2 justify-center items-center px-4">
-            <img
-              src="https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774422826/m_R_rfcrha.png"
-              alt="Profile"
-              className="relative z-10 max-w-sm object-contain"
-            />
-          </div>
-
+  
+          {/* Download CV */}
+          <a
+            href="/Keshan%20Jayaweera%20-%20CV.pdf"
+            download
+            className="flex items-center justify-center gap-2 px-4 py-2.5 sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
+          >
+            <HiArrowSmDown className="text-lg" />
+            <span>Download CV</span>
+          </a>
         </div>
-      </section>
-    </>
+
+          {/* Social Icons */}
+          <div className="flex justify-center lg:justify-start gap-6 text-4xl lg:text-5xl text-white lg:text-gray-800">
+
+            <a
+              href="https://www.linkedin.com/in/keshan-jayaweera-0b120a265"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 hover:text-[#19C753] hover:scale-110"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a
+              href="https://github.com/keshandinith4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 hover:text-[#19C753] hover:scale-110"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href="mailto:keshandinith4@gmail.com"
+              className="transition duration-300 hover:text-[#19C753] hover:scale-110"
+            >
+              <MdEmail />
+            </a>
+
+            <a
+              href="https://wa.me/94719943746"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 hover:text-[#19C753] hover:scale-110"
+            >
+              <FaWhatsapp />
+            </a>
+
+          </div>
+        </div>
+
+        {/* Right Image */}
+        <div className="hidden lg:flex relative w-full lg:w-1/2 justify-center items-center px-4">
+          <img
+            src="https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69481876002e4c58c6df/view?project=68fc4f79002e7fc2874a&mode=admin.png"
+            alt="Profile"
+            className="relative z-10 max-w-sm object-contain"
+          />
+        </div>
+
+      </div>
+    </section>
   );
 }
