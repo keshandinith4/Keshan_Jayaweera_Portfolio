@@ -8,7 +8,7 @@ const certificates = [
   description: "Issued by Udemy",
   credentialId: "UC-f27e231e-b85f-413d-863a-9782a3d6c9e8",
   credentialUrl: "https://www.udemy.com/certificate/UC-f27e231e-b85f-413d-863a-9782a3d6c9e8/",
-  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b89a5003d1e6f1aa9/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
+  image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423154/UC-f27e231e-b85f-413d-863a-9782a3d6c9e8_1_s0lwz3.jpg"
 },
   {
   id: 7,
@@ -16,7 +16,7 @@ const certificates = [
   description: "Issued by University of Moratuwa",
   credentialId: "JWAwQiY3Lh",
   credentialUrl: "https://open.uom.lk/verify",
-  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/6950fe4e0038dc1b5bd9/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
+  image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423444/Screenshot_2025-12-28_152400_hiyyqo.png"
 },
   
   {
@@ -25,7 +25,7 @@ const certificates = [
   description: "Issued by University of Columbia+",
   credentialId: "160307524",
   credentialUrl: "https://badges.plus.columbia.edu/bb66c2d3-f6e5-4202-94e6-021ad99550d3",
-  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/6950fd37003adc7c2c3b/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
+  image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423397/kc4m149y_1759190993525_1_wuzpg7.png"
 },
   {
   id: 5,
@@ -33,7 +33,7 @@ const certificates = [
   description: "Issued by SLIIT Campus",
   credentialId: "",
   credentialUrl: "",
-  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b9aec001fbf27196e/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
+  image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423345/Screenshot_2025-12-24_131829_whoe2j.png"
 },
 {
   id: 4,
@@ -41,7 +41,7 @@ const certificates = [
   description: "Issued by Lyceum Campus",
   credentialId: "",
   credentialUrl: "",
-  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b87ed002aa5db8c03/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
+  image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423195/WhatsApp_Image_2025-12-24_at_11.52.34_AM_1_xk8hdx.jpg"
 },
 {
   id: 3,
@@ -49,7 +49,7 @@ const certificates = [
   description: "Issued by Saegis Campus",
   credentialId: "",
   credentialUrl: "",
-  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b872200371e4dcb96/view?project=68fc4f79002e7fc2874a&mode=admin.jpg"
+  image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423242/WhatsApp_Image_2025-12-24_at_11.51.29_AM_1_pxzfjb.jpg"
 },
 {
   id: 2,
@@ -57,7 +57,7 @@ const certificates = [
   description: "Issued by Cisco",
   credentialId: "1be44ce2-a3ef-4583-8918-15bff3ff729f",
   credentialUrl: "https://www.credly.com/earner/earned/badge/1be44ce2-a3ef-4583-8918-15bff3ff729f",
-  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690853cc002d90f10a64/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
+  image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423631/Screenshot_2025-11-03_123246_squ0nv.png"
 },
 {
   id: 1,
@@ -65,7 +65,7 @@ const certificates = [
   description: "Issued by Cisco",
   credentialId: "c03ab3a2-f46e-4124-bb12-2c419c5275d8",
   credentialUrl: "https://www.credly.com/earner/earned/badge/c03ab3a2-f46e-4124-bb12-2c419c5275d8",
-  image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690854b800239a79cdb7/view?project=68fc4f79002e7fc2874a&mode=admin.jpeg"
+  image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423695/Screenshot_2025-11-03_123628_kvioik.png"
 }
 
 ];

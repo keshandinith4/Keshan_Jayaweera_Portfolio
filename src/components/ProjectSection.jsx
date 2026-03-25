@@ -8,7 +8,7 @@ const projectsData = [
 
     id: 2,
     title: "Dyes and Thread-Web",
-    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/690c6d2e001a1356ecc9/view?project=68fc4f79002e7fc2874a&mode=admin.png",
+    image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774422986/Screenshot_2025-11-06_151016_aid8yk.png",
     description: "MERN Stack",
     fullDescription: "A MERN stack web application designed for a batik textile business that allows customers to place and customize orders online, while enabling real-time management of dyes and thread inventory. The system includes order tracking, customer feedback, and an analytics dashboard to improve operational efficiency and customer satisfaction.",
     technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],
@@ -28,7 +28,7 @@ const projectsData = [
   {
     id: 1,
     title: "RABBIT TOURS",
-    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b95e4000c439d7071/view?project=68fc4f79002e7fc2874a&mode=admin.png",
+    image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423043/Screenshot_2025-12-24_125704_qyny5d.png",
     description: "MERN Stack | Bootstrap",
     fullDescription: "A React-based tourism web application developed by converting a Bootstrap template into a fully functional system. The platform allows customers to explore Sri Lanka tour destinations, book tour packages, and share feedback, while enabling administrators and drivers to manage tours, locations, and images through a complete CRUD system.",
     technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS", "Bootstrap"],
@@ -63,8 +63,6 @@ export default function Projects() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-
-  
   // Show 2 on mobile (initially or all), show 3 initially or all on desktop
   const visibleProjects = isMobile 
     ? (showAll ? projectsData : projectsData.slice(0, 2))

@@ -99,7 +99,7 @@ export default function Hero() {
         {/* Right Image */}
         <div className="hidden lg:flex relative w-full lg:w-1/2 justify-center items-center px-4">
           <img
-            src="https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/69481876002e4c58c6df/view?project=68fc4f79002e7fc2874a&mode=admin.png"
+            src="https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774422826/m_R_rfcrha.png"
             alt="Profile"
             className="relative z-10 max-w-sm object-contain"
           />
