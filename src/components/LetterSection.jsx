@@ -6,7 +6,7 @@ const lettersData = [
   {
     id: 1,
     title: "Saegis Study Abroad Mini Expo-2025",
-    image: "https://nyc.cloud.appwrite.io/v1/storage/buckets/68fc4ffc0029fa78be44/files/694b86c7001624368b51/view?project=68fc4f79002e7fc2874a&mode=admin",
+    image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423294/WhatsApp_Image_2025-12-24_at_11.51.30_AM_1_v9zumv.jpg",
     description: "Student Committee Appreciation Letter",
     fullDescription: "This appreciation letter recognizes the outstanding contribution and dedication of the student committee members who made the Saegis Study Abroad Mini Expo-2025 a tremendous success. Their hard work, commitment, and collaborative spirit were instrumental in organizing and executing this significant event.",
     duration: "30th of August 2025",
