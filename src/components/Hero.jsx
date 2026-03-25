@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function Hero() {
+
   return (
     <section id="Home" className="scroll-smooth">
       <div className="relative flex flex-col lg:flex-row items-center justify-between min-h-screen w-full bg-[#121828] overflow-hidden">
@@ -42,6 +43,16 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-row justify-center lg:justify-start gap-3 sm:gap-4 mb-6">
+            {/* Download CV */}
+            <a
+              href="/Keshan_Jayaweera_CV.pdf"
+              download
+              className="flex items-center justify-center gap-2 px-4 py-2.5 sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
+            >
+              <HiArrowSmDown className="text-lg" />
+              <span>Download CV</span>
+            </a>
+          </div>
 
          {/* Download CV */}
          <a
@@ -57,8 +68,7 @@ export default function Hero() {
         </div>
 
           {/* Social Icons */}
-          <div className="flex justify-center lg:justify-start gap-6 text-4xl lg:text-5xl text-white lg:text-gray-800">
-
+          <div className="flex justify-center lg:justify-start gap-6 text-4xl lg:text-5xl text-white lg:text-gray-800 mb-4">
             <a
               href="https://www.linkedin.com/in/keshan-jayaweera-0b120a265"
               target="_blank"
@@ -92,7 +102,15 @@ export default function Hero() {
             >
               <FaWhatsapp />
             </a>
+          </div>
 
+          {/* View Counter */}
+          <div className="flex justify-center lg:justify-start mt-1">
+            <img
+              src="https://hits.sh/github.com/keshandinith4/portfolio.svg?style=flat-square&label=Profile%20Views&color=19C753&labelColor=1e2a3a"
+              alt="Visit counter"
+              className="h-5"
+            />
           </div>
         </div>
 
