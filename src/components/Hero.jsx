@@ -41,17 +41,18 @@ export default function Hero() {
               development environments.
             </p>
 
-            {/* Buttons */}
-            <div className="flex flex-row justify-center lg:justify-start gap-3 sm:gap-4 mb-6">
-              <a
-                href="/Keshan_Jayaweera_CV.pdf"
-                download
-                className="flex items-center justify-center gap-2 px-4 py-2.5 sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
-              >
-                <HiArrowSmDown className="text-lg" />
-                <span>Download CV</span>
-              </a>
-            </div>
+          {/* Buttons */}
+          <div className="flex flex-row justify-center lg:justify-start gap-3 sm:gap-4 mb-6">
+            {/* Download CV */}
+            <a
+              href="/Keshan_Jayaweera_CV.pdf"
+              download
+              className="flex items-center justify-center gap-2 px-4 py-2.5 sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
+            >
+              <HiArrowSmDown className="text-lg" />
+              <span>Download CV</span>
+            </a>
+          </div>
 
             {/* Social Icons */}
             <div className="flex justify-center lg:justify-start gap-6 text-4xl lg:text-5xl text-white lg:text-gray-800 mb-4">
