@@ -2,7 +2,7 @@ import React from "react";
 import { HiArrowSmDown } from "react-icons/hi";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import my from "../assets/images/my.png";
+import My from "../assets/images/my.png";
 
 export default function Hero() {
   return (
@@ -98,7 +98,7 @@ export default function Hero() {
         {/* Right Image */}
         <div className="hidden lg:flex relative w-full lg:w-1/2 justify-center items-center px-4">
           <img
-            src={my}
+            src={My}
             alt="Profile"
             className="relative z-10 max-w-sm object-contain"
           />
