@@ -2,21 +2,20 @@ import React from "react";
 import { HiArrowSmDown } from "react-icons/hi";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import my from "../assets/images/my.png";
 
 export default function Hero() {
   return (
-    <section id="home" className="scroll-smooth">
+    <section id="Home" className="scroll-smooth">
       <div className="relative flex flex-col lg:flex-row items-center justify-between min-h-screen w-full bg-[#121828] overflow-hidden">
 
         {/* Left Shape */}
         <div
           className="absolute left-0 top-0 h-full bg-gray-300 -skew-x-12 origin-top-left hidden lg:block"
           style={{ width: "55%" }}
-        />
+        ></div>
 
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-20 py-10 lg:py-24 text-center lg:text-left relative z-10">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-20 py-8 lg:py-24 text-center lg:text-left relative z-10">
 
           <h2 className="mb-4 text-base sm:text-lg lg:text-2xl text-white lg:text-gray-800 font-semibold">
             Web Application Developer
@@ -42,19 +41,22 @@ export default function Hero() {
           </p>
 
           {/* Buttons */}
-          <div className="flex justify-center lg:justify-start mb-6">
-            <a
-              href="/Keshan%20Jayaweera%20-%20CV.pdf"
-              download
-              className="flex items-center gap-2 px-5 py-2.5 bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition duration-300 text-sm"
-            >
-              <HiArrowSmDown className="text-lg" />
-              Download CV
-            </a>
-          </div>
+          <div className="flex flex-row justify-center lg:justify-start gap-3 sm:gap-4 mb-6">
+  
+          {/* Download CV */}
+          <a
+            href="/Keshan%20Jayaweera%20-%20CV.pdf"
+            download
+            className="flex items-center justify-center gap-2 px-4 py-2.5 sm:min-w-[160px] bg-[#19C753] lg:bg-[#121828] text-white font-semibold rounded-lg shadow hover:bg-[#121828] lg:hover:bg-[#19C753] transition text-sm duration-300"
+          >
+            <HiArrowSmDown className="text-lg" />
+            <span>Download CV</span>
+          </a>
+        </div>
 
           {/* Social Icons */}
           <div className="flex justify-center lg:justify-start gap-6 text-4xl lg:text-5xl text-white lg:text-gray-800">
+
             <a
               href="https://www.linkedin.com/in/keshan-jayaweera-0b120a265"
               target="_blank"
@@ -88,13 +90,14 @@ export default function Hero() {
             >
               <FaWhatsapp />
             </a>
+
           </div>
         </div>
 
         {/* Right Image */}
         <div className="hidden lg:flex relative w-full lg:w-1/2 justify-center items-center px-4">
           <img
-            src={my}
+            src="https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774422826/m_R_rfcrha.png"
             alt="Profile"
             className="relative z-10 max-w-sm object-contain"
           />
