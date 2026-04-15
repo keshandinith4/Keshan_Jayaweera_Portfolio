@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const projectsData = [
   {
 
-    id: 2,
+    id: 1,
     title: "Dyes and Thread-Web",
     image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774422986/Screenshot_2025-11-06_151016_aid8yk.png",
     description: "MERN Stack",
@@ -20,13 +20,33 @@ const projectsData = [
       "Implemented full CRUD operations",
       "Responsive design for all devices"
     ],
-    github: "https://github.com/keshandinith4/Dyes_And_Thread",
     liveDemo: "https://dyes-thread-web.com",
     duration: "Ongoing",
     role: "Full Stack Developer"
   },
   {
-    id: 1,
+    id: 2,
+    title: "Portfolio Generator",
+    image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1776254799/Screenshot_2026-04-15_172413_qnxrr1.png",
+    description: "MERN Stack | Tailwind CSS",
+    fullDescription: "A MERN stack web application designed to help individuals create professional portfolio websites quickly and easily without any coding knowledge. The platform offers a guided, form-based experience with real-time preview and automatic portfolio generation, making portfolio creation simple and accessible for everyone.",
+    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS", "Cloudinary", "Render", "Vercel"],
+    features: [
+      "Interactive preview and user-friendly introduction",
+      "Simple form-based portfolio creation",
+      "Automatic generation of personalized portfolio websites",
+      "Ability to update or delete portfolios anytime",
+      "Image upload and management using Cloudinary",
+      "Backend hosted on Render for reliable API performance",
+      "Fully responsive design across all devices",
+      "Full CRUD operations for portfolio data"
+    ],
+    liveDemo: "https://portfolio-generator-web.vercel.app/",
+    duration: "Completed",
+    role: "Full Stack Developer"
+  },
+  {
+    id: 3,
     title: "RABBIT TOURS",
     image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423043/Screenshot_2025-12-24_125704_qyny5d.png",
     description: "MERN Stack | Bootstrap",
@@ -41,7 +61,6 @@ const projectsData = [
       "Admin panel for managing tours & bookings",
       "Fully mobile responsive design compatible with smartphones, tablets, and desktops"
     ],
-    github: "https://github.com/keshandinith4/Rabbit-Tourism-Backend",
     liveDemo: null,
     duration: "Ongoing",
     role: "Backend Developer"
