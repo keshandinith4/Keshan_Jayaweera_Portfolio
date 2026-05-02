@@ -5,23 +5,23 @@ import { motion } from "framer-motion";
 // Mock project data with full details
 const projectsData = [
   {
-
     id: 1,
-    title: "Dyes and Thread-Web",
-    image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774422986/Screenshot_2025-11-06_151016_aid8yk.png",
-    description: "MERN Stack",
-    fullDescription: "A MERN stack web application designed for a batik textile business that allows customers to place and customize orders online, while enabling real-time management of dyes and thread inventory. The system includes order tracking, customer feedback, and an analytics dashboard to improve operational efficiency and customer satisfaction.",
-    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],
+    title: "LankaXplore Tours & Travels",
+    image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1777728212/Screenshot_2026-05-02_185257_ff1nam.png",
+    description: "MERN Stack | MySQL",
+    fullDescription: "LankaXplore is a robust web application designed to streamline the tourism experience in Sri Lanka. Developed by transforming a static Bootstrap template into a dynamic React-based system, the platform bridges the gap between travelers and service providers. It features a comprehensive management system for administrators and drivers while providing an intuitive interface for tourists.",
+    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS", "My SQL"],
     features: [
-      "Real-time inventory management",
-      "Online batik product browsing & ordering",
-      "Admin dashboard for order & stock management",
+      "Dynamic Package Discovery",
+      "Tour package management (CRUD)",
+      "Separate tour categories & packages",
       "Customer feedback & review system",
-      "Implemented full CRUD operations",
-      "Responsive design for all devices"
+      "Location-based tour listings",
+      "Admin panel for managing tours & bookings",
+      "Fully mobile responsive design compatible with smartphones, tablets, and desktops"
     ],
-    liveDemo: "https://dyes-thread-web.com",
-    duration: "Ongoing",
+    liveDemo: "https://lankaxploretoursandtravels.com/",
+    duration: "Completed",
     role: "Full Stack Developer"
   },
   {
@@ -45,25 +45,24 @@ const projectsData = [
     duration: "Completed",
     role: "Full Stack Developer"
   },
-  {
+   {
     id: 3,
-    title: "RABBIT TOURS",
-    image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774423043/Screenshot_2025-12-24_125704_qyny5d.png",
-    description: "MERN Stack | Bootstrap",
-    fullDescription: "A React-based tourism web application developed by converting a Bootstrap template into a fully functional system. The platform allows customers to explore Sri Lanka tour destinations, book tour packages, and share feedback, while enabling administrators and drivers to manage tours, locations, and images through a complete CRUD system.",
-    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS", "Bootstrap"],
+    title: "Dyes and Thread-Web",
+    image: "https://res.cloudinary.com/dzs9g4ogi/image/upload/v1774422986/Screenshot_2025-11-06_151016_aid8yk.png",
+    description: "MERN Stack",
+    fullDescription: "A MERN stack web application designed for a batik textile business that allows customers to place and customize orders online, while enabling real-time management of dyes and thread inventory. The system includes order tracking, customer feedback, and an analytics dashboard to improve operational efficiency and customer satisfaction.",
+    technologies: ["React", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],
     features: [
-      "Browse and book Sri Lanka tour packages",
-      "Tour package management (CRUD)",
-      "Separate tour categories & packages",
+      "Real-time inventory management",
+      "Online batik product browsing & ordering",
+      "Admin dashboard for order & stock management",
       "Customer feedback & review system",
-      "Location-based tour listings",
-      "Admin panel for managing tours & bookings",
-      "Fully mobile responsive design compatible with smartphones, tablets, and desktops"
+      "Implemented full CRUD operations",
+      "Responsive design for all devices"
     ],
-    liveDemo: null,
+    liveDemo: "https://dyes-thread-web.com",
     duration: "Ongoing",
-    role: "Backend Developer"
+    role: "Full Stack Developer"
   },
 ];
 
